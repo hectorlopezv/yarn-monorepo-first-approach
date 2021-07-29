@@ -8,6 +8,8 @@
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "moduleResolution": "node",
     "baseUrl": "./"
-  }
+  },
+  "exclude": ["**/node_modules"],
 }

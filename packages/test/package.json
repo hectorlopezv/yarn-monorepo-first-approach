@@ -7,16 +7,19 @@
   "license": "ISC",
   "main": "dist/test.cjs.js",
   "module": "dist/test.esm.js",
-  "types": "dist/test.esm.d.ts",
+  "types": "dist/types/test.esm.d.ts",
   "filename": [
     "test",
     "tsx"
   ],
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "dist": "dist",
+    "types": "types"
   },
   "files": [
-    "dist"
+    "dist",
+    "lib"
   ],
   "publishConfig": {
     "access": "public"

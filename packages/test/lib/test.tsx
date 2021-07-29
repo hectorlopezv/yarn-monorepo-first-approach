@@ -6,5 +6,6 @@ export interface TestProps {
 }
 
 export const Test: React.FC<TestProps> = ({ label = "" }) => {
+  
   return <div className="test">{`${label} hello`}</div>;
 };

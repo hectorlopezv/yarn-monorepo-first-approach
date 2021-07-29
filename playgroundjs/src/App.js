@@ -1,7 +1,6 @@
-// @ts-ignore
 import logo from './logo.svg';
 import './App.css';
-import {Test} from "@libprov/test"
+import {TestProps, Test } from "@libprov/test"
 import React from 'react';
 function App() {
   return (
