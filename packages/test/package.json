@@ -1,0 +1,34 @@
+{
+  "name": "@libprov/test",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/test.cjs.js",
+  "module": "dist/test.esm.js",
+  "types": "dist/test.esm.d.ts",
+  "filename": [
+    "test",
+    "tsx"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rollup --config node_modules/@libProv/builder/lib/rollup.config.js"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@libProv/builder": "^1.0.0",
+    "@types/react": "^17.0.15"
+  }
+}

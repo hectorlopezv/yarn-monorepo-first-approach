@@ -1,0 +1,2 @@
+import e from"react";!function(e,t){void 0===t&&(t={});var d=t.insertAt;if(e&&"undefined"!=typeof document){var o=document.head||document.getElementsByTagName("head")[0],n=document.createElement("style");n.type="text/css","top"===d&&o.firstChild?o.insertBefore(n,o.firstChild):o.appendChild(n),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(document.createTextNode(e))}}(".test{background-color:red}",{insertAt:"top"});const t=({label:t=""})=>e.createElement("div",{className:"test"},`${t} hello`);export{t as Test};
+//# sourceMappingURL=test.esm.js.map
