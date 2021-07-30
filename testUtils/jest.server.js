@@ -9,4 +9,9 @@ module.exports = {
   testEnvironment: 'jest-environment-node',
   displayName: 'server',
   testMatch: ['__server_tests__/**/*.js'],
+  preset: 'ts-jest',
+  transform: {
+    '^.+\\.(ts|tsx)?$': 'ts-jest',
+    "^.+\\.(js|jsx)$": "babel-jest",
+  }
 }

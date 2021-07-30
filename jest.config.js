@@ -1,9 +1,11 @@
 module.exports = {
   ...require('./testUtils/jest-common'),
+  collectCoverage: true,
   collectCoverageFrom: [
-    '<rootDir>/packages/**/*.js',
+    '<rootDir>/packages/**/lib/*.tsx',
+    '<rootDir>/packages/**/lib/*.ts',
+    '!<rootDir>/stories/**/*.js',
     '!<rootDir>/packages/builder/**/*.js',
-    '!<rootDir>/packages/**/*.stories.js',
     '!<rootDir>/playgroundjs/**/*.js',
     '!<rootDir>/testUtils/**/*.js',
     '!<rootDir>/testUtils/*.js',
@@ -16,12 +18,6 @@ module.exports = {
       lines: 90,
       statements: 90,
     },
-    // './src/shared/utils.js': {
-    //     statements: 100,
-    //     branches: 80,
-    //     functions: 100,
-    //     lines: 100,
-    //   },
   },
   coverageReporters: ['html', 'text'],
   projects: [

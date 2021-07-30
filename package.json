@@ -7,7 +7,8 @@
       "packages/*"
     ],
     "nohoist": [
-      "**/@libProv/builder"
+      "**/@libProv/builder",
+      "**/babel-preset-react-app/@babel/runtime"
     ]
   },
   "main": "index.js",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
@@ -63,5 +65,7 @@
     "ts-jest": "^27.0.4",
     "typescript": "^4.3.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/runtime": "^7.14.8"
+  }
 }

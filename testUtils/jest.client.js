@@ -10,4 +10,9 @@ module.exports = {
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   //snapshotSerializers: ['jest-emotion'],
   testMatch: ['<rootDir>/__tests__/**/*.js'],
+  preset: 'ts-jest',
+  transform: {
+    '^.+\\.(ts|tsx)?$': 'ts-jest',
+    "^.+\\.(js|jsx)$": "babel-jest",
+  }
 }
