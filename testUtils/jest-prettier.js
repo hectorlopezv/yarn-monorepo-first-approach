@@ -1,0 +1,47 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path')
+module.exports = {
+  rootDir: path.join(__dirname, '..'),
+  displayName: 'prettier',
+  runner: 'jest-runner-prettier',
+  moduleFileExtensions: [
+    'js',
+    'mjs',
+    'jsx',
+    'vue',
+    'ts',
+    'tsx',
+    'css',
+    'less',
+    'scss',
+    'html',
+    'json',
+    'graphql',
+    'md',
+    'markdown',
+    'mdx',
+    'yaml',
+    'yml',
+  ],
+  testMatch: [
+    '**/*.js',
+    '**/*.mjs',
+    '**/*.jsx',
+    '**/*.vue',
+    '**/*.ts',
+    '**/*.tsx',
+    '**/*.css',
+    '**/*.less',
+    '**/*.scss',
+    '**/*.html',
+    '**/*.json',
+    '**/*.graphql',
+    '**/*.md',
+    '**/*.markdown',
+    '**/*.mdx',
+    '**/*.yaml',
+    '**/*.yml',
+  ],
+}

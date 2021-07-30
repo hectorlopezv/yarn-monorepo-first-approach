@@ -14,8 +14,7 @@
   ],
   "directories": {
     "lib": "lib",
-    "dist": "dist",
-    "types": "types"
+    "dist": "dist"
   },
   "files": [
     "dist",

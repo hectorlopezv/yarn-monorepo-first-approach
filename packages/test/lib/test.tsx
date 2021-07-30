@@ -4,7 +4,7 @@ import "./test.scss";
 export interface TestProps {
   label: string;
 }
-
+export const andres = (x: number):number => x
 export const Test: React.FC<TestProps> = ({ label = "" }) => {
   
   return <div className="test">{`${label} hello`}</div>;
