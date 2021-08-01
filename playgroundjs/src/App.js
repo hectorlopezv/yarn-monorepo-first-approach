@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import {TestProps, Test } from "@libprov/test"
+import {Smilef} from "@libProv/proveedores"
 import React from 'react';
 function App() {
   return (
     <div className="App">
-      <Test />
+      <Smilef sad message1="hola este es hello"/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
