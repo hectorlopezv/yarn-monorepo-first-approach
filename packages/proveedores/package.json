@@ -42,5 +42,6 @@
   },
   "devDependencies": {
     "@libProv/builder": "^1.0.1-alpha.0"
-  }
+  },
+  "gitHead": "b4818bd16bb368f9ab8c31e1135e4841ac84c287"
 }

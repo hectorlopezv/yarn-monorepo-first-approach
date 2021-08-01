@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/hectorlopezv/yarn-monorepo-first-approach/issues"
   },
-  "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme"
+  "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
+  "gitHead": "b4818bd16bb368f9ab8c31e1135e4841ac84c287"
 }

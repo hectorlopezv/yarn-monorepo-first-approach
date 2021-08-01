@@ -42,5 +42,6 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "react-bootstrap": "0.32.4"
-  }
+  },
+  "gitHead": "b4818bd16bb368f9ab8c31e1135e4841ac84c287"
 }
