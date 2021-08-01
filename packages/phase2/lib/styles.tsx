@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, {css} from 'styled-components'
 
 export const Container = styled.div`
   background: #f9f9f9 0% 0% no-repeat padding-box;
@@ -14,14 +14,14 @@ export const Container = styled.div`
   @media screen and (max-width: 767px) {
     margin: 70px 0px 0px;
   }
-`;
+`
 
 export const Inner = styled.div`
   border-radius: 10px;
   background: #ffffff 0% 0% no-repeat padding-box;
-`;
+`
 export interface labelInterfacetype {
-  phase: number;
+  phase: number
 }
 export const Label = styled.span<labelInterfacetype>`
   position: absolute;
@@ -44,7 +44,7 @@ export const Label = styled.span<labelInterfacetype>`
     left: -36.5px;
     transform: translateX(0);
   }
-  ${({ phase }) =>
+  ${({phase}) =>
     phase === 2 &&
     css`
       border: none;
@@ -52,4 +52,4 @@ export const Label = styled.span<labelInterfacetype>`
       line-height: 73px;
       color: #fff;
     `}
-`;
+`

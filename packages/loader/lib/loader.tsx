@@ -1,14 +1,11 @@
-import React from 'react';
-import { Container, Spin, Text } from './styles';
+import React from 'react'
+import {Container, Spin, Text} from './styles'
 export interface Loader {
-  loading: boolean;
-  noBack?: boolean;
+  loading: boolean
+  noBack?: boolean
 }
 
-export const Loader: React.FC<Loader> = ({
-  loading,
-  noBack = false,
-}) => {
+export const Loader: React.FC<Loader> = ({loading, noBack = false}) => {
   return (
     <>
       {loading && (
@@ -19,5 +16,5 @@ export const Loader: React.FC<Loader> = ({
         </Container>
       )}
     </>
-  );
-};
+  )
+}

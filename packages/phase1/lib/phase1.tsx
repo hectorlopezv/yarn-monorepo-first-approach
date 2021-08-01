@@ -1,11 +1,11 @@
-import React from 'react';
-import { Container, NumberContainer, Digit } from './styles';
+import React from 'react'
+import {Container, NumberContainer, Digit} from './styles'
 export interface Phase1_SCProps {
-  phase: number;
-  className?: string;
+  phase: number
+  className?: string
   setRef: (
-    node: HTMLElement | null | undefined
-  ) => HTMLElement | null | undefined;
+    node: HTMLElement | null | undefined,
+  ) => HTMLElement | null | undefined
 }
 
 export const Phase1: React.FC<Phase1_SCProps> = ({
@@ -21,5 +21,5 @@ export const Phase1: React.FC<Phase1_SCProps> = ({
       </NumberContainer>
       {children}
     </Container>
-  );
-};
+  )
+}

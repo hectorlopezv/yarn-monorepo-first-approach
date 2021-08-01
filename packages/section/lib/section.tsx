@@ -1,19 +1,19 @@
-import React from "react";
-import "./styles.scss";
-import { MainTitle, Section as SectionContainer } from "./styles";
+import React from 'react'
+import './styles.scss'
+import {MainTitle, Section as SectionContainer} from './styles'
 export interface Section_SCProps {
   setRef?: (
-    node: HTMLElement | null | undefined
-  ) => HTMLElement | null | undefined;
-  subTitle?: () => JSX.Element;
-  titleContainer: string;
-  className?: string;
+    node: HTMLElement | null | undefined,
+  ) => HTMLElement | null | undefined
+  subTitle?: () => JSX.Element
+  titleContainer: string
+  className?: string
 }
 
 export const Section: React.FC<Section_SCProps> = ({
   titleContainer,
 
-  className = "",
+  className = '',
   subTitle = null,
   setRef = null,
   children,
@@ -24,5 +24,5 @@ export const Section: React.FC<Section_SCProps> = ({
       {subTitle && subTitle()}
       <SectionContainer>{children}</SectionContainer>
     </div>
-  );
-};
+  )
+}

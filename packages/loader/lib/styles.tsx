@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from 'styled-components';
+import styled, {keyframes, css} from 'styled-components'
 export const animationFrame = keyframes`
 0% {
 
@@ -8,14 +8,14 @@ export const animationFrame = keyframes`
 
             transform: rotate(360deg); 
 }
-`;
+`
 
 interface Container {
-  noBack?: boolean;
-  loading: boolean;
+  noBack?: boolean
+  loading: boolean
 }
 export const Container = styled.div<Container>`
-  ${({ noBack }) =>
+  ${({noBack}) =>
     noBack
       ? css`
           background-color: transparent;
@@ -32,12 +32,12 @@ export const Container = styled.div<Container>`
   position: absolute;
   top: 0;
   left: 0;
-  ${({ loading }) =>
+  ${({loading}) =>
     loading &&
     css`
       display: block;
     `}
-`;
+`
 
 export const Spin = styled.div`
   border-radius: 50%;
@@ -75,11 +75,11 @@ export const Spin = styled.div`
     transform-origin: 1px 26px;
     animation: ${animationFrame} 2s infinite ease;
   }
-`;
+`
 
 export const Text = styled.span`
   display: block;
   overflow: hidden;
   text-indent: -999px;
   width: 100%;
-`;
+`

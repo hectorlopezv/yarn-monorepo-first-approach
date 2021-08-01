@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled, {css} from 'styled-components'
 interface typeContainer {
-  phase: number;
+  phase: number
 }
 export const Container = styled.div<typeContainer>`
   &&&& {
@@ -11,20 +11,19 @@ export const Container = styled.div<typeContainer>`
     min-height: 200px;
     position: relative;
     border-color: #ccc;
-    ${({ phase }) =>
-      phase === 2 ? 'border-color: #ccc' : 'border-color: #f60'}
+    ${({phase}) => (phase === 2 ? 'border-color: #ccc' : 'border-color: #f60')}
   }
   padding-top: 30px;
-`;
+`
 
 export const NumberContainer = styled.div`
   position: relative;
   display: block;
   min-height: 1px;
   padding: 1px;
-`;
+`
 interface digitTypes {
-  phase: number;
+  phase: number
 }
 export const Digit = styled.span<digitTypes>`
   border: none;
@@ -46,7 +45,7 @@ export const Digit = styled.span<digitTypes>`
   font-family: 'Roboto Bold';
   border-radius: 100%;
 
-  ${({ phase }) => {
+  ${({phase}) => {
     if (phase === 2) {
       return css`
         border: none;
@@ -59,9 +58,9 @@ export const Digit = styled.span<digitTypes>`
           content: '\f00c';
           font-size: 40px;
         }
-      `;
+      `
     }
-    return css``;
+    return css``
   }}
 
   @media screen and (device-width: 767px) {
@@ -76,4 +75,4 @@ export const Digit = styled.span<digitTypes>`
     left: -36.5px;
     transform: translateX(0);
   }
-`;
+`

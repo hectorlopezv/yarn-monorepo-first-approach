@@ -1,10 +1,9 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
   margin: 0 15px;
   position: relative;
-`;
-
+`
 export const MainTitle = styled.h1`
   &&&& {
     text-align: left;
@@ -20,7 +19,7 @@ export const MainTitle = styled.h1`
       font: normal normal bold 31px Roboto bold !important;
     }
   }
-`;
+`
 
 export const SubTitle = styled.h3`
   &&& {
@@ -38,6 +37,6 @@ export const SubTitle = styled.h3`
       margin-bottom: 55px;
     }
   }
-`;
+`
 
-export const Section = styled.section``;
+export const Section = styled.section``

@@ -1,11 +1,11 @@
-import React from 'react';
-import { Container, Inner, Label } from './styles';
+import React from 'react'
+import {Container, Inner, Label} from './styles'
 export interface Phase2Props {
-  phase: number;
-  className?: string;
+  phase: number
+  className?: string
   setRef: (
-    node: HTMLElement | null | undefined
-  ) => HTMLElement | null | undefined;
+    node: HTMLElement | null | undefined,
+  ) => HTMLElement | null | undefined
 }
 
 export const Phase2: React.FC<Phase2Props> = ({
@@ -21,5 +21,5 @@ export const Phase2: React.FC<Phase2Props> = ({
         {children}
       </Inner>
     </Container>
-  );
-};
+  )
+}

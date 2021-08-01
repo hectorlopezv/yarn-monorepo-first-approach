@@ -1,52 +1,52 @@
-import React from "react"; //llamado para creacion de componentes
-import { Modal, Button } from "react-bootstrap"; //llamado para creacion de componentes de Bootstrap
-import "./styles.scss";
+import React from 'react' //llamado para creacion de componentes
+import {Modal, Button} from 'react-bootstrap' //llamado para creacion de componentes de Bootstrap
+import './styles.scss'
 
 export interface IModalMessageProps {
-  show: boolean;
-  showModal?: boolean;
-  container?: any; //this
-  MessageTitle: string;
-  icStyles?: string;
-  IconoColor?: string;
-  Icono: JSX.Element;
-  buttonsZone?: JSX.Element;
-  msg: string;
-  MainButtonText: string;
-  buttonsZoneStyle?: any;
-  getModalData?: (...args: any[]) => any;
-  CloseAction: (...args: any[]) => any;
-  AltButtonAction?: (...args: any[]) => any;
-  MainButtonAction?: (...args: any[]) => any;
+  show: boolean
+  showModal?: boolean
+  container?: any //this
+  MessageTitle: string
+  icStyles?: string
+  IconoColor?: string
+  Icono: JSX.Element
+  buttonsZone?: JSX.Element
+  msg: string
+  MainButtonText: string
+  buttonsZoneStyle?: any
+  getModalData?: (...args: any[]) => any
+  CloseAction: (...args: any[]) => any
+  AltButtonAction?: (...args: any[]) => any
+  MainButtonAction?: (...args: any[]) => any
 }
 export interface stateTyp {
-  showModal: boolean;
+  showModal: boolean
 }
 export class ModalMessage extends React.Component<IModalMessageProps> {
   state: stateTyp = {
     showModal: false,
-  };
-  handleHide (e: any, callback?: (...args: any[]) => any    )  {
-    e.preventDefault();
-    this.setState({ showModal: false }, callback ? callback() : null);
-    return null;
-  };
-  static getDerivedStateFromProps(props:any, _state:any): any {
+  }
+  handleHide(e: any, callback?: (...args: any[]) => any) {
+    e.preventDefault()
+    this.setState({showModal: false}, callback ? callback() : null)
+    return null
+  }
+  static getDerivedStateFromProps(props: any, _state: any): any {
     return {
       showModal: props.show,
       // ... other derived state properties
-    };
-  }
-  handleShow = () => {
-    this.setState({ showModal: true });
-  };
-  componentDidUpdate(prevPros: any, _: any) {
-    if (this.props.show !== prevPros.show) {
-      this.setState({ showModal: this.props.show });
     }
   }
-   render() {
-    const  params:any = this.props.getModalData ? this.props.getModalData() : {};
+  handleShow = () => {
+    this.setState({showModal: true})
+  }
+  componentDidUpdate(prevPros: any, _: any) {
+    if (this.props.show !== prevPros.show) {
+      this.setState({showModal: this.props.show})
+    }
+  }
+  render() {
+    const params: any = this.props.getModalData ? this.props.getModalData() : {}
     return (
       <div id="modal-wrap-alert-modal">
         <div className="modal-container">
@@ -67,9 +67,9 @@ export class ModalMessage extends React.Component<IModalMessageProps> {
               </Modal.Title>
               <Button
                 className={`ModalMessage__ic ${
-                  this.props.icStyles ? this.props.icStyles : ""
+                  this.props.icStyles ? this.props.icStyles : ''
                 }`}
-                onClick={(e) => this.handleHide(e, this.props.CloseAction)}
+                onClick={e => this.handleHide(e, this.props.CloseAction)}
               >
                 <i className="fa fa-times"></i>
               </Button>
@@ -80,7 +80,7 @@ export class ModalMessage extends React.Component<IModalMessageProps> {
                   className={`col-xs-12 col-sm-2 ModalMessage__icMain ${
                     this.props.IconoColor
                       ? `ModalMessage__icMain${this.props.IconoColor}`
-                      : ""
+                      : ''
                   }`}
                 >
                   {this.props.Icono}
@@ -104,8 +104,8 @@ export class ModalMessage extends React.Component<IModalMessageProps> {
               <div className="clearfix">
                 {this.props.AltButtonAction && this.props.MainButtonText ? (
                   <Button
-                    className={"ModalMessage__btn btn btn-default"}
-                    onClick={(e) =>
+                    className={'ModalMessage__btn btn btn-default'}
+                    onClick={e =>
                       this.handleHide(e, this.props.AltButtonAction)
                     }
                   >
@@ -119,6 +119,6 @@ export class ModalMessage extends React.Component<IModalMessageProps> {
           </Modal>
         </div>
       </div>
-    );
+    )
   }
 }

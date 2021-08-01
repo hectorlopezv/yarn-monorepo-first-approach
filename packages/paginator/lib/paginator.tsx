@@ -1,15 +1,15 @@
-import React from "react";
-import "./styles.scss";
+import React from 'react'
+import './styles.scss'
 
 //Left Arrrow
 interface LeftArrowProps {
-  title?: string;
-  titleId?: string;
-  className?: string;
+  title?: string
+  titleId?: string
+  className?: string
 }
 
 const LeftArrow: React.FC<LeftArrowProps> = ({
-  className = "",
+  className = '',
   title,
   titleId,
   ...props
@@ -20,7 +20,7 @@ const LeftArrow: React.FC<LeftArrowProps> = ({
       fill="currentColor"
       strokeWidth={0}
       viewBox="0 0 512 512"
-      className={className }
+      className={className}
       height="1em"
       width="1em"
       xmlns="http://www.w3.org/2000/svg"
@@ -33,18 +33,18 @@ const LeftArrow: React.FC<LeftArrowProps> = ({
         stroke="none"
       />
     </svg>
-  );
-};
+  )
+}
 //Right Arrow
 //Left Arrrow
 interface RightArrowProps {
-  title?: string;
-  titleId?: string;
-  className?: string;
+  title?: string
+  titleId?: string
+  className?: string
 }
 
 const RightArrow: React.FC<RightArrowProps> = ({
-  className = "",
+  className = '',
   title,
   titleId,
   ...props
@@ -68,26 +68,26 @@ const RightArrow: React.FC<RightArrowProps> = ({
         stroke="none"
       />
     </svg>
-  );
-};
+  )
+}
 interface IPaginationPanelProps {
-  totalPages: number;
-  currPage: number;
-  changePage: (page: number) => void;
+  totalPages: number
+  currPage: number
+  changePage: (page: number) => void
 }
 
 //Pagination Panel
 class PaginationPanel extends React.Component<IPaginationPanelProps> {
   public render() {
     return (
-      <div style={{ padding: "15px" }}>
+      <div style={{padding: '15px'}}>
         {this.props.totalPages > 0 && (
           <div className="paginador">
             <div
               className={
                 this.props.currPage === 1
-                  ? "paginadorArrowLeft inactive"
-                  : "paginadorArrowLeft"
+                  ? 'paginadorArrowLeft inactive'
+                  : 'paginadorArrowLeft'
               }
               onClick={() =>
                 this.props.currPage !== 1
@@ -98,8 +98,8 @@ class PaginationPanel extends React.Component<IPaginationPanelProps> {
               <LeftArrow
                 className={
                   this.props.currPage === 1
-                    ? "paginadorArrowLeft inactive"
-                    : "paginadorArrowLeft"
+                    ? 'paginadorArrowLeft inactive'
+                    : 'paginadorArrowLeft'
                 }
               />
             </div>
@@ -116,8 +116,8 @@ class PaginationPanel extends React.Component<IPaginationPanelProps> {
             <div
               className={
                 this.props.currPage === this.props.totalPages
-                  ? "paginadorArrowright inactive"
-                  : "paginadorArrowright"
+                  ? 'paginadorArrowright inactive'
+                  : 'paginadorArrowright'
               }
               onClick={() =>
                 this.props.currPage !== this.props.totalPages
@@ -128,33 +128,33 @@ class PaginationPanel extends React.Component<IPaginationPanelProps> {
               <RightArrow
                 className={
                   this.props.currPage === this.props.totalPages
-                    ? "paginadorArrowright inactive"
-                    : "paginadorArrowright"
+                    ? 'paginadorArrowright inactive'
+                    : 'paginadorArrowright'
                 }
               />
             </div>
           </div>
         )}
       </div>
-    );
+    )
   }
 }
 
 //Paginator
 export interface IPaginatorProps {
-  size: number;
-  limit: number;
-  currentPage: number;
-  changePage: (...args: any[]) => any;
+  size: number
+  limit: number
+  currentPage: number
+  changePage: (...args: any[]) => any
 }
 
 export class Paginator extends React.Component<IPaginatorProps> {
   changePage = (cpage: number) => {
-    this.props.changePage(cpage);
-  };
+    this.props.changePage(cpage)
+  }
 
   public render() {
-    const totalPages = Math.ceil(this.props.size / this.props.limit);
+    const totalPages = Math.ceil(this.props.size / this.props.limit)
 
     return (
       <div className={`paginator pl-0 pr-0 clearfix`}>
@@ -162,13 +162,13 @@ export class Paginator extends React.Component<IPaginatorProps> {
         {totalPages > 1 && (
           <div className="row col-sm-12">
             <PaginationPanel
-              changePage={(cpage) => this.changePage(cpage)}
+              changePage={cpage => this.changePage(cpage)}
               totalPages={totalPages}
               currPage={this.props.currentPage}
             />
           </div>
         )}
       </div>
-    );
+    )
   }
 }

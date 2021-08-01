@@ -1,6 +1,6 @@
 {
-  "*.+(js|json|ts)": [
-    "prettier --write",
+  "**/*.+(js|json|ts|tsx)": [
+    "prettier --ignore-path .gitignore --write",
     "git add ."
   ]
 }
