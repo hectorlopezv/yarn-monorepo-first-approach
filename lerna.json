@@ -1,8 +1,7 @@
 {
   "packages": ["packages/*"],
+  "hoist": true,
   "stream": true,
-  "npmClient": "yarn",
-  "useWorkspaces": true,
   "bootstrap": {
     "npmClientArgs": ["--no-package-lock"]
   },

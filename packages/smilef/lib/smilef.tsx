@@ -2,19 +2,21 @@ import React from 'react'
 import './styles.scss'
 
 export interface SmilefProps {
-  className?: string;
-  sad: boolean;
-  message1?: string;
-  message2?: string;
-  classNameSmile?: string;
-  titleId?: string;
-  title?: string | null;
+  className?: string
+  sad: boolean
+  message1?: string
+  message2?: string
+  classNameSmile?: string
+  titleId?: string
+  title?: string | null
 }
 
 export const Smilef: React.FC<SmilefProps> = ({
   sad = false,
+
   className = '',
   message1 = null,
+  
   message2 = null,
   classNameSmile = '',
   titleId = 'smile',

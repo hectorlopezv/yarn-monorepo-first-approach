@@ -22,7 +22,7 @@ module.exports = {
   coverageReporters: ['html', 'text'],
   projects: [
     './testUtils/jest-prettier.js',
-     './testUtils/jest-lint.js',
+    './testUtils/jest-lint.js',
     './testUtils/jest.client.js',
     './testUtils/jest.server.js',
   ],

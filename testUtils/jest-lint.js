@@ -6,5 +6,5 @@ module.exports = {
   rootDir: path.join(__dirname, '..'),
   displayName: 'lint',
   runner: 'jest-runner-eslint',
-  testMatch: ['<rootDir>/**/*.js'],
+  testMatch: ['**/packages/**/lib/*.ts', '**/packages/**/lib/*.tsx'],
 }

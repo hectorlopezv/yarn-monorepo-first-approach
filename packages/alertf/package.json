@@ -1,15 +1,15 @@
 {
-  "name": "@libProv/smilef",
+  "name": "@libProv/alertf",
   "version": "1.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
   "license": "ISC",
-  "main": "dist/smilef.cjs.js",
-  "module": "dist/smilef.esm.js",
-  "types": "dist/types/smilef.esm.d.ts",
+  "main": "dist/alertf.cjs.js",
+  "module": "dist/alertf.esm.js",
+  "types": "dist/types/alertf.esm.d.ts",
   "filename": [
-    "smilef",
+    "alertf",
     "tsx"
   ],
   "directories": {

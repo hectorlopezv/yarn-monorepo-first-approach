@@ -1,11 +1,11 @@
-# `@libProv/test`
+# `@libProv/alertf`
 
 > TODO: description
 
 ## Usage
 
 ```
-const test = require('@libProv/test');
+const alertf = require('@libProv/alertf');
 
 // TODO: DEMONSTRATE API
 ```
