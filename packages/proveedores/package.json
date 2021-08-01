@@ -1,6 +1,6 @@
 {
   "name": "@libProv/proveedores",
-  "version": "1.0.0",
+  "version": "1.0.1-alpha.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
@@ -28,19 +28,19 @@
   },
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "dependencies": {
-    "@libProv/alertf": "^1.0.0",
-    "@libProv/dots": "^1.0.0",
-    "@libProv/filter": "^1.0.0",
-    "@libProv/loader": "^1.0.0",
-    "@libProv/message": "^1.0.0",
-    "@libProv/paginator": "^1.0.0",
-    "@libProv/phase1": "^1.0.0",
-    "@libProv/phase2": "^1.0.0",
-    "@libProv/section": "^1.0.0",
-    "@libProv/selector": "^1.0.0",
-    "@libProv/smilef": "^1.0.0"
+    "@libProv/alertf": "^1.0.1-alpha.0",
+    "@libProv/dots": "^1.0.1-alpha.0",
+    "@libProv/filter": "^1.0.1-alpha.0",
+    "@libProv/loader": "^1.0.1-alpha.0",
+    "@libProv/message": "^1.0.1-alpha.0",
+    "@libProv/paginator": "^1.0.1-alpha.0",
+    "@libProv/phase1": "^1.0.1-alpha.0",
+    "@libProv/phase2": "^1.0.1-alpha.0",
+    "@libProv/section": "^1.0.1-alpha.0",
+    "@libProv/selector": "^1.0.1-alpha.0",
+    "@libProv/smilef": "^1.0.1-alpha.0"
   },
   "devDependencies": {
-    "@libProv/builder": "^1.0.0"
+    "@libProv/builder": "^1.0.1-alpha.0"
   }
 }
