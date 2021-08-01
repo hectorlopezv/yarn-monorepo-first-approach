@@ -2,7 +2,7 @@ import React from 'react'
 import {render, screen} from '@testing-library/react'
 import user from '@testing-library/user-event'
 
-import {Alertf} from '@libProv/alertf/lib/alertf'
+import {Alertf} from '@libprov/alertf/lib/alertf'
 describe('testing suite', () => {
   it('testing unit test1', () => {
     const {debug, rerender} = render(<Alertf mensaje="hector" />)
