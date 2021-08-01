@@ -1,0 +1,46 @@
+{
+  "name": "@libProv/phase2",
+  "version": "1.0.0",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "keywords": [],
+  "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
+  "license": "ISC",
+  "main": "dist/phase2.cjs.js",
+  "module": "dist/phase2.esm.js",
+  "types": "dist/types/phase2.esm.d.ts",
+  "filename": [
+    "phase2",
+    "tsx"
+  ],
+  "directories": {
+    "lib": "lib",
+    "dist": "dist"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorlopezv/yarn-monorepo-first-approach.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "rollup --config node_modules/@libProv/builder/lib/rollup.config.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hectorlopezv/yarn-monorepo-first-approach/issues"
+  },
+  "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
+  "devDependencies": {
+    "@libProv/builder": "^1.0.0",
+    "@types/styled-components": "^5.1.11"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "styled-components": "^5.3.0"
+  }
+}

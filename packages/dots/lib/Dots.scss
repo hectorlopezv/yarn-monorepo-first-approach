@@ -1,0 +1,62 @@
+$dot-speed: 200ms;
+
+.DotsContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+.dot-holders {
+  display: inline-flex;
+}
+
+.dot-holder:last-child {
+  margin-right: 0;
+}
+
+@mixin slider-size($dot-holder-size) {
+  .dot-holder {
+    width: $dot-holder-size;
+    height: $dot-holder-size;
+    border-radius: 50%;
+    background: #ffae7f 0% 0% no-repeat padding-box;
+    margin-right: 1.43 * $dot-holder-size;
+  }
+  .dot-holder:last-child {
+    margin-right: 0;
+  }
+  .dot-holder-clickable {
+    cursor: pointer;
+  }
+  .dot {
+    width: 7px;
+    height: 7px;
+    border: 1px solid var(--a-color-ff6600);
+    background: #ff6600 0% 0% no-repeat padding-box;
+    border: 0px solid #ff6600;
+    border-radius: 10px;
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    transition: left $dot-speed ease-in;
+  }
+  .dot-position-0 {
+  }
+  .dot-position-1 {
+    left: 17px;
+  }
+
+  .dot-position-2 {
+    left: 34px;
+  }
+}
+.slider {
+  display: inline-flex;
+  position: relative;
+  text-align: center;
+}
+.slider-small {
+  @include slider-size(7px);
+}

@@ -4,6 +4,7 @@ module.exports = {
   collectCoverageFrom: [
     '<rootDir>/packages/**/lib/*.tsx',
     '<rootDir>/packages/**/lib/*.ts',
+    '!<rootDir>/packages/proveedores/**/*.(ts|tsx)',
     '!<rootDir>/stories/**/*.js',
     '!<rootDir>/packages/builder/**/*.js',
     '!<rootDir>/playgroundjs/**/*.js',
@@ -13,7 +14,7 @@ module.exports = {
   ],
   coverageThreshold: {
     global: {
-      branches: 90,
+      branches: 55,
       functions: 90,
       lines: 90,
       statements: 90,

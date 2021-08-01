@@ -29,6 +29,15 @@
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "dependencies": {
     "@libProv/alertf": "^1.0.0",
+    "@libProv/dots": "^1.0.0",
+    "@libProv/filter": "^1.0.0",
+    "@libProv/loader": "^1.0.0",
+    "@libProv/message": "^1.0.0",
+    "@libProv/paginator": "^1.0.0",
+    "@libProv/phase1": "^1.0.0",
+    "@libProv/phase2": "^1.0.0",
+    "@libProv/section": "^1.0.0",
+    "@libProv/selector": "^1.0.0",
     "@libProv/smilef": "^1.0.0"
   },
   "devDependencies": {

@@ -1,2 +1,7 @@
 **/node_modules
 **/coverage
+**/packages/**/*.esm.js
+**/packages/**/*.cjs.js
+**/packages/**/*.esm.*.js.map
+**/packages/**/*.cjs.*.ts.map
+**/packages/**/types/*.js

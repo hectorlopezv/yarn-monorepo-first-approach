@@ -8,8 +8,7 @@
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
-    "baseUrl": "./packages"
+    "moduleResolution": "node"
   },
-  "exclude": ["**/node_modules"],
+  "exclude": ["node_modules", "babel.config.js", "jest.config.js"]
 }

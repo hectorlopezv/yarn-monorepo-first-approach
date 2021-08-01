@@ -1,0 +1,1 @@
+{"version":3,"file":"loader.esm.d.ts","sourceRoot":"","sources":["../../lib/loader.tsx","../../lib/styles.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAE1B,UAAiB,MAAM;IACrB,OAAO,EAAE,OAAO,CAAC;IACjB,MAAM,CAAC,EAAE,OAAO,CAAC;CAClB;AAED,QAAO,MAAM,MAAM,EAAE,KAAK,CAAC,EAAE,CAAC,MAAM,CAenC,CAAC"}
