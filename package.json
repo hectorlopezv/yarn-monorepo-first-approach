@@ -15,6 +15,9 @@
   "jest": {
     "verbose": true
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
