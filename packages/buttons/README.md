@@ -1,11 +1,11 @@
-# `@libProv/server`
+# `@libprov/buttons`
 
 > TODO: description
 
 ## Usage
 
 ```
-const server = require('@libProv/server');
+const buttons = require('@libprov/buttons');
 
 // TODO: DEMONSTRATE API
 ```

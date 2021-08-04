@@ -1,6 +1,6 @@
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import {FaFileArchive} from 'react-icons/fa'
-import {Buttons_SC} from '../Buttons'
+import {Buttons_SC} from '@libprov/buttons'
 export const Container = styled.div`
   display: flex;
   align-items: baseline;

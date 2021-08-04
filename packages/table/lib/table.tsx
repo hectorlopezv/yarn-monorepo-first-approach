@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {PaginationPanel} from '../PaginationPanel'
-import {SliderTable} from '../Dots/Slider'
+import {PaginationPanel} from './PaginationPanel'
+import {SliderTable} from '@libprov/dots'
 
 import SimpleBar from 'simplebar' // or "import SimpleBar from 'simplebar';" if you want to use it manually.
 import 'simplebar/dist/simplebar.css'
@@ -11,9 +11,9 @@ import {
   focusMyInput,
   setMyInputRef,
   scrollhorizontal,
-} from '../../utils/scripts/scrolling'
+} from './srollUtils/scrolling'
 import './styles.scss'
-import debounce from 'lodash/debounce'
+import debounce from 'lodash.debounce'
 export interface fieldType {
   csvformater?: boolean
   formater?: boolean
@@ -234,11 +234,11 @@ export class Table extends React.Component<ITableProps> {
   }
   //
   simplebar: HTMLElement | any = null
-  pagination: boolean = false
+  pagination = false
   previousPosition: number | null = null
   MyTableContainer: HTMLElement | null = null
   myInput: HTMLElement | null = null
-  overflowMount: boolean = false
+  overflowMount = false
   optsDesktop = {
     clearSearch: true,
     noDataText: 'No hay datos Disponibles',

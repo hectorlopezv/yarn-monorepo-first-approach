@@ -84,15 +84,15 @@ export class Date_SC extends React.Component<IDate_SCProps> {
   }
   setFormat = (date: Date | undefined) => {
     if (date === undefined) return ''
-    let month =
+    const month =
       (date.getMonth() + 1).toString().length === 1
         ? '0' + (date.getMonth() + 1)
         : date.getMonth() + 1
-    let day =
+    const day =
       date.getDate().toString().length === 1
         ? '0' + date.getDate()
         : date.getDate()
-    let year = date.getFullYear()
+    const year = date.getFullYear()
 
     if (typeof date === 'object') {
       return day + '/' + month + '/' + year

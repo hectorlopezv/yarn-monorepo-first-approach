@@ -5,11 +5,11 @@
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
   "license": "ISC",
-  "main": "dist/loader.cjs.js",
-  "module": "dist/loader.esm.js",
-  "types": "dist/types/loader.esm.d.ts",
+  "main": "dist/table.cjs.js",
+  "module": "dist/table.esm.js",
+  "types": "dist/types/table.esm.d.ts",
   "filename": [
-    "loader",
+    "table",
     "tsx"
   ],
   "directories": {
@@ -38,6 +38,11 @@
     "@libprov/builder": "^1.0.5-alpha.0"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
+    "@types/react-bootstrap-table": "^4.3.9",
+    "lodash.debounce": "^4.0.8",
+    "react": "^17.0.2",
+    "react-bootstrap-table": "^4.3.1",
+    "seamless-scroll-polyfill": "^1.2.4",
+    "simplebar": "^5.3.5"
   }
 }

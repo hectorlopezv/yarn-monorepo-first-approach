@@ -38,6 +38,7 @@
     "@libprov/builder": "^1.0.5-alpha.0"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-bootstrap": "0.32.4"
   }
 }
