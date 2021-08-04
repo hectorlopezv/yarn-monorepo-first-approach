@@ -29,16 +29,25 @@
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "dependencies": {
     "@libprov/alertf": "^1.0.5-alpha.0",
+    "@libprov/cards": "^1.0.0",
+    "@libprov/date": "^1.0.0",
     "@libprov/dots": "^1.0.5-alpha.0",
+    "@libprov/download": "^1.0.0",
     "@libprov/filter": "^1.0.5-alpha.0",
+    "@libprov/infouser": "^1.0.0",
+    "@libprov/labelvalue": "^1.0.0",
     "@libprov/loader": "^1.0.5-alpha.0",
     "@libprov/message": "^1.0.5-alpha.0",
     "@libprov/paginator": "^1.0.5-alpha.0",
+    "@libprov/pdf": "^1.0.0",
     "@libprov/phase1": "^1.0.5-alpha.0",
     "@libprov/phase2": "^1.0.5-alpha.0",
+    "@libprov/radio": "^1.0.0",
     "@libprov/section": "^1.0.5-alpha.0",
     "@libprov/selector": "^1.0.5-alpha.0",
-    "@libprov/smilef": "^1.0.5-alpha.0"
+    "@libprov/smilef": "^1.0.5-alpha.0",
+    "@libprov/table": "^1.0.0",
+    "@libprov/tooltip": "^1.0.0"
   },
   "devDependencies": {
     "@libprov/builder": "^1.0.5-alpha.0"

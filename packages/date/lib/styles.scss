@@ -1,0 +1,16 @@
+.arrow {
+  left: 50% !important;
+}
+
+#popover-positioned-bottom {
+  top: 24.5px !important;
+  left: -958% !important;
+  @media screen and (max-width: 766px) {
+    top: 24.5px !important;
+    left: -958% !important;
+  }
+}
+
+.popover-content {
+  width: 240px !important;
+}

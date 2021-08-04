@@ -1,10 +1,10 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Smilef} from '@libprov/smilef'
+import {Selector} from '@libprov/selector'
 
 export default {
-  title: 'components/Smilef',
-  component: Smilef,
+  title: 'components/Selector',
+  component: Selector,
   argTypes: {
     sad: {
       name: 'sad',
@@ -20,9 +20,9 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Smilef>
+} as ComponentMeta<typeof Selector>
 
-const Template: ComponentStory<typeof Smilef> = args => <Smilef {...args} />
+const Template: ComponentStory<typeof Selector> = args => <Selector {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {}

@@ -1,0 +1,43 @@
+{
+  "name": "@libprov/infouser",
+  "version": "1.0.0",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "keywords": [],
+  "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
+  "license": "ISC",
+  "main": "dist/infouser.cjs.js",
+  "module": "dist/infouser.esm.js",
+  "types": "dist/types/infouser.esm.d.ts",
+  "filename": [
+    "infouser",
+    "tsx"
+  ],
+  "directories": {
+    "lib": "lib",
+    "dist": "dist"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorlopezv/yarn-monorepo-first-approach.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/hectorlopezv/yarn-monorepo-first-approach/issues"
+  },
+  "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
+  "devDependencies": {
+    "@libprov/builder": "^1.0.5-alpha.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}

@@ -1,0 +1,266 @@
+$error: #bb4945;
+$bg-error: #efd3d7;
+$sm: 768px;
+.tableContainer {
+  outline-width: 0px;
+  &__Title {
+    font: normal normal normal 17px/20px Roboto;
+    letter-spacing: 0px;
+    color: #999999;
+    opacity: 1;
+    padding: 0px 0px 0px 24px;
+    @media screen and (max-width: 767px) {
+      padding: 24px 25px 1px 12px;
+      text-align: center;
+      word-break: break-word;
+    }
+  }
+}
+
+#btn--fix.btn.btn-success.react-bs-table-csv-btn.hidden-print.btn-fiixin {
+  background-color: transparent !important;
+  border: none !important;
+  font: normal normal 300 14px/16px Roboto;
+  letter-spacing: 0px;
+  color: #ff6600 !important;
+  opacity: 1;
+}
+
+.fa.glyphicon.glyphicon-export.fa-download.btn__icon {
+  margin-right: 10px;
+}
+
+.react-bs-table-bordered {
+  border: none;
+  padding: 20px;
+  padding-left: 0px;
+  margin-top: 15px;
+}
+
+.react-bs-table .table-bordered > thead > tr > td,
+.react-bs-table .table-bordered > thead > tr > th {
+  border-bottom-width: 1px;
+}
+
+.react-bs-table .table-bordered > tbody > tr:nth-child(odd) {
+  background-color: #f5f8fa;
+}
+
+.react-bs-table .table-bordered > tbody > tr > td {
+  border: 1px dotted #e5e5e5;
+  padding: 15px 8px;
+  text-align: center !important;
+  vertical-align: middle;
+}
+
+.react-bs-table .table-bordered > tbody > tr {
+  &.no-expandable {
+    td {
+      &.react-bs-table-expand-cell {
+        pointer-events: none;
+      }
+    }
+  }
+  &.expandable {
+    td {
+      &.react-bs-table-expand-cell {
+        pointer-events: all;
+      }
+    }
+  }
+  &.trParent {
+    &:nth-child(odd) {
+      background-color: white;
+    }
+    &.tr-odd {
+      background-color: #f5f8fa;
+    }
+  }
+}
+.table-bordered > thead > tr > th {
+  border: 1px dotted #e5e5e5;
+}
+.react-bs-table .table-bordered > thead > tr > td {
+  padding: 15px 8px;
+  text-align: center !important;
+}
+.react-bs-table .table-bordered > thead > tr:first-child > td,
+.react-bs-table .table-bordered > thead > tr:first-child > th {
+  border-bottom-width: 0;
+  padding: 10px;
+  text-align: center !important;
+  font: normal normal normal 14px/16px Roboto;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+.react-bs-table-pagination {
+  i {
+    cursor: pointer;
+  }
+}
+.react-bs-table-tool-bar {
+  .row {
+    > .col-lg-4 {
+      width: 100% !important;
+    }
+  }
+}
+.react-bs-table-container {
+  padding: 10px;
+  &:focus {
+    outline-width: 0px;
+  }
+  .react-bs-table-tool-bar .row {
+    @media screen and (max-width: 802px) {
+      & > div {
+        width: 100% !important;
+        & > div {
+          display: grid;
+          place-content: center center;
+        }
+      }
+    }
+  }
+  .react-bs-table-bordered {
+    display: block;
+    opacity: 1;
+  }
+
+  .react-bs-container-footer,
+  .react-bs-container-header,
+  .react-bs-container-body {
+    @media screen and (max-width: $sm) {
+      width: 880px;
+      width: 100%;
+    }
+  }
+
+  .react-bs-container-header .table-bordered {
+    border: 1px dotted #e5e5e5;
+    border-bottom: none;
+    border-radius: 3px;
+  }
+
+  .react-bs-container-body .table-bordered {
+    border: 1px dotted #e5e5e5;
+    border-top: none;
+    border-radius: 3px;
+  }
+
+  .btn-ver {
+    min-width: 70px;
+  }
+}
+
+.simplebar-mask {
+  border-radius: 7px;
+}
+//Scrollbar Chrome, Safari
+
+.simplebar-scrollbar::before {
+  background-color: #ff6600;
+  opacity: 0.8 !important;
+}
+
+.simplebar-scrollbar {
+  height: 11px !important;
+}
+.simplebar-track.simplebar-horizontal {
+  height: 14px !important;
+}
+
+.simplebar-track.simplebar-horizontal {
+  border-radius: 20px;
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+}
+.simplebar-offset {
+  top: -16px !important;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none !important;
+}
+
+.react-bs-container-header {
+  overflow: unset !important;
+}
+
+.react-bs-container-body {
+  overflow: unset !important;
+}
+
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  white-space: normal;
+}
+
+.estado {
+  &-tabla {
+    border-radius: 10px;
+    display: inline-block;
+    font-family: 'Roboto Medium';
+    font-size: 12px;
+    padding: 2px 5px;
+    letter-spacing: -0.04em;
+  }
+  &-0 {
+    background-color: #dff0d7;
+    color: #43894e;
+  }
+  &-4 {
+    background-color: #d8edf8;
+    color: #5cadd6;
+  }
+  &-1,
+  &-2,
+  &-3,
+  &-5 {
+    background-color: $bg-error;
+    color: $error;
+  }
+  &-6 {
+    background-color: #fbeed4;
+    color: #cd9439;
+  }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.estado {
+  background: #dff0d7 0% 0% no-repeat padding-box;
+  border: 0.3px solid #d6eac5;
+  opacity: 1;
+  border-radius: 941px;
+  text-align: center;
+  padding: 0px 1px 1px 0px;
+  &__text {
+    font: normal normal bold 11px/13px Roboto;
+    letter-spacing: 0px;
+    color: #43894e;
+    opacity: 1;
+  }
+}
+
+.btn-group-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.react-bs-table-container {
+  @media screen and (max-width: 801px) {
+    margin-top: -25px;
+  }
+}
+.display__none {
+  display: none;
+}

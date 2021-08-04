@@ -1,0 +1,21 @@
+.labelValue {
+  text-align: start;
+  border-radius: 5px;
+  background-color: white;
+  height: fit-content;
+  display: flex;
+  color: #777777;
+  font: normal normal 300 14px/17px Roboto;
+  @media (max-width: 767.999px) {
+    margin: 0px;
+    padding: 5px;
+  }
+  @media (min-width: 768px) {
+    margin: 15px;
+    padding: 20px;
+  }
+  &__label {
+    font: normal normal normal 14px/17px Roboto !important;
+    color: #000000;
+  }
+}

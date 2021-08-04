@@ -1,10 +1,10 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Smilef} from '@libprov/smilef'
+import {Phase2} from '@libprov/phase2'
 
 export default {
-  title: 'components/Smilef',
-  component: Smilef,
+  title: 'components/Phase2',
+  component: Phase2,
   argTypes: {
     sad: {
       name: 'sad',
@@ -20,9 +20,9 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Smilef>
+} as ComponentMeta<typeof Phase2>
 
-const Template: ComponentStory<typeof Smilef> = args => <Smilef {...args} />
+const Template: ComponentStory<typeof Phase2> = args => <Phase2 {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {}
