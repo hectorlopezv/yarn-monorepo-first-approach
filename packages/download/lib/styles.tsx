@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {FaFileArchive} from 'react-icons/fa'
+import FaFileArchiveIcon from './FaFileArchiveIcon'
 import {Buttons_SC} from '@libprov/buttons'
 export const Container = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ export const Inner = styled.div`
   }
 `
 
-export const IconFile = styled(FaFileArchive)`
+export const IconFile = styled(FaFileArchiveIcon)`
   //margin-left: 29px;
   font-size: 24px;
   @media screen and (max-width: 767px) {

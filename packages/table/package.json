@@ -28,14 +28,16 @@
     "url": "git+https://github.com/hectorlopezv/yarn-monorepo-first-approach.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "rollup --config node_modules/@libprov/builder/lib/rollup.config.js"
   },
   "bugs": {
     "url": "https://github.com/hectorlopezv/yarn-monorepo-first-approach/issues"
   },
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "devDependencies": {
-    "@libprov/builder": "^1.0.5-alpha.0"
+    "@libprov/builder": "^1.0.5-alpha.0",
+    "@types/lodash.debounce": "^4.0.6"
   },
   "peerDependencies": {
     "@types/react-bootstrap-table": "^4.3.9",

@@ -1,14 +1,14 @@
-import styled, {css} from 'styled-components/macro'
+import styled, {css} from 'styled-components'
 import {
-  FaSearchPlus,
-  FaSearchMinus,
-  FaAngleDoubleLeft,
-  FaAngleDoubleRight,
-  FaCaretLeft,
-  FaCaretRight,
-  FaWindowClose,
-} from 'react-icons/fa'
-export const Close = styled(FaWindowClose)`
+  CloseIcon,
+  LeftIcon,
+  RightIcon,
+  PlusIcon,
+  MinusIcon,
+  DoubleLeftIcon,
+  DoubleRightIcon,
+} from './icons'
+export const Close = styled(CloseIcon)`
   &:hover {
     color: #e60000c4 !important;
   }
@@ -90,7 +90,7 @@ interface PlusTypes {
   zoomInClass: boolean
   disabledZoomIn: boolean
 }
-export const Plus = styled(FaSearchPlus)<PlusTypes>`
+export const Plus = styled(PlusIcon)<PlusTypes>`
   &&& {
     ${({zoomInClass, disabledZoomIn}) =>
       (zoomInClass || disabledZoomIn) &&
@@ -105,7 +105,7 @@ export const Plus = styled(FaSearchPlus)<PlusTypes>`
 interface MinusTypes {
   zoomOutClass: boolean
 }
-export const Minus = styled(FaSearchMinus)<MinusTypes>`
+export const Minus = styled(MinusIcon)<MinusTypes>`
   &&& {
     ${({zoomOutClass}) =>
       zoomOutClass &&
@@ -120,17 +120,17 @@ export const Minus = styled(FaSearchMinus)<MinusTypes>`
 interface lastpageInterface {
   lastPageClass: string
 }
-export const LastPageX = styled(FaAngleDoubleRight)<lastpageInterface>``
+export const LastPageX = styled(DoubleRightIcon)<lastpageInterface>``
 
 interface FirstPageXInterface {
   firstPageClass: string
 }
-export const FirstPageX = styled(FaAngleDoubleLeft)<FirstPageXInterface>``
+export const FirstPageX = styled(DoubleLeftIcon)<FirstPageXInterface>``
 
 interface LeftTypes {
   firstPageClass: boolean
 }
-export const Left = styled(FaCaretLeft)<LeftTypes>`
+export const Left = styled(LeftIcon)<LeftTypes>`
   &&& {
     ${({firstPageClass}) =>
       firstPageClass &&
@@ -146,7 +146,7 @@ export const Left = styled(FaCaretLeft)<LeftTypes>`
 interface RigthTypes {
   lastPageClass: boolean
 }
-export const Right = styled(FaCaretRight)<RigthTypes>`
+export const Right = styled(RightIcon)<RigthTypes>`
   &&& {
     ${({lastPageClass}) =>
       lastPageClass &&

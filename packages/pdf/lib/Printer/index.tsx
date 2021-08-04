@@ -1,12 +1,14 @@
 import React from 'react'
-import {FaPrint} from 'react-icons/fa'
+import PrintIcon from '../icons/Print'
 import printJS from 'print-js'
-export interface printerInteface {
+//FaPrint
+export interface Printer_SCProps {
   base64: string
   NombrePdf: string
 }
-export const Printer_SC = ({base64, NombrePdf}: printerInteface) => {
-  const print = (_: any) => {
+
+export const Printer_SC: React.FC<Printer_SCProps> = ({base64, NombrePdf}) => {
+  const print = () => {
     printJS({
       printable: base64,
       type: 'pdf',
@@ -14,5 +16,5 @@ export const Printer_SC = ({base64, NombrePdf}: printerInteface) => {
       documentTitle: NombrePdf,
     })
   }
-  return <FaPrint onClick={print} />
+  return <PrintIcon onClick={print} />
 }

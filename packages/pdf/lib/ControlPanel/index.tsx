@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 import {Printer_SC} from '../Printer'
 import React, {useState} from 'react'
-import i18next from 'i18next'
 import {
   Toolbar,
   Span,
@@ -14,8 +13,8 @@ import {
   Close,
 } from '../styles'
 
-import {FaDownload} from 'react-icons/fa'
-export interface controlTypes {
+import {DownloadIcon} from '../icons'
+export interface ControlPanel_SCProps {
   pageNumber: number
   numPages: number | null
   setPageNumber: (...args: any[]) => any
@@ -26,7 +25,8 @@ export interface controlTypes {
   NombrePdf: string
   base64: string
 }
-export const ControlPanel_SC = ({
+
+export const ControlPanel_SC: React.FC<ControlPanel_SCProps> = ({
   pageNumber,
   numPages,
   setPageNumber,
@@ -36,7 +36,7 @@ export const ControlPanel_SC = ({
   NombrePdf,
   base64,
   setToogleShow,
-}: controlTypes) => {
+}) => {
   const [disabledZoomIn, setdisabledZoomIn] = useState(false)
   const isFirstPage = pageNumber === 1
   const isLastPage = pageNumber === numPages
@@ -86,7 +86,7 @@ export const ControlPanel_SC = ({
 
   const dowloadPdf = (e: any) => {
     e.stopPropagation()
-    dowloadPdfDataMobile(NombrePdf, base64).then(() => {})
+    dowloadPdfDataMobile(NombrePdf, base64)
   }
 
   const unMountPdf = (e: any) => {
@@ -104,9 +104,7 @@ export const ControlPanel_SC = ({
 
       <Left onClick={goToPreviousPage} firstPageClass={firstPageClass} />
 
-      <Span>{`${i18next.t('ToolbarPdf.pagina')} ${pageNumber} ${i18next.t(
-        'ToolbarPdf.de',
-      )}  ${numPages}`}</Span>
+      <Span>{`Toolbar ${pageNumber} De ${numPages}`}</Span>
 
       <Right onClick={goToNextPage} lastPageClass={lastPageClass} />
 
@@ -124,7 +122,7 @@ export const ControlPanel_SC = ({
         disabledZoomIn={disabledZoomIn}
       />
 
-      <FaDownload onClick={dowloadPdf} />
+      <DownloadIcon onClick={dowloadPdf} />
 
       <Printer_SC base64={base64} NombrePdf={NombrePdf} />
       <Close onClick={unMountPdf} />

@@ -1,6 +1,6 @@
 import {elementScrollBy, elementScrollIntoView} from 'seamless-scroll-polyfill'
 
-export function setMyInputRef(context: any, element: HTMLElement | null) {
+export function setMyInputRef(context: any, element: HTMLElement | null): void {
   context.myInput = element
 }
 
@@ -8,7 +8,7 @@ export function focusMyInput(
   myInput: HTMLElement | null,
   offset: number | string,
   block: 'center' | 'end' | 'nearest' | 'start' = 'center',
-) {
+): void {
   let pos, top
 
   if (myInput) {
@@ -28,7 +28,7 @@ export function scrollhorizontal(
   top: number,
   left: number,
   behavior: 'auto' | 'smooth' = 'smooth',
-) {
+): void {
   elementScrollBy(element, {
     top: top,
     left: left,

@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Viewer_SC} from '../Viewer'
-export interface pdfFileTypes {
+
+export interface PdfFile_SCProps {
   NombrePdf: string
   dowloadPdfDataMobile: (...args: any[]) => any
   setToogleShow: (...args: any[]) => any
@@ -10,7 +11,8 @@ export interface pdfFileTypes {
   dataUrl: string
   domElementName: string
 }
-export const PdfFile_SC = ({
+
+const PdfFile_SC: React.FC<PdfFile_SCProps> = ({
   NombrePdf,
   dowloadPdfDataMobile,
   base64,
@@ -18,7 +20,7 @@ export const PdfFile_SC = ({
   dataUrl,
   domElementName,
   setToogleShow,
-}: pdfFileTypes) => {
+}) => {
   return ReactDOM.createPortal(
     <>
       {ToogleShow && dataUrl !== null && (
@@ -35,3 +37,5 @@ export const PdfFile_SC = ({
     document.querySelector(domElementName) as HTMLElement,
   )
 }
+
+export default PdfFile_SC

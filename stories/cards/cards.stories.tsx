@@ -1,10 +1,10 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Smilef} from '@libprov/smilef'
+import {Cards} from '@libprov/cards'
 
 export default {
   title: 'components/Smilef',
-  component: Smilef,
+  component: Cards,
   argTypes: {
     sad: {
       name: 'sad',
@@ -20,9 +20,9 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Smilef>
+} as ComponentMeta<typeof Cards>
 
-const Template: ComponentStory<typeof Smilef> = args => <Smilef {...args} />
+const Template: ComponentStory<typeof v> = args => <Cards {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {}

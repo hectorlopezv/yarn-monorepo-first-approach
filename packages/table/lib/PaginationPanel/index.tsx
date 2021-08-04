@@ -1,7 +1,8 @@
 import React from 'react'
 import './styles.scss'
 
-import {FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa'
+import LeftIcon from './LeftIcon'
+import RightIcon from './RightIcon'
 export interface IPaginationPanelProps {
   totalPages: number
   currPage: number
@@ -9,7 +10,7 @@ export interface IPaginationPanelProps {
 }
 
 export class PaginationPanel extends React.Component<IPaginationPanelProps> {
-  public render() {
+  render() {
     return (
       <div style={{padding: '15px'}}>
         {this.props.totalPages > 0 ? (
@@ -26,7 +27,7 @@ export class PaginationPanel extends React.Component<IPaginationPanelProps> {
                   : null
               }
             >
-              <FaArrowCircleLeft
+              <LeftIcon
                 className={
                   this.props.currPage === 1
                     ? 'paginadorArrowLeft inactive'
@@ -56,7 +57,7 @@ export class PaginationPanel extends React.Component<IPaginationPanelProps> {
                   : null
               }
             >
-              <FaArrowCircleRight
+              <RightIcon
                 className={
                   this.props.currPage === this.props.totalPages
                     ? 'paginadorArrowright inactive'
