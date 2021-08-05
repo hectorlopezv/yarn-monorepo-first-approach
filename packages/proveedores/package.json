@@ -30,6 +30,7 @@
   "dependencies": {
     "@libprov/alertf": "^1.0.5-alpha.0",
     "@libprov/buttons": "^1.0.0",
+    "@libprov/card": "^1.0.0",
     "@libprov/cards": "^1.0.0",
     "@libprov/date": "^1.0.0",
     "@libprov/dots": "^1.0.5-alpha.0",

@@ -3,26 +3,43 @@ import {ComponentStory, ComponentMeta} from '@storybook/react'
 import {Cards} from '@libprov/cards'
 
 export default {
-  title: 'components/Smilef',
+  title: 'components/Cards',
   component: Cards,
   argTypes: {
-    sad: {
-      name: 'sad',
-      type: {name: 'boolean', required: true},
-      defaultValue: false,
-      description: 'make the face :( --> :)',
+    classExtra: {
+      name: 'classExtra',
+      type: {name: 'string', required: true},
+      defaultValue: '',
+      description: 'change className of the Container',
       table: {
-        type: {summary: 'boolean'},
-        defaultValue: {summary: false},
+        type: {summary: 'string'},
+        defaultValue: {summary: ''},
       },
       control: {
-        type: 'boolean',
+        type: 'text',
+      },
+    },
+    title: {
+      name: 'classExtra',
+      type: {name: 'string', required: true},
+      defaultValue: '',
+      description: 'change className of the Container',
+      table: {
+        type: {summary: 'string'},
+        defaultValue: {summary: ''},
+      },
+      control: {
+        type: 'text',
       },
     },
   },
 } as ComponentMeta<typeof Cards>
 
-const Template: ComponentStory<typeof v> = args => <Cards {...args} />
+const Template: ComponentStory<typeof Cards> = args => (
+  <Cards {...args}>
+    <div>hello im Here</div>
+  </Cards>
+)
 
 export const Primary = Template.bind({})
 Primary.args = {}

@@ -39,6 +39,11 @@ export class Alertf extends React.Component<IAlertFProps> {
   componentWillMount() {
     this.setTypeClass(this.props.type)
   }
+  componentDidUpdate(prevProps: any, prevState: any) {
+    if (prevProps.type !== this.props.type) {
+      this.setTypeClass(this.props.type)
+    }
+  }
   public static defaultProps = {
     type: 'alert-info',
     className: '',

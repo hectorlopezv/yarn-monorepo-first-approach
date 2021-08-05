@@ -10,6 +10,7 @@ declare class Alertf extends React.Component<IAlertFProps> {
   icon: string
   setTypeClass: (input: string) => void
   componentWillMount(): void
+  componentDidUpdate(prevProps: any, prevState: any): void
   static defaultProps: {
     type: string
     className: string

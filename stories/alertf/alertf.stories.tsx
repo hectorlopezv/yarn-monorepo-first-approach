@@ -1,22 +1,50 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Alertf, IAlertFProps} from '@libprov/alertf'
+import {Alertf} from '@libprov/alertf'
 
 export default {
   title: 'components/Alertf',
   component: Alertf,
   argTypes: {
-    sad: {
-      name: 'sad',
-      type: {name: 'boolean', required: true},
-      defaultValue: false,
-      description: 'make the face :( --> :)',
+    mensaje: {
+      name: 'mensaje',
+      type: {name: 'string', required: true},
+      defaultValue: 'hola soy un mensaje',
+      description: 'change the message of the alert',
       table: {
-        type: {summary: 'boolean'},
-        defaultValue: {summary: false},
+        type: {summary: 'string'},
+        defaultValue: {summary: 'change the message of the alert'},
       },
       control: {
-        type: 'boolean',
+        type: 'text',
+      },
+    },
+    type: {
+      name: 'type',
+      type: {name: 'enum', required: true},
+      defaultValue: 'info',
+      description: 'changes the icons of the alertf',
+      table: {
+        type: {summary: '[info, success, warning, danger]'},
+        defaultValue: {summary: 'info'},
+      },
+
+      control: {
+        type: 'select',
+        options: ['info', 'success', 'warning', 'danger'], // An array of serializable values
+      },
+    },
+    className: {
+      name: 'className',
+      type: {name: 'string', required: false},
+      defaultValue: '',
+      description: 'className for the Alert Container',
+      table: {
+        type: {summary: ''},
+        defaultValue: {summary: ''},
+      },
+      control: {
+        type: 'text',
       },
     },
   },

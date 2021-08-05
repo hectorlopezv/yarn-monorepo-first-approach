@@ -1,28 +1,43 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Smilef} from '@libprov/smilef'
-
+import {Date_SC} from '@libprov/date'
+import moment from 'moment'
 export default {
-  title: 'components/Smilef',
-  component: Smilef,
+  title: 'components/Date_SC',
+  component: Date_SC,
   argTypes: {
     sad: {
-      name: 'sad',
-      type: {name: 'boolean', required: true},
+      name: 'label',
+      type: {name: 'string', required: true},
       defaultValue: false,
-      description: 'make the face :( --> :)',
+      description: 'change the label',
       table: {
-        type: {summary: 'boolean'},
-        defaultValue: {summary: false},
+        type: {summary: 'string'},
+        defaultValue: {summary: 'hello im label'},
       },
       control: {
-        type: 'boolean',
+        type: 'text',
       },
     },
   },
-} as ComponentMeta<typeof Smilef>
+} as ComponentMeta<typeof Date_SC>
 
-const Template: ComponentStory<typeof Smilef> = args => <Smilef {...args} />
+const Template: ComponentStory<typeof Date_SC> = args => {
+  const [date, setdate] = useState(null)
+  const dateHandler = value => {
+    setdate(moment(value))
+  }
+  return (
+    <Date_SC
+      minDateSelector={null}
+      maxDateSelector={null}
+      disabled={false}
+      Date={date}
+      handleChange={dateHandler}
+      {...args}
+    />
+  )
+}
 
 export const Primary = Template.bind({})
 Primary.args = {}
