@@ -3,9 +3,7 @@ import {Container, NumberContainer, Digit} from './styles'
 export interface Phase1_SCProps {
   phase: number
   className?: string
-  setRef: (
-    node: HTMLElement | null | undefined,
-  ) => HTMLElement | null | undefined
+  setRef: (node: HTMLElement | null | undefined) => any
 }
 
 export const Phase1: React.FC<Phase1_SCProps> = ({

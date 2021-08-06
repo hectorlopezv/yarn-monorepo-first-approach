@@ -3,9 +3,7 @@ import {Container, Inner, Label} from './styles'
 export interface Phase2Props {
   phase: number
   className?: string
-  setRef: (
-    node: HTMLElement | null | undefined,
-  ) => HTMLElement | null | undefined
+  setRef: (node: HTMLElement | null | undefined) => any
 }
 
 export const Phase2: React.FC<Phase2Props> = ({
