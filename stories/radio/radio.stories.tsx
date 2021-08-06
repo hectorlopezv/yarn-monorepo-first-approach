@@ -1,29 +1,44 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Smilef} from '@libprov/smilef'
+import {RadioHv} from '@libprov/radio'
 
 export default {
-  title: 'components/Smilef',
-  component: Smilef,
+  title: 'components/RadioHv',
+  component: RadioHv,
   argTypes: {
-    sad: {
-      name: 'sad',
-      type: {name: 'boolean', required: true},
-      defaultValue: false,
-      description: 'make the face :( --> :)',
+    label: {
+      name: 'label',
+      type: {name: 'string', required: false},
+      defaultValue: 'im label',
+      description: 'set the label for radios',
       table: {
-        type: {summary: 'boolean'},
-        defaultValue: {summary: false},
+        type: {summary: 'label'},
+        defaultValue: {summary: 'label im'},
       },
       control: {
-        type: 'boolean',
+        type: 'text',
       },
     },
   },
-} as ComponentMeta<typeof Smilef>
+} as ComponentMeta<typeof RadioHv>
 
-const Template: ComponentStory<typeof Smilef> = args => <Smilef {...args} />
-
+const Template: ComponentStory<typeof RadioHv> = args => {
+  const [selectRadio, setselectRadio] = useState(null)
+  const selectedRadioHandler = radio => {
+    if (radio) {
+      setselectRadio(radio)
+    }
+  }
+  return (
+    <RadioHv
+      {...args}
+      messages={['Paciente', 'Autorizacion']}
+      label={'label'}
+      selectedRadioHandler={selectedRadioHandler}
+      selectedRadio={selectRadio}
+    />
+  )
+}
 export const Primary = Template.bind({})
 Primary.args = {}
 

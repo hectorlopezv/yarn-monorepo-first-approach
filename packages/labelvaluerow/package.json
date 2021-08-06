@@ -1,15 +1,15 @@
 {
-  "name": "@libprov/tooltip",
+  "name": "@libprov/labelvaluerow",
   "version": "1.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
   "license": "ISC",
-  "main": "dist/tooltip.cjs.js",
-  "module": "dist/tooltip.esm.js",
-  "types": "dist/types/tooltip.esm.d.ts",
+  "main": "dist/labelvaluerow.cjs.js",
+  "module": "dist/labelvaluerow.esm.js",
+  "types": "dist/types/labelvaluerow.esm.d.ts",
   "filename": [
-    "tooltip",
+    "labelvaluerow",
     "tsx"
   ],
   "directories": {
@@ -35,13 +35,10 @@
     "url": "https://github.com/hectorlopezv/yarn-monorepo-first-approach/issues"
   },
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
-  "peerDependencies": {
-    "@libprov/builder": "^1.0.5-alpha.0",
-    "react": "^17.0.2",
-    "react-bootstrap": "0.32.4",
-    "styled-components": "^5.3.0"
-  },
   "devDependencies": {
-    "@types/styled-components": "^5.1.12"
+    "@libprov/builder": "^1.0.5-alpha.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
   }
 }

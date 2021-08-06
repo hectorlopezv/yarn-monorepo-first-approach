@@ -12,7 +12,7 @@ export interface PdfFile_SCProps {
   domElementName: string
 }
 
-const PdfFile_SC: React.FC<PdfFile_SCProps> = ({
+export const PdfFile_SC: React.FC<PdfFile_SCProps> = ({
   NombrePdf,
   dowloadPdfDataMobile,
   base64,
@@ -21,7 +21,7 @@ const PdfFile_SC: React.FC<PdfFile_SCProps> = ({
   domElementName,
   setToogleShow,
 }) => {
-  return ReactDOM.createPortal(
+  return (
     <>
       {ToogleShow && dataUrl !== null && (
         <Viewer_SC
@@ -33,9 +33,6 @@ const PdfFile_SC: React.FC<PdfFile_SCProps> = ({
           documentElementName={domElementName}
         />
       )}
-    </>,
-    document.querySelector(domElementName) as HTMLElement,
+    </>
   )
 }
-
-export default PdfFile_SC

@@ -6,6 +6,7 @@ interface DownloadProps {
   disabled: boolean
   filename: string
   btnMessage: string
+  key: string | number
 }
 declare const Download: React.FC<DownloadProps>
 export {DownloadProps, Download}

@@ -6,10 +6,10 @@ export default {
   title: 'components/Date_SC',
   component: Date_SC,
   argTypes: {
-    sad: {
+    label: {
       name: 'label',
-      type: {name: 'string', required: true},
-      defaultValue: false,
+      type: {name: 'string', required: false},
+      defaultValue: 'hello im label',
       description: 'change the label',
       table: {
         type: {summary: 'string'},

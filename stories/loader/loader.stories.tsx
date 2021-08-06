@@ -6,11 +6,24 @@ export default {
   title: 'components/Loader',
   component: Loader,
   argTypes: {
-    sad: {
-      name: 'sad',
+    loading: {
+      name: 'loading',
+      type: {name: 'boolean', required: true},
+      defaultValue: true,
+      description: 'make the spinner go boom',
+      table: {
+        type: {summary: 'boolean'},
+        defaultValue: {summary: true},
+      },
+      control: {
+        type: 'boolean',
+      },
+    },
+    noBack: {
+      name: 'noBack',
       type: {name: 'boolean', required: true},
       defaultValue: false,
-      description: 'make the face :( --> :)',
+      description: 'make the background transparent',
       table: {
         type: {summary: 'boolean'},
         defaultValue: {summary: false},

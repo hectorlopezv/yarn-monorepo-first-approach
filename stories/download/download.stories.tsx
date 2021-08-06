@@ -1,16 +1,16 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Smilef} from '@libprov/smilef'
+import {Download} from '@libprov/download'
 
 export default {
-  title: 'components/Smilef',
-  component: Smilef,
+  title: 'components/Download',
+  component: Download,
   argTypes: {
-    sad: {
-      name: 'sad',
+    disabled: {
+      name: 'disabled',
       type: {name: 'boolean', required: true},
       defaultValue: false,
-      description: 'make the face :( --> :)',
+      description: 'disable button',
       table: {
         type: {summary: 'boolean'},
         defaultValue: {summary: false},
@@ -19,10 +19,64 @@ export default {
         type: 'boolean',
       },
     },
+    filename: {
+      name: 'filename',
+      type: {name: 'string', required: true},
+      defaultValue: 'Nombre del reporte.xlsx',
+      description: 'filename for .zip or .pdf',
+      table: {
+        type: {summary: 'string'},
+        defaultValue: {summary: 'Nombre del reporte.xlsx'},
+      },
+      control: {
+        type: 'text',
+      },
+    },
+    btnMessage: {
+      name: 'btnMessage',
+      type: {name: 'string', required: true},
+      defaultValue: 'btnMessage',
+      description: 'btnMessage for .zip or .pdf',
+      table: {
+        type: {summary: 'string'},
+        defaultValue: {summary: 'btnMessage'},
+      },
+      control: {
+        type: 'text',
+      },
+    },
+    messageZipPart1: {
+      name: 'messageZipPart1',
+      type: {name: 'string', required: true},
+      defaultValue: 'messageZipPart1',
+      description: 'messageZipPart1 for .zip or .pdf',
+      table: {
+        type: {summary: 'string'},
+        defaultValue: {summary: 'messageZipPart1/'},
+      },
+      control: {
+        type: 'text',
+      },
+    },
+    messageZipPart2: {
+      name: 'messageZipPart2',
+      type: {name: 'string', required: true},
+      defaultValue: 'messageZipPart2',
+      description: 'messageZipPart2 for .zip or .pdf',
+      table: {
+        type: {summary: 'string'},
+        defaultValue: {summary: 'messageZipPart2'},
+      },
+      control: {
+        type: 'text',
+      },
+    },
   },
-} as ComponentMeta<typeof Smilef>
+} as ComponentMeta<typeof Download>
 
-const Template: ComponentStory<typeof Smilef> = args => <Smilef {...args} />
+const Template: ComponentStory<typeof Download> = args => (
+  <Download {...args} querySickLeaves={() => console.log('hello excel')} />
+)
 
 export const Primary = Template.bind({})
 Primary.args = {}

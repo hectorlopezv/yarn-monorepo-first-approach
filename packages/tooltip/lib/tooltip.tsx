@@ -1,40 +1,48 @@
-import React from 'react'
 import {Popover, OverlayTrigger} from 'react-bootstrap'
-import './styles.scss'
+import {Container} from './styles'
+import React, {Component} from 'react'
 
 export interface IToolTipc_SCProps {
   text: string
   icon: string
   className?: string
+  isMobile: boolean
 }
+interface stateTypes {
+  show: boolean
+}
+export class ToolTipc_SC extends Component<IToolTipc_SCProps> {
+  target: any
+  constructor(props: any) {
+    super(props)
+    this.target = null
 
-export class ToolTipc_SC extends React.Component<IToolTipc_SCProps> {
-  target: HTMLElement | null = null
-  state = {
+    this.handleClick = this.handleClick.bind(this)
+  }
+  state: stateTypes = {
     show: false,
   }
-  handleClick = (e: any) => {
+  handleClick(e: any) {
     e.preventDefault()
-    e.stopPropagation()
     this.setState({target: e.target, show: !this.state.show})
   }
+
   render() {
     return (
-      <div
-        data-container="body"
-        id={'container_tooltip'}
-        className={this.props.className}
-      >
+      <Container data-container="body">
         <OverlayTrigger
           trigger={['hover', 'focus']}
           container={this}
-          // shouldUpdatePosition={true}
+          //shouldUpdatePosition={false}
           rootClose={true}
-          placement={'bottom'}
+          placement={this.props.isMobile ? 'left' : 'bottom'}
           overlay={
             <Popover
-              className={'popover--fix'}
-              id={'popover-positioned-bottom'}
+              id={
+                this.props.isMobile
+                  ? 'popover-positioned-left'
+                  : 'popover-positioned-bottom'
+              }
               title=""
             >
               {this.props.text}
@@ -55,7 +63,7 @@ export class ToolTipc_SC extends React.Component<IToolTipc_SCProps> {
             <i className={this.props.icon}></i>
           </a>
         </OverlayTrigger>
-      </div>
+      </Container>
     )
   }
 }

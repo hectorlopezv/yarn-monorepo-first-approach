@@ -51,6 +51,48 @@ $dot-speed: 200ms;
   .dot-position-2 {
     left: 34px;
   }
+  .dot-position-3 {
+    left: 51px;
+  }
+
+  .dot-position-4 {
+    left: 68px;
+  }
+  .dot-position-5 {
+    left: 85px;
+  }
+
+  .dot-position-6 {
+    left: 102px;
+  }
+  .dot-position-7 {
+    left: 119px;
+  }
+
+  .dot-position-8 {
+    left: 136px;
+  }
+  .dot-position-9 {
+    left: 153px;
+  }
+
+  .dot-position-10 {
+    left: 170px;
+  }
+  .dot-position-11 {
+    left: 187px;
+  }
+
+  .dot-position-12 {
+    left: 204px;
+  }
+  .dot-position-13 {
+    left: 221px;
+  }
+
+  .dot-position-14 {
+    left: 238px;
+  }
 }
 .slider {
   display: inline-flex;
@@ -59,4 +101,12 @@ $dot-speed: 200ms;
 }
 .slider-small {
   @include slider-size(7px);
+}
+
+.slider-medium {
+  @include slider-size(10px);
+}
+
+.slider-large {
+  @include slider-size(13px);
 }

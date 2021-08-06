@@ -1,14 +1,14 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
 import {LabelValue} from '@libprov/labelvalue'
-
+import {LabelValueRow} from '@libprov/labelvaluerow'
 export default {
-  title: 'components/LabelValue',
-  component: LabelValue,
+  title: 'components/LabelValueRow',
+  component: LabelValueRow,
   argTypes: {},
-} as ComponentMeta<typeof LabelValue>
+} as ComponentMeta<typeof LabelValueRow>
 
-const Template: ComponentStory<typeof LabelValue> = args => {
+const Template: ComponentStory<typeof LabelValueRow> = args => {
   const dataAfiliado = [
     {
       label: 'Estado PBS:',
@@ -40,13 +40,22 @@ const Template: ComponentStory<typeof LabelValue> = args => {
     },
   ]
   return (
-    <LabelValue
-      key={`labelValue_1`}
-      dataColumn={dataAfiliado}
-      stylesColumn={'col-sm-12 labelValue__spacing'}
-      subColumns={true}
+    <LabelValueRow
+      key={`labelValueRow_1`}
+      label={'hector'}
+      value={`${'CC'} ${'1073565411'}`}
+      concealable={true}
+      styles="labelValueRow--first labelValueRow--last"
+      delta={0}
       {...args}
-    />
+    >
+      <LabelValue
+        key={`labelValue_1`}
+        dataColumn={dataAfiliado}
+        stylesColumn={'col-sm-12 labelValue__spacing'}
+        subColumns={true}
+      />
+    </LabelValueRow>
   )
 }
 

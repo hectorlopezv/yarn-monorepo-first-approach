@@ -1,30 +1,41 @@
-import React from 'react'
+import React, {useRef, useState} from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
 import {FilterSelect} from '@libprov/filter'
 
 export default {
   title: 'components/FilterSelect',
   component: FilterSelect,
-  argTypes: {
-    sad: {
-      name: 'sad',
-      type: {name: 'boolean', required: true},
-      defaultValue: false,
-      description: 'make the face :( --> :)',
-      table: {
-        type: {summary: 'boolean'},
-        defaultValue: {summary: false},
-      },
-      control: {
-        type: 'boolean',
-      },
-    },
-  },
+  argTypes: {},
 } as ComponentMeta<typeof FilterSelect>
 
-const Template: ComponentStory<typeof FilterSelect> = args => (
-  <FilterSelect {...args} />
-)
+const Template: ComponentStory<typeof FilterSelect> = args => {
+  const selectorFields = useRef(null)
+  const [selecteSite, setselecteSite] = useState({
+    // eslint-disable-next-line no-undef
+    value: 'hector placeholder',
+  })
+  const [title, settitle] = useState(selecteSite.value)
+  const handleSelect = e => {
+    setselecteSite({...e})
+    settitle(e.value)
+  }
+  return (
+    <FilterSelect
+      {...args}
+      ref={selectorFields}
+      options={[
+        {value: 'Nombre sede', label: 'Nombre sede'},
+        {value: 'hector', label: 'hector'},
+        {value: 'andresito', label: 'andresito'},
+        {value: 'pepe', label: 'pepe'},
+      ]}
+      onSelected={handleSelect}
+      title={title}
+      placeholder={selecteSite.value || 'placeholder'}
+      disabled={null}
+    />
+  )
+}
 
 export const Primary = Template.bind({})
 Primary.args = {}

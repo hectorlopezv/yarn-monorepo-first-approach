@@ -38,6 +38,7 @@
     "@libprov/filter": "^1.0.5-alpha.0",
     "@libprov/infouser": "^1.0.0",
     "@libprov/labelvalue": "^1.0.0",
+    "@libprov/labelvaluerow": "^1.0.0",
     "@libprov/loader": "^1.0.5-alpha.0",
     "@libprov/message": "^1.0.5-alpha.0",
     "@libprov/paginator": "^1.0.5-alpha.0",

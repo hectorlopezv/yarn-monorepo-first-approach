@@ -6,23 +6,43 @@ export default {
   title: 'components/Phase2',
   component: Phase2,
   argTypes: {
-    sad: {
-      name: 'sad',
-      type: {name: 'boolean', required: true},
-      defaultValue: false,
-      description: 'make the face :( --> :)',
+    className: {
+      name: 'className',
+      type: {name: 'string', required: false},
+      defaultValue: '',
+      description: 'className of container',
       table: {
-        type: {summary: 'boolean'},
-        defaultValue: {summary: false},
+        type: {summary: 'string'},
+        defaultValue: {summary: 'className'},
       },
       control: {
-        type: 'boolean',
+        type: 'text',
+      },
+    },
+    phase: {
+      name: 'phase',
+      type: {name: 'number', required: true},
+      defaultValue: 1,
+      description: 'depending on phase(1,2) interface changes',
+      table: {
+        type: {summary: 'number'},
+        defaultValue: {summary: 1},
+      },
+      control: {
+        type: 'number',
+        min: 1,
+        max: 2,
       },
     },
   },
 } as ComponentMeta<typeof Phase2>
 
-const Template: ComponentStory<typeof Phase2> = args => <Phase2 {...args} />
+const Template: ComponentStory<typeof Phase2> = args => (
+  <Phase2 {...args}>
+    <p>hello im hector</p>
+    <p>hello im andres</p>
+  </Phase2>
+)
 
 export const Primary = Template.bind({})
 Primary.args = {}

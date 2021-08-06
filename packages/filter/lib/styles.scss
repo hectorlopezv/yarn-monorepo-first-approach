@@ -53,6 +53,7 @@
     &__search {
       width: 100%;
       position: relative;
+      display: flex;
       &__input {
         height: 38px;
         background: #ffffff 0% 0% no-repeat padding-box;
@@ -63,7 +64,7 @@
         margin-bottom: 5px;
       }
       &__icon {
-        position: absolute;
+        position: absolute !important;
         transform: translateY(10px);
         right: 11px;
       }
@@ -85,6 +86,7 @@
       overflow: hidden;
       padding-left: 9px;
       padding-right: 32px;
+      margin-left: 0px;
       &:hover {
         border-color: #ff944d !important;
         background-color: #ff944d !important;
@@ -119,6 +121,7 @@
 .SelectTableFilter__Options {
   width: 100%;
   z-index: 3 !important;
+  position: relative;
 }
 .SelectTableFilter__title {
   display: flex;

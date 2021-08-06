@@ -20,10 +20,10 @@ export default {
       },
     },
     title: {
-      name: 'classExtra',
-      type: {name: 'string', required: true},
+      name: 'title',
+      type: {name: 'string', required: false},
       defaultValue: '',
-      description: 'change className of the Container',
+      description: 'change the title fo the container',
       table: {
         type: {summary: 'string'},
         defaultValue: {summary: ''},
