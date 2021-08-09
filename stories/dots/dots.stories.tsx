@@ -10,7 +10,7 @@ export default {
       name: 'length',
       type: {name: 'number', required: true},
       defaultValue: 1,
-      description: 'the length of the dots',
+      description: 'the height of the dots',
       table: {
         type: {summary: 'number'},
         defaultValue: {summary: 1},

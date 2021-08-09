@@ -5,6 +5,7 @@ module.exports = {
     '<rootDir>/packages/**/lib/*.tsx',
     '<rootDir>/packages/**/lib/*.ts',
     '!<rootDir>/packages/proveedores/**/*.(ts|tsx)',
+    '!<rootDir>/packages/proveedores/**/styles.(ts|tsx)',
     '!<rootDir>/stories/**/*.js',
     '!<rootDir>/packages/builder/**/*.js',
     '!<rootDir>/playgroundjs/**/*.js',

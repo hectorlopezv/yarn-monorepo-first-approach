@@ -1,16 +1,16 @@
 import React from 'react'
 interface ISliderTableProps {
-  position: string | number
-  size: string | number
+  position: number
+  size: 'small' | 'medium' | 'large'
   clickable: boolean | any
   length: number
-  positionChangeListener: (e: any, position: number | string) => void
+  positionChangeListener: (e: any, position: number) => void
 }
 interface stateType {
-  position: string | number
+  position: number
 }
 declare class SliderTable extends React.Component<ISliderTableProps> {
-  updatePosition: (e: any, position: string | number) => void
+  updatePosition: (e: any, position: number) => void
   generateDotHolders: () => JSX.Element[]
   componentDidUpdate(prevProps: any, _: any): void
   state: stateType

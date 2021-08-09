@@ -1,7 +1,7 @@
 import React from 'react'
 
 export interface IDotProps {
-  position: string | number
+  position: number
 }
 
 export class Dot extends React.Component<IDotProps> {

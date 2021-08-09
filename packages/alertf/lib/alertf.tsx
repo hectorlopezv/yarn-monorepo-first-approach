@@ -53,6 +53,7 @@ export class Alertf extends React.Component<IAlertFProps> {
       <div
         className={`alert alert-custom alert-dismissible ${this.props.className}`}
         role="alert"
+        data-testid="hello"
       >
         <i className={`fa ${this.icon}`}></i>
 

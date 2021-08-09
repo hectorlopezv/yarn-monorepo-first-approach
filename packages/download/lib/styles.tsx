@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import FaFileArchiveIcon from './FaFileArchiveIcon'
-import {Buttons_SC} from '@libprov/buttons'
+import {Buttons} from '@libprov/buttons'
 export const Container = styled.div`
   display: flex;
   align-items: baseline;
@@ -47,7 +47,7 @@ export const Label = styled.span`
     margin-top: 5px;
   }
 `
-export const Button = styled(Buttons_SC)`
+export const Button = styled(Buttons)`
   &&& {
     margin-left: auto;
     border: none;

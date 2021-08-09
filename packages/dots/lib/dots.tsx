@@ -4,18 +4,18 @@ import DotHolder from './DotHolder'
 import './Dots.scss'
 
 export interface ISliderTableProps {
-  position: string | number
-  size: string | number
+  position: number
+  size: 'small' | 'medium' | 'large'
   clickable: boolean | any
   length: number
-  positionChangeListener: (e: any, position: number | string) => void
+  positionChangeListener: (e: any, position: number) => void
 }
 export interface stateType {
-  position: string | number
+  position: number
 }
 
 export class SliderTable extends React.Component<ISliderTableProps> {
-  updatePosition = (e: any, position: string | number) => {
+  updatePosition = (e: any, position: number) => {
     if (this.props.clickable) {
       this.setState({position: position})
       if (this.props.positionChangeListener) {

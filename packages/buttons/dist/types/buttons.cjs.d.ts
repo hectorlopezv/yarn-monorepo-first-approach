@@ -9,6 +9,6 @@ interface Buttons_SCProps {
   disableGenerate?: boolean
   querySickLeaves?: (...args: any[]) => any
 }
-declare const Buttons_SC: React.FC<Buttons_SCProps>
-export {Buttons_SCProps, Buttons_SC}
+declare const Buttons: React.FC<Buttons_SCProps>
+export {Buttons_SCProps, Buttons}
 //# sourceMappingURL=buttons.cjs.d.ts.map

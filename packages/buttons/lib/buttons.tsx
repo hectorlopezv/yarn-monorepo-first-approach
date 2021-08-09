@@ -12,7 +12,7 @@ export interface Buttons_SCProps {
   querySickLeaves?: (...args: any[]) => any
 }
 
-export const Buttons_SC: React.FC<Buttons_SCProps> = ({
+export const Buttons: React.FC<Buttons_SCProps> = ({
   className,
   show,
   disableMessage,
@@ -30,6 +30,8 @@ export const Buttons_SC: React.FC<Buttons_SCProps> = ({
           disabled={disableMessage}
           value={cleanMessage}
           onClick={handleCancel}
+          aria-label="cleaning function"
+          data-testid="clean"
         />
       )}
 
@@ -39,6 +41,8 @@ export const Buttons_SC: React.FC<Buttons_SCProps> = ({
           value={generateMessage}
           disabled={disableGenerate}
           onClick={querySickLeaves}
+          aria-label="generate function"
+          data-testid="generate"
         />
       )}
     </Container>

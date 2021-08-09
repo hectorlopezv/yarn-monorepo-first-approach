@@ -37,12 +37,12 @@
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "devDependencies": {
     "@libprov/builder": "^1.0.5-alpha.0",
-    "@types/styled-components": "^5.1.11"
+    "@types/styled-components": "^4.3.2"
   },
   "peerDependencies": {
     "@uifabric/icons": "7.5.23",
     "office-ui-fabric-react": "5.135.0",
     "react": "^17.0.2",
-    "styled-components": "^5.3.0"
+    "styled-components": "^4.3.3"
   }
 }

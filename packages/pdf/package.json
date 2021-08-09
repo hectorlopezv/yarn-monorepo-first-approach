@@ -37,7 +37,7 @@
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "devDependencies": {
     "@libprov/builder": "^1.0.5-alpha.0",
-    "@types/styled-components": "^5.1.12"
+    "@types/styled-components": "^4.3.3"
   },
   "peerDependencies": {
     "print-js": "^1.6.0",
@@ -45,6 +45,6 @@
     "react-dom": "^17.0.2",
     "react-pdf": "^5.3.2",
     "seamless-scroll-polyfill": "^1.2.4",
-    "styled-components": "^5.3.0"
+    "styled-components": "^4.3.2"
   }
 }

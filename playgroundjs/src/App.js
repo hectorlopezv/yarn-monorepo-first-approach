@@ -1,27 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import {Smilef} from "@libProv/proveedores"
-import React from 'react';
-function App() {
-  return (
-    <div className="App">
-      <Smilef sad message1="hola este es hello"/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+import Test from './test'
+import React from 'react'
+const App = () => {
+  return <Test />
 }
 
-export default App;
+export default App
