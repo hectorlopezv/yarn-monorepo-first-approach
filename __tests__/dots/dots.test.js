@@ -5,7 +5,7 @@ import {SliderTable} from '@libprov/dots/lib/dots'
 describe('testing suite', () => {
   it('testing unit dots', () => {
     const fnListener = jest.fn()
-    const {debug, rerender} = render(
+    const {rerender} = render(
       <SliderTable
         positionChangeListener={fnListener}
         clickable={true}

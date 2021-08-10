@@ -1,14 +1,14 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Card_SC} from '@libprov/card'
+import {Card} from '@libprov/card'
 import {Cards} from '@libprov/cards'
 import {HashRouter, Switch, Route} from 'react-router-dom'
 
 export default {
-  title: 'components/Card_SC',
-  component: Card_SC,
+  title: 'components/Card',
+  component: Card,
   argTypes: {},
-} as ComponentMeta<typeof Card_SC>
+} as ComponentMeta<typeof Card>
 const CloseIcon = props => {
   return (
     <svg
@@ -28,7 +28,7 @@ const CloseIcon = props => {
     </svg>
   )
 }
-const Template: ComponentStory<typeof Card_SC> = args => {
+const Template: ComponentStory<typeof Card> = args => {
   const cleanData = () => {
     console.log('cleaning data')
   }
@@ -38,14 +38,14 @@ const Template: ComponentStory<typeof Card_SC> = args => {
         <Route path="/">
           <Cards title="title cards container" classExtra="extraClass">
             <>
-              <Card_SC
+              <Card
                 icon={<CloseIcon className="card__icon" />}
                 title={'Consulta de Riesgos'}
                 link={'/Consulta'}
                 linkTitle={'SELECCIONAR'}
                 onClick={cleanData}
               />
-              <Card_SC
+              <Card
                 icon={<CloseIcon className="card__icon" />}
                 title={'Reporte de Marcación de Riesgo'}
                 link={'/Reporte'}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 
 import {
   CardsContainer,
@@ -8,7 +8,7 @@ import {
 } from './styles'
 
 export interface CardsProps {
-  children: JSX.Element
+  children: ReactNode
   title: string
   classExtra?: string
 }
@@ -19,7 +19,7 @@ export const Cards: React.FC<CardsProps> = ({
   children,
 }) => {
   return (
-    <CardsContainer classExtra={classExtra}>
+    <CardsContainer classExtra={classExtra} data-testid="cards container">
       {title && (
         <TitleContainer>
           <Title>{title}</Title>

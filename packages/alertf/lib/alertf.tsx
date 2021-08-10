@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 import './styles.scss'
@@ -55,15 +56,25 @@ export class Alertf extends React.Component<IAlertFProps> {
         role="alert"
         data-testid="hello"
       >
-        <i className={`fa ${this.icon}`}></i>
+        <i className={`fa ${this.icon}`} aria-label={`icon ${this.icon}`}></i>
 
-        <div className="alert__message">{this.props.mensaje}</div>
+        <div
+          className="alert__message"
+          aria-label={`alert message ${this.props.mensaje}`}
+          // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+          tabIndex={0}
+        >
+          {this.props.mensaje}
+        </div>
 
         <a
+          role="button"
+          tabIndex={0}
           className={`close ${this.type}`}
           data-bs-dismiss="alert"
           aria-label="Close"
           onClick={this.props.handleFlyerClose}
+          onKeyPress={this.props.handleFlyerClose}
         >
           <i className="fa fa-times-circle"></i>
         </a>

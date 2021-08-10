@@ -9,7 +9,7 @@ export interface Card_SCProps {
   onClick: (...args: any[]) => any
 }
 
-export const Card_SC: React.FC<Card_SCProps> = ({
+export const Card: React.FC<Card_SCProps> = ({
   icon,
   title,
   onClick,
@@ -17,9 +17,9 @@ export const Card_SC: React.FC<Card_SCProps> = ({
   linkTitle,
 }) => {
   return (
-    <CardContainer>
+    <CardContainer tabIndex={0}>
       {icon}
-      <Title>{title}</Title>
+      <Title tabIndex={0}>{title}</Title>
       <Link onClick={onClick} to={link}>
         {linkTitle}
       </Link>

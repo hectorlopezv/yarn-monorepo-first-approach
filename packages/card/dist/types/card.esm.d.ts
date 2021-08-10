@@ -6,6 +6,6 @@ interface Card_SCProps {
   linkTitle: string
   onClick: (...args: any[]) => any
 }
-declare const Card_SC: React.FC<Card_SCProps>
-export {Card_SCProps, Card_SC}
+declare const Card: React.FC<Card_SCProps>
+export {Card_SCProps, Card}
 //# sourceMappingURL=card.esm.d.ts.map

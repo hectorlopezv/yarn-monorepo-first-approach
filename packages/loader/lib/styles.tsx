@@ -38,8 +38,12 @@ export const Container = styled.div<Container>`
       display: block;
     `}
 `
-
-export const Spin = styled.div`
+interface spinProps {
+  'data-testId'?: string
+}
+export const Spin = styled.div.attrs<spinProps>(prop => ({
+  'data-testid': prop['data-testId'],
+}))`
   border-radius: 50%;
   color: #f60;
   font-size: 11px;

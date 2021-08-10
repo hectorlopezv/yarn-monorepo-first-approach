@@ -16,7 +16,6 @@ export interface DownloadProps {
   disabled: boolean
   filename: string
   btnMessage: string
-  key: string | number
 }
 
 export const Download: React.FC<DownloadProps> = ({
@@ -30,12 +29,19 @@ export const Download: React.FC<DownloadProps> = ({
   return (
     <>
       <ContainerEl>
-        <TitleZipper>{`${messageZipPart1} ${messageZipPart2}`}</TitleZipper>
+        <TitleZipper
+          tabIndex={0}
+        >{`${messageZipPart1} ${messageZipPart2}`}</TitleZipper>
 
         <Container>
           <Inner>
             <IconFile />
-            <Label>{filename}</Label>
+            <Label
+              aria-label={`filename of generated file when downloading its ${filename}`}
+              tabIndex={0}
+            >
+              {filename}
+            </Label>
           </Inner>
           <Button
             className="provedores__buttonsGenerar"

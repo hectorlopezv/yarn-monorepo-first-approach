@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Date_SC} from '@libprov/date'
+import {Date} from '@libprov/date'
 import moment from 'moment'
 export default {
-  title: 'components/Date_SC',
-  component: Date_SC,
+  title: 'components/Date',
+  component: Date,
   argTypes: {
     label: {
       name: 'label',
@@ -20,15 +20,15 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Date_SC>
+} as ComponentMeta<typeof Date>
 
-const Template: ComponentStory<typeof Date_SC> = args => {
+const Template: ComponentStory<typeof Date> = args => {
   const [date, setdate] = useState(null)
   const dateHandler = value => {
     setdate(moment(value))
   }
   return (
-    <Date_SC
+    <Date
       minDateSelector={null}
       maxDateSelector={null}
       disabled={false}

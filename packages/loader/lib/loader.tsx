@@ -10,7 +10,7 @@ export const Loader: React.FC<Loader> = ({loading, noBack = false}) => {
     <>
       {loading && (
         <Container loading={loading} noBack={noBack}>
-          <Spin>
+          <Spin data-testId="spinningLoader">
             <Text>cargando... </Text>
           </Spin>
         </Container>

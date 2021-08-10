@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 interface CardContainerTypes {
   classExtra?: string
+  'data-testid'?: string
 }
 export const CardsContainer = styled.div.attrs<CardContainerTypes>(prop => ({
   className: prop.classExtra,
+  'data-testid': prop['data-testid'],
 }))<CardContainerTypes>`
   display: flex;
   flex-flow: column;

@@ -1,6 +1,7 @@
 import React from 'react'
+import {ReactNode} from 'react'
 interface CardsProps {
-  children: JSX.Element
+  children: ReactNode
   title: string
   classExtra?: string
 }

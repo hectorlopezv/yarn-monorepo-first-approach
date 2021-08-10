@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from 'react'
 import {DatePicker} from 'office-ui-fabric-react/lib/DatePicker'
 import {initializeIcons} from '@uifabric/icons'
@@ -10,13 +9,13 @@ export interface IDate_SCProps {
   tooltip?: () => React.ReactNode
   handleChange: (date: Date | null | undefined) => void
   label: string
-  minDateSelector: Date | undefined
-  maxDateSelector: Date | undefined
+  minDateSelector: any
+  maxDateSelector: any
   Date: any
   disabled: boolean
 }
 
-export class Date_SC extends React.Component<IDate_SCProps> {
+export class Date extends React.Component<IDate_SCProps> {
   dayPickerStrings = {
     months: [
       'Enero',
@@ -82,7 +81,7 @@ export class Date_SC extends React.Component<IDate_SCProps> {
   componentDidMount() {
     initializeIcons(undefined, {disableWarnings: true})
   }
-  setFormat = (date: Date | undefined) => {
+  setFormat = (date: any): string => {
     if (date === undefined) return ''
     const month =
       (date.getMonth() + 1).toString().length === 1
@@ -118,10 +117,8 @@ export class Date_SC extends React.Component<IDate_SCProps> {
             minDate={this.props.minDateSelector}
             maxDate={this.props.maxDateSelector}
             value={this.props.Date !== null ? this.props.Date.toDate() : null}
-            onSelectDate={(date: Date | null | undefined) =>
-              this.props.handleChange(date)
-            }
-            formatDate={(date: Date | undefined) => this.setFormat(date)}
+            onSelectDate={(date: any) => this.props.handleChange(date)}
+            formatDate={(date: any) => this.setFormat(date)}
             allowTextInput={false}
             placeholder={`${'DD/MM/YYYY'}`}
             isMonthPickerVisible={true}

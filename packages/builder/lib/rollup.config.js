@@ -15,18 +15,21 @@ import process from 'process'
 
 const currentWorkingPath = process.cwd()
 
-const {filename, devDependencies = {}} = require(path.join(
-  currentWorkingPath,
-  'package.json',
-))
+const {
+  filename,
+  devDependencies = {},
+  peerDependencies = {},
+} = require(path.join(currentWorkingPath, 'package.json'))
 console.log('filename', filename)
 console.log('devDependencies', devDependencies)
+console.log('peerDependencies', peerDependencies)
 const inputPath = path.join(
   currentWorkingPath,
   `lib/${filename[0]}.${filename[1]}`,
 )
 const globals = {
   ...devDependencies,
+  ...peerDependencies,
 }
 const configPostCss = postcss({
   plugins: [

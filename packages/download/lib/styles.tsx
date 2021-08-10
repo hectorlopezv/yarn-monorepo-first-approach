@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import FaFileArchiveIcon from './FaFileArchiveIcon'
 import {Buttons} from '@libprov/buttons'
+interface propsZipper {
+  tabIndex: number
+}
 export const Container = styled.div`
   display: flex;
   align-items: baseline;
@@ -38,7 +41,9 @@ export const IconFile = styled(FaFileArchiveIcon)`
     margin-top: 0px;
   }
 `
-export const Label = styled.span`
+export const Label = styled.span.attrs<propsZipper>(prop => ({
+  tabindex: prop.tabIndex,
+}))`
   margin-left: 7px;
   font: normal normal 300 14px/16px Roboto;
 
@@ -77,7 +82,8 @@ export const ContainerEl = styled.div`
     }
   }
 `
-export const TitleZipper = styled.h3`
+
+export const TitleZipper = styled.h3<propsZipper>`
   &&& {
     font: normal normal normal 17.6px/21px Roboto;
     letter-spacing: 0px;

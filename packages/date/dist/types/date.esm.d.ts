@@ -4,12 +4,12 @@ interface IDate_SCProps {
   tooltip?: () => React.ReactNode
   handleChange: (date: Date | null | undefined) => void
   label: string
-  minDateSelector: Date | undefined
-  maxDateSelector: Date | undefined
+  minDateSelector: any
+  maxDateSelector: any
   Date: any
   disabled: boolean
 }
-declare class Date_SC extends React.Component<IDate_SCProps> {
+declare class Date extends React.Component<IDate_SCProps> {
   dayPickerStrings: {
     months: string[]
     shortMonths: string[]
@@ -34,8 +34,8 @@ declare class Date_SC extends React.Component<IDate_SCProps> {
     disabled: false
   }
   componentDidMount(): void
-  setFormat: (date: Date | undefined) => string
+  setFormat: (date: any) => string
   render(): JSX.Element
 }
-export {IDate_SCProps, Date_SC}
+export {IDate_SCProps, Date}
 //# sourceMappingURL=date.esm.d.ts.map

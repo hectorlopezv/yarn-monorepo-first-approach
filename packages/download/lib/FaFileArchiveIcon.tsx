@@ -11,6 +11,7 @@ const FaFileArchiveIcon: React.FC<FaFileArchiveIconProps> = props => {
       viewBox="0 0 384 512"
       height="1em"
       width="1em"
+      data-testid="fileicon"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

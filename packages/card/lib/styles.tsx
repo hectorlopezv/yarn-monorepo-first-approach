@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
-export const Card = styled.div`
+interface TitleProps {
+  tabIndex: number
+}
+
+export const Card = styled.div.attrs<TitleProps>(prop => ({
+  tabindex: prop.tabIndex,
+}))`
   width: 270px;
   height: 154px;
   align-items: center;
@@ -18,14 +24,6 @@ export const Card = styled.div`
   }
 `
 
-export const Title = styled.span`
-  margin-top: 11px;
-  text-align: center;
-  font: normal normal normal 14px/16px Roboto !important;
-  letter-spacing: 0px;
-  color: #000000;
-`
-
 export const Link = styled(LinkR)`
   margin-top: 15px;
   text-align: center;
@@ -39,4 +37,13 @@ export const Link = styled(LinkR)`
     outline: 0;
     text-decoration: none;
   }
+`
+export const Title = styled.span.attrs<TitleProps>(prop => ({
+  tabindex: prop.tabIndex,
+}))`
+  margin-top: 11px;
+  text-align: center;
+  font: normal normal normal 14px/16px Roboto !important;
+  letter-spacing: 0px;
+  color: #000000;
 `
