@@ -10,14 +10,7 @@ type MyState = {
 }
 declare class RadioHv extends React.Component<IRadioHvProps> {
   state: MyState
-  shouldComponentUpdate(
-    nextProps: {
-      selectedRadio: any
-    },
-    nextState: {
-      upload_radio: any
-    },
-  ): boolean
+  shouldComponentUpdate(nextProps: any, nextState: any): boolean
   componentDidUpdate(prevProps: any, _: any): void
   setStatus: (e: any) => void
   render(): JSX.Element

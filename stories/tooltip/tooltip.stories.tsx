@@ -1,10 +1,10 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {ToolTipc_SC} from '@libprov/tooltip'
+import {ToolTipc} from '@libprov/tooltip'
 
 export default {
-  title: 'components/ToolTipc_SC',
-  component: ToolTipc_SC,
+  title: 'components/ToolTipc',
+  component: ToolTipc,
   argTypes: {
     text: {
       name: 'text',
@@ -33,9 +33,9 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof ToolTipc_SC>
+} as ComponentMeta<typeof ToolTipc>
 
-const Template: ComponentStory<typeof ToolTipc_SC> = args => (
+const Template: ComponentStory<typeof ToolTipc> = args => (
   <div
     style={{
       position: 'relative',
@@ -44,7 +44,7 @@ const Template: ComponentStory<typeof ToolTipc_SC> = args => (
       justifyContent: 'center',
     }}
   >
-    <ToolTipc_SC {...args} icon={'fa fa-info-circle'} />
+    <ToolTipc {...args} icon={'fa fa-info-circle'} />
   </div>
 )
 

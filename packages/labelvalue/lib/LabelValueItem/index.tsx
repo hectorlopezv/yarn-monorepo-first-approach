@@ -4,6 +4,7 @@ export interface LabelValueItemProps {
   styleSpan: string
   styleValue: string | null
   item: any
+  id?: string
 }
 
 export const LabelValueItem: React.SFC<LabelValueItemProps> = ({

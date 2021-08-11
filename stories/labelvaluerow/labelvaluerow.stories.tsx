@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
 import {LabelValue} from '@libprov/labelvalue'
@@ -49,12 +50,14 @@ const Template: ComponentStory<typeof LabelValueRow> = args => {
       delta={0}
       {...args}
     >
-      <LabelValue
-        key={`labelValue_1`}
-        dataColumn={dataAfiliado}
-        stylesColumn={'col-sm-12 labelValue__spacing'}
-        subColumns={true}
-      />
+      <div tabIndex={0}>
+        <LabelValue
+          key={`labelValue_1`}
+          dataColumn={dataAfiliado}
+          stylesColumn={'col-sm-12 labelValue__spacing'}
+          subColumns={true}
+        />
+      </div>
     </LabelValueRow>
   )
 }

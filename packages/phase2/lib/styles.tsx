@@ -16,10 +16,6 @@ export const Container = styled.div`
   }
 `
 
-export const Inner = styled.div`
-  border-radius: 10px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-`
 export interface labelInterfacetype {
   phase: number
 }
@@ -52,4 +48,18 @@ export const Label = styled.span<labelInterfacetype>`
       line-height: 73px;
       color: #fff;
     `}
+`
+
+interface numberContaineProps {
+  'data-testid': string
+  tabIndex: number
+  'aria-label': string
+}
+export const Inner = styled.div.attrs<numberContaineProps>(prop => ({
+  tabindex: prop.tabIndex,
+  'data-testid': prop['data-testid'],
+  'aria-label': prop['aria-label'],
+}))`
+  border-radius: 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
 `

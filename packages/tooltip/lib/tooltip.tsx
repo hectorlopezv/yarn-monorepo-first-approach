@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import {Popover, OverlayTrigger} from 'react-bootstrap'
 import {Container} from './styles'
 import React, {Component} from 'react'
@@ -11,7 +12,7 @@ export interface IToolTipc_SCProps {
 interface stateTypes {
   show: boolean
 }
-export class ToolTipc_SC extends Component<IToolTipc_SCProps> {
+export class ToolTipc extends Component<IToolTipc_SCProps> {
   target: any
   constructor(props: any) {
     super(props)
@@ -31,10 +32,10 @@ export class ToolTipc_SC extends Component<IToolTipc_SCProps> {
     return (
       <Container data-container="body">
         <OverlayTrigger
-          trigger={['hover', 'focus']}
+          trigger={['focus']}
           container={this}
-          //shouldUpdatePosition={false}
-          rootClose={true}
+          //shouldUpdatePosition={true}
+          rootClose={false}
           placement={this.props.isMobile ? 'left' : 'bottom'}
           overlay={
             <Popover
@@ -52,6 +53,9 @@ export class ToolTipc_SC extends Component<IToolTipc_SCProps> {
           <a
             id="toolTip-Icon"
             href="#"
+            data-testid="toolTip-Icon"
+            tabIndex={0}
+            aria-label={`informative tooltip on ${this.props.text}`}
             data-toggle="tooltip"
             data-container="body"
             style={{position: 'relative', cursor: 'pointer'}}

@@ -37,8 +37,9 @@ export class Alertf extends React.Component<IAlertFProps> {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.setTypeClass(this.props.type)
+    this.forceUpdate()
   }
   componentDidUpdate(prevProps: any, prevState: any) {
     if (prevProps.type !== this.props.type) {

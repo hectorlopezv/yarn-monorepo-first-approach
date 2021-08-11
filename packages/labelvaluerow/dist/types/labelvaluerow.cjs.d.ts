@@ -10,6 +10,7 @@ declare class LabelValueRow extends React.Component<ILabelValueRowProps> {
   state: {
     display: boolean
   }
+  myRef: any
   clickHandler: () => void
   componentDidUpdate(prevProps: any, __: any): void
   render(): JSX.Element

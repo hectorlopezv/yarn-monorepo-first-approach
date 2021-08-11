@@ -11,8 +11,8 @@ export const animationFrame = keyframes`
 `
 
 interface Container {
-  noBack?: boolean
-  loading: boolean
+  loading: boolean | 0 | 1
+  noBack?: boolean | 0 | 1
 }
 export const Container = styled.div<Container>`
   ${({noBack}) =>
@@ -39,10 +39,10 @@ export const Container = styled.div<Container>`
     `}
 `
 interface spinProps {
-  'data-testId'?: string
+  'data-testid'?: string
 }
 export const Spin = styled.div.attrs<spinProps>(prop => ({
-  'data-testid': prop['data-testId'],
+  'data-testid': prop['data-testid'],
 }))`
   border-radius: 50%;
   color: #f60;

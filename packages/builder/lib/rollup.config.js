@@ -50,13 +50,13 @@ export default {
     {
       file: `dist/${filename[0]}.cjs.js`,
       format: 'cjs',
-      //sourcemap: true,
+      sourcemap: true,
       plugins: [terser()],
     },
     {
       file: `dist/${filename[0]}.esm.js`,
       format: 'esm',
-      //sourcemap: true,
+      sourcemap: true,
       plugins: [terser()],
     },
   ],

@@ -8,9 +8,15 @@ import {Cards} from '@libprov/cards'
 import {Date} from '@libprov/date'
 import {Download} from '@libprov/download'
 import {Loader} from '@libprov/loader'
+import {ToolTipc} from '@libprov/tooltip'
+import {RadioHv} from '@libprov/radio'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import moment from 'moment'
-
+import {Phase1} from '@libprov/phase1'
+import {Phase2} from '@libprov/phase2'
+import {InfoUser} from '@libprov/infouser'
+import {LabelValue} from '@libprov/labelvalue'
+import {LabelValueRow} from '@libprov/labelvaluerow'
 const CloseIcon = props => {
   return (
     <svg
@@ -40,6 +46,50 @@ const Test = () => {
     console.log('entro')
     setdate(moment(value))
   }
+  const [selectRadio, setselectRadio] = useState(null)
+
+  const selectedRadioHandler = radio => {
+    if (radio) {
+      setselectRadio(radio)
+    }
+  }
+  const transformUserInfo = () => {
+    return [
+      {label: 'el label 1', value: 'el value 1'},
+      {label: 'el label 2', value: 'el value 2'},
+      {label: 'el label 3', value: 'el value 3'},
+    ]
+  }
+  const dataAfiliado = [
+    {
+      label: 'Estado PBS:',
+      value: 'x1',
+    },
+    {
+      label: 'Derecho a servicios:',
+      value: 'x2',
+    },
+    {
+      label: 'Estado en Plan Complementario:',
+      value: 'x3',
+    },
+    {
+      label: 'Programa Especial:',
+      value: 'x4',
+    },
+    {
+      label: 'Programa para el servicio:',
+      value: 'x5',
+    },
+    {
+      label: 'Estado en RS:',
+      value: 'x6',
+    },
+    {
+      label: 'Fecha de Nacimiento:',
+      value: 'x7',
+    },
+  ]
   return (
     <div className="App">
       <div>
@@ -132,8 +182,75 @@ const Test = () => {
           querySickLeaves={() => console.log('hello excel')}
         />
       </div>
+      <div style={{position: 'relative', marginBottom: '70px'}}>
+        <Loader loading={1} noBack={1} />
+      </div>
+
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '200px',
+        }}
+      >
+        <ToolTipc
+          text={'hello im back'}
+          isMobile={false}
+          icon={'fa fa-info-circle'}
+        />
+      </div>
+      <div style={{marginTop: '10px'}}>
+        <RadioHv
+          label={'hello im label'}
+          messages={['Paciente', 'Autorizacion']}
+          selectedRadioHandler={selectedRadioHandler}
+          selectedRadio={selectRadio}
+        />
+      </div>
+      <div style={{marginTop: '113px', padding: '40px'}}>
+        <Phase1 phase={1} className={'phase'}>
+          <p>hello im hector</p>
+          <p>hello im andres</p>
+        </Phase1>
+      </div>
+      <div style={{marginTop: '113px', padding: '40px'}}>
+        <Phase2 phase={1} className={'phase'}>
+          <p>hello im hector</p>
+          <p>hello im andres</p>
+        </Phase2>
+      </div>
       <div>
-        <Loader loading noBack />
+        <InfoUser key="infoUser" DefaultOptions={transformUserInfo()} />
+      </div>
+
+      <div>
+        <LabelValue
+          key={`labelValue_1`}
+          dataColumn={dataAfiliado}
+          stylesColumn={'col-sm-12 labelValue__spacing'}
+          subColumns={true}
+        />
+      </div>
+
+      <div>
+        <LabelValueRow
+          key={`labelValueRow_1`}
+          label={'hector'}
+          value={`${'CC'} ${'1073565411'}`}
+          concealable={true}
+          styles="labelValueRow--first labelValueRow--last"
+          delta={0}
+        >
+          <div tabIndex={0}>
+            <LabelValue
+              key={`labelValue_1`}
+              dataColumn={dataAfiliado}
+              stylesColumn={'col-sm-12 labelValue__spacing'}
+              subColumns={true}
+            />
+          </div>
+        </LabelValueRow>
       </div>
     </div>
   )

@@ -24,6 +24,7 @@ export default {
 
 const Template: ComponentStory<typeof RadioHv> = args => {
   const [selectRadio, setselectRadio] = useState(null)
+
   const selectedRadioHandler = radio => {
     if (radio) {
       setselectRadio(radio)
@@ -33,7 +34,6 @@ const Template: ComponentStory<typeof RadioHv> = args => {
     <RadioHv
       {...args}
       messages={['Paciente', 'Autorizacion']}
-      label={'label'}
       selectedRadioHandler={selectedRadioHandler}
       selectedRadio={selectRadio}
     />

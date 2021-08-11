@@ -16,10 +16,7 @@ export class RadioHv extends React.Component<IRadioHvProps> {
   state: MyState = {
     upload_radio: null,
   }
-  shouldComponentUpdate(
-    nextProps: {selectedRadio: any},
-    nextState: {upload_radio: any},
-  ) {
+  shouldComponentUpdate(nextProps: any, nextState: any) {
     if (
       nextProps.selectedRadio !== this.props.selectedRadio ||
       this.state.upload_radio !== nextProps.selectedRadio
@@ -69,6 +66,7 @@ export class RadioHv extends React.Component<IRadioHvProps> {
                     id === 0 ? this.props.messages[0] : this.props.messages[1]
                   }`}
                   onChange={this.setStatus}
+                  onKeyDown={this.setStatus}
                   className="col-xs-5 col-sm-5 col-md-5 col-lg-5 provedores__Radio"
                 >
                   <span className="provedores__RadioText">{message}</span>

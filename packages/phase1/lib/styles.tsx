@@ -15,8 +15,16 @@ export const Container = styled.div<typeContainer>`
   }
   padding-top: 30px;
 `
-
-export const NumberContainer = styled.div`
+interface numberContaineProps {
+  'data-testid': string
+  tabIndex: number
+  'aria-label': string
+}
+export const NumberContainer = styled.div.attrs<numberContaineProps>(prop => ({
+  tabindex: prop.tabIndex,
+  'data-testid': prop['data-testid'],
+  'aria-label': prop['aria-label'],
+}))`
   position: relative;
   display: block;
   min-height: 1px;

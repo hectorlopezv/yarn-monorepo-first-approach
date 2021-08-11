@@ -8,12 +8,12 @@ interface IToolTipc_SCProps {
 interface stateTypes {
   show: boolean
 }
-declare class ToolTipc_SC extends Component<IToolTipc_SCProps> {
+declare class ToolTipc extends Component<IToolTipc_SCProps> {
   target: any
   constructor(props: any)
   state: stateTypes
   handleClick(e: any): void
   render(): JSX.Element
 }
-export {IToolTipc_SCProps, ToolTipc_SC}
+export {IToolTipc_SCProps, ToolTipc}
 //# sourceMappingURL=tooltip.esm.d.ts.map

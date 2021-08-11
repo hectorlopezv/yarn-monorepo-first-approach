@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import './styles.scss'
 
 import React from 'react'
@@ -13,12 +14,22 @@ export interface ILabelValueRowProps {
 
 export class LabelValueRow extends React.Component<ILabelValueRowProps> {
   state = {
-    display: true,
+    display: false,
   }
+  myRef: any = React.createRef()
   clickHandler = () => {
-    this.setState({
-      display: !this.state.display,
-    })
+    this.setState(
+      {
+        display: !this.state.display,
+      },
+      () => {
+        console.log('this.state.display', this.state.display)
+        console.log('this.myRef.current', this.myRef.current)
+        if (this.state.display && this.myRef.current) {
+          this.myRef.current.focus()
+        }
+      },
+    )
   }
   componentDidUpdate(prevProps: any, __: any) {
     if (
@@ -35,6 +46,8 @@ export class LabelValueRow extends React.Component<ILabelValueRowProps> {
     return (
       <div
         className={`col-sm-12 col-md-12 col-xs-12 col-lg-12  pl-0 pr-0 labelValueRow ${this.props.styles}`}
+        tabIndex={0}
+        aria-label={`${this.props.label} ${this.props.value}`}
       >
         <div className="labelValueRow__header row col-sm-12 col-md-12 col-xs-12 col-lg-12 pr-0">
           <div className="col-sm-7 col-md-7 col-lg-6">
@@ -57,6 +70,7 @@ export class LabelValueRow extends React.Component<ILabelValueRowProps> {
                     this.state.display === true ? 'd-none' : 'd-block'
                   }`}
                   onClick={() => this.clickHandler()}
+                  onKeyDown={() => this.clickHandler()}
                 />
                 <UpIcon
                   className={`labelValueRow__iconRight ${
@@ -65,6 +79,7 @@ export class LabelValueRow extends React.Component<ILabelValueRowProps> {
                       : 'd-none'
                   }`}
                   onClick={() => this.clickHandler()}
+                  onKeyDown={() => this.clickHandler()}
                 />
               </>
             )}
@@ -77,8 +92,17 @@ export class LabelValueRow extends React.Component<ILabelValueRowProps> {
               ? 'd-block'
               : 'd-none'
           }`}
+          tabIndex={0}
         >
-          {this.props.children}
+          {React.Children.map(this.props.children, (child, index) => {
+            // will not explode if children is null
+            if (index === 0) {
+              return React.cloneElement(child as any, {ref: this.myRef}) //if we want to put new props to child
+              return child
+            } else {
+              return child
+            }
+          })}
         </div>
       </div>
     )
