@@ -8,6 +8,7 @@ export interface IRadioHvProps {
   label: string
   selectedRadioHandler: (arg: number | string | null) => void
 }
+
 type MyState = {
   upload_radio: number | null | string // like this
 }

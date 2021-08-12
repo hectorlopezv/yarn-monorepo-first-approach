@@ -173,6 +173,7 @@ export const Selector: React.FC<SelectProps> = ({
       <div className="">
         <p className="">{label}</p>
       </div>
+
       <Select
         inputId={props.inputId}
         onChange={args => onClick(args, type)}

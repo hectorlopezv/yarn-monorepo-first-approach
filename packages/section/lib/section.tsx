@@ -12,7 +12,6 @@ export interface Section_SCProps {
 
 export const Section: React.FC<Section_SCProps> = ({
   titleContainer,
-
   className = '',
   subTitle = null,
   setRef = null,

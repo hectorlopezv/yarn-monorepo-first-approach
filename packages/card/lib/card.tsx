@@ -13,6 +13,7 @@ export const Card: React.FC<Card_SCProps> = ({
   icon,
   title,
   onClick,
+
   link,
   linkTitle,
 }) => {

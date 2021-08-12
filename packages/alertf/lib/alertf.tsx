@@ -13,6 +13,7 @@ export interface IAlertFProps {
 export class Alertf extends React.Component<IAlertFProps> {
   type = ''
   icon = ''
+
   setTypeClass = (input: string): void => {
     switch (input) {
       case 'info':

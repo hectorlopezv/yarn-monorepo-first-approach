@@ -3,9 +3,9 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path')
 module.exports = {
-    ...require('./jest-common'),
-    rootDir: path.join(__dirname, '..'),
-    displayName: "client",
+  ...require('./jest-common'),
+  rootDir: path.join(__dirname, '..'),
+  displayName: 'client',
   testEnvironment: 'jest-environment-jsdom',
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   //snapshotSerializers: ['jest-emotion'],
@@ -13,6 +13,6 @@ module.exports = {
   preset: 'ts-jest',
   transform: {
     '^.+\\.(ts|tsx)?$': 'ts-jest',
-    "^.+\\.(js|jsx)$": "babel-jest",
-  }
+    '^.+\\.(js|jsx)$': 'babel-jest',
+  },
 }

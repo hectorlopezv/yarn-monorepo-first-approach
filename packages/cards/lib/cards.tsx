@@ -15,6 +15,7 @@ export interface CardsProps {
 
 export const Cards: React.FC<CardsProps> = ({
   classExtra = '',
+
   title = '',
   children,
 }) => {
