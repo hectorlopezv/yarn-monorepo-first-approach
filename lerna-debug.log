@@ -1,13 +1,1212 @@
-0 silly argv {
-0 silly argv   _: [ 'add' ],
-0 silly argv   scope: '@libprov/cards',
-0 silly argv   globs: [],
-0 silly argv   lernaVersion: '4.0.0',
-0 silly argv   '$0': 'lerna',
-0 silly argv   pkg: '@libprov/build'
-0 silly argv }
-1 notice cli v4.0.0
-2 verbose rootPath /home/hvmlopez/yarn-monorepo-first-approach
-3 info versioning independent
-4 error HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/@libprov%2fbuild - Not found
-4 error     at /home/hvmlopez/yarn-monorepo-first-approach/node_modules/npm-registry-fetch/check-response.js:95:15
+178 error Error: Command failed with exit code 1: git commit -F /tmp/4f366ba1-2d70-468d-99b8-645cdb275c39/lerna-commit.txt
+178 error info cli using local version of lerna
+178 error lerna notice cli v4.0.0
+178 error lerna info versioning independent
+178 error lerna info Executing command in 24 packages: "yarn run build"
+178 error @libprov/alertf: yarn run v1.22.11
+178 error @libprov/cards: yarn run v1.22.11
+178 error @libprov/buttons: yarn run v1.22.11
+178 error @libprov/date: yarn run v1.22.11
+178 error @libprov/dots: yarn run v1.22.11
+178 error @libprov/card: yarn run v1.22.11
+178 error @libprov/filter: yarn run v1.22.11
+178 error @libprov/download: yarn run v1.22.11
+178 error @libprov/infouser: yarn run v1.22.11
+178 error @libprov/labelvalue: yarn run v1.22.11
+178 error @libprov/loader: yarn run v1.22.11
+178 error @libprov/cards: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/alertf: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/buttons: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/labelvaluerow: yarn run v1.22.11
+178 error @libprov/dots: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/date: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/download: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/card: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/filter: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/infouser: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/loader: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/labelvalue: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/labelvaluerow: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/infouser: filename [ 'infouser', 'tsx' ]
+178 error @libprov/infouser: devDependencies { '@libprov/builder': '^1.0.6' }
+178 error @libprov/infouser: peerDependencies { react: '^17.0.2' }
+178 error @libprov/download: filename [ 'download', 'tsx' ]
+178 error @libprov/download: devDependencies { '@libprov/builder': '^1.0.6', '@types/styled-components': '^5.1.11' }
+178 error @libprov/download: peerDependencies { react: '^17.0.2', 'styled-components': '^5.3.0' }
+178 error @libprov/date: filename [ 'date', 'tsx' ]
+178 error @libprov/date: devDependencies { '@libprov/builder': '^1.0.6', '@types/styled-components': '^5.1.11' }
+178 error @libprov/date: peerDependencies {
+178 error @libprov/date:   '@uifabric/icons': '7.5.23',
+178 error @libprov/date:   'office-ui-fabric-react': '5.135.0',
+178 error @libprov/date:   react: '^17.0.2',
+178 error @libprov/date:   'styled-components': '^5.3.0'
+178 error @libprov/date: }
+178 error @libprov/dots: filename [ 'dots', 'tsx' ]
+178 error @libprov/dots: devDependencies { '@libprov/builder': '^1.0.6' }
+178 error @libprov/dots: peerDependencies { react: '^17.0.2' }
+178 error @libprov/labelvalue: filename [ 'labelvalue', 'tsx' ]
+178 error @libprov/labelvalue: devDependencies { '@libprov/builder': '^1.0.6' }
+178 error @libprov/labelvalue: peerDependencies { react: '^17.0.2' }
+178 error @libprov/filter: filename [ 'filter', 'tsx' ]
+178 error @libprov/filter: devDependencies {
+178 error @libprov/filter:   '@libprov/builder': '^1.0.6',
+178 error @libprov/filter:   '@types/react': '^17.0.15',
+178 error @libprov/filter:   '@types/react-custom-scrollbars': '^4.0.8'
+178 error @libprov/filter: }
+178 error @libprov/filter: peerDependencies { react: '^17.0.2', 'react-custom-scrollbars': '^4.2.1' }
+178 error @libprov/download: /home/hvmlopez/yarn-monorepo-first-approach/packages/download/lib/download.tsx → dist/download.cjs.js, dist/download.esm.js...
+178 error @libprov/card: filename [ 'card', 'tsx' ]
+178 error @libprov/card: devDependencies {
+178 error @libprov/card:   '@libprov/builder': '^1.0.6',
+178 error @libprov/card:   '@types/react-router-dom': '^5.1.8',
+178 error @libprov/card:   '@types/styled-components': '^5.1.11'
+178 error @libprov/card: }
+178 error @libprov/card: peerDependencies {
+178 error @libprov/card:   react: '^17.0.2',
+178 error @libprov/card:   'react-router-dom': '^5.2.0',
+178 error @libprov/card:   'styled-components': '^5.3.0'
+178 error @libprov/card: }
+178 error @libprov/cards: filename [ 'cards', 'tsx' ]
+178 error @libprov/buttons: filename [ 'buttons', 'tsx' ]
+178 error @libprov/cards: devDependencies { '@libprov/builder': '^1.0.6', '@types/styled-components': '^5.1.11' }
+178 error @libprov/buttons: devDependencies {
+178 error @libprov/buttons:   '@libprov/builder': '^1.0.6',
+178 error @libprov/buttons:   '@types/react': '^17.0.15',
+178 error @libprov/buttons:   '@types/styled-components': '^5.1.11'
+178 error @libprov/buttons: }
+178 error @libprov/buttons: peerDependencies { react: '^17.0.2', 'styled-components': '^5.3.0' }
+178 error @libprov/cards: peerDependencies { react: '^17.0.2', 'styled-components': '^5.3.0' }
+178 error @libprov/alertf: filename [ 'alertf', 'tsx' ]
+178 error @libprov/alertf: devDependencies { '@libprov/builder': '^1.0.6', '@types/react': '^17.0.15' }
+178 error @libprov/alertf: peerDependencies { react: '^17.0.2' }
+178 error @libprov/loader: filename [ 'loader', 'tsx' ]
+178 error @libprov/loader: devDependencies { '@libprov/builder': '^1.0.6', '@types/styled-components': '^5.1.11' }
+178 error @libprov/loader: peerDependencies { react: '^17.0.2', 'styled-components': '^5.3.0' }
+178 error @libprov/infouser: /home/hvmlopez/yarn-monorepo-first-approach/packages/infouser/lib/infouser.tsx → dist/infouser.cjs.js, dist/infouser.esm.js...
+178 error @libprov/date: /home/hvmlopez/yarn-monorepo-first-approach/packages/date/lib/date.tsx → dist/date.cjs.js, dist/date.esm.js...
+178 error @libprov/labelvaluerow: filename [ 'labelvaluerow', 'tsx' ]
+178 error @libprov/labelvaluerow: devDependencies { '@libprov/builder': '^1.0.6' }
+178 error @libprov/labelvaluerow: peerDependencies { react: '^17.0.2' }
+178 error @libprov/dots: /home/hvmlopez/yarn-monorepo-first-approach/packages/dots/lib/dots.tsx → dist/dots.cjs.js, dist/dots.esm.js...
+178 error @libprov/labelvalue: /home/hvmlopez/yarn-monorepo-first-approach/packages/labelvalue/lib/labelvalue.tsx → dist/labelvalue.cjs.js, dist/labelvalue.esm.js...
+178 error @libprov/filter: /home/hvmlopez/yarn-monorepo-first-approach/packages/filter/lib/filter.tsx → dist/filter.cjs.js, dist/filter.esm.js...
+178 error @libprov/cards: /home/hvmlopez/yarn-monorepo-first-approach/packages/cards/lib/cards.tsx → dist/cards.cjs.js, dist/cards.esm.js...
+178 error @libprov/card: /home/hvmlopez/yarn-monorepo-first-approach/packages/card/lib/card.tsx → dist/card.cjs.js, dist/card.esm.js...
+178 error @libprov/alertf: /home/hvmlopez/yarn-monorepo-first-approach/packages/alertf/lib/alertf.tsx → dist/alertf.cjs.js, dist/alertf.esm.js...
+178 error @libprov/loader: /home/hvmlopez/yarn-monorepo-first-approach/packages/loader/lib/loader.tsx → dist/loader.cjs.js, dist/loader.esm.js...
+178 error @libprov/buttons: /home/hvmlopez/yarn-monorepo-first-approach/packages/buttons/lib/buttons.tsx → dist/buttons.cjs.js, dist/buttons.esm.js...
+178 error @libprov/labelvaluerow: /home/hvmlopez/yarn-monorepo-first-approach/packages/labelvaluerow/lib/labelvaluerow.tsx → dist/labelvaluerow.cjs.js, dist/labelvaluerow.esm.js...
+178 error @libprov/infouser: created dist/infouser.cjs.js, dist/infouser.esm.js in 9.7s
+178 error @libprov/infouser: Done in 12.12s.
+178 error @libprov/message: yarn run v1.22.11
+178 error @libprov/labelvalue: created dist/labelvalue.cjs.js, dist/labelvalue.esm.js in 10.9s
+178 error @libprov/message: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/labelvalue: Done in 13.50s.
+178 error @libprov/alertf: created dist/alertf.cjs.js, dist/alertf.esm.js in 11.1s
+178 error @libprov/alertf: Done in 13.85s.
+178 error @libprov/paginator: yarn run v1.22.11
+178 error @libprov/dots: created dist/dots.cjs.js, dist/dots.esm.js in 11.6s
+178 error @libprov/dots: Done in 14.19s.
+178 error @libprov/paginator: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/pdf: yarn run v1.22.11
+178 error @libprov/pdf: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/phase1: yarn run v1.22.11
+178 error @libprov/phase1: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/filter: created dist/filter.cjs.js, dist/filter.esm.js in 13.9s
+178 error @libprov/filter: Done in 16.45s.
+178 error @libprov/labelvaluerow: created dist/labelvaluerow.cjs.js, dist/labelvaluerow.esm.js in 13.8s
+178 error @libprov/labelvaluerow: Done in 16.57s.
+178 error @libprov/buttons: created dist/buttons.cjs.js, dist/buttons.esm.js in 14.2s
+178 error @libprov/buttons: Done in 16.98s.
+178 error @libprov/phase2: yarn run v1.22.11
+178 error @libprov/message: filename [ 'message', 'tsx' ]
+178 error @libprov/message: devDependencies { '@libprov/builder': '^1.0.6', '@types/react-bootstrap': '^0.32.26' }
+178 error @libprov/message: peerDependencies { react: '^17.0.2', 'react-bootstrap': '0.32.4' }
+178 error @libprov/card: created dist/card.cjs.js, dist/card.esm.js in 14.5s
+178 error @libprov/card: Done in 17.23s.
+178 error @libprov/phase2: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/download: created dist/download.cjs.js, dist/download.esm.js in 15.1s
+178 error @libprov/download: Done in 17.32s.
+178 error @libprov/radio: yarn run v1.22.11
+178 error @libprov/section: yarn run v1.22.11
+178 error @libprov/selector: yarn run v1.22.11
+178 error @libprov/radio: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/section: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/message: /home/hvmlopez/yarn-monorepo-first-approach/packages/message/lib/message.tsx → dist/message.cjs.js, dist/message.esm.js...
+178 error @libprov/smilef: yarn run v1.22.11
+178 error @libprov/selector: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/smilef: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/paginator: filename [ 'paginator', 'tsx' ]
+178 error @libprov/paginator: devDependencies { '@libprov/builder': '^1.0.6' }
+178 error @libprov/paginator: peerDependencies { react: '^17.0.2' }
+178 error @libprov/loader: created dist/loader.cjs.js, dist/loader.esm.js in 15.4s
+178 error @libprov/loader: Done in 18.07s.
+178 error @libprov/paginator: /home/hvmlopez/yarn-monorepo-first-approach/packages/paginator/lib/paginator.tsx → dist/paginator.cjs.js, dist/paginator.esm.js...
+178 error @libprov/phase1: filename [ 'phase1', 'tsx' ]
+178 error @libprov/phase1: devDependencies { '@libprov/builder': '^1.0.6', '@types/styled-components': '^5.1.11' }
+178 error @libprov/phase1: peerDependencies { react: '^17.0.2', 'styled-components': '^5.3.0' }
+178 error @libprov/pdf: filename [ 'pdf', 'tsx' ]
+178 error @libprov/pdf: devDependencies { '@libprov/builder': '^1.0.6', '@types/styled-components': '^5.1.11' }
+178 error @libprov/pdf: peerDependencies {
+178 error @libprov/pdf:   '@libprov/loader': '^1.0.5-alpha.0',
+178 error @libprov/pdf:   'print-js': '^1.6.0',
+178 error @libprov/pdf:   react: '^17.0.2',
+178 error @libprov/pdf:   'react-dom': '^17.0.2',
+178 error @libprov/pdf:   'react-pdf': '^5.3.2',
+178 error @libprov/pdf:   'seamless-scroll-polyfill': '^1.2.4',
+178 error @libprov/pdf:   'styled-components': '^5.3.0'
+178 error @libprov/pdf: }
+178 error @libprov/table: yarn run v1.22.11
+178 error @libprov/table: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/phase1: /home/hvmlopez/yarn-monorepo-first-approach/packages/phase1/lib/phase1.tsx → dist/phase1.cjs.js, dist/phase1.esm.js...
+178 error @libprov/pdf: /home/hvmlopez/yarn-monorepo-first-approach/packages/pdf/lib/pdf.tsx → dist/pdf.cjs.js, dist/pdf.esm.js...
+178 error @libprov/radio: filename [ 'radio', 'tsx' ]
+178 error @libprov/radio: devDependencies { '@libprov/builder': '^1.0.6' }
+178 error @libprov/radio: peerDependencies { react: '^17.0.2', 'react-bootstrap': '0.32.4' }
+178 error @libprov/phase2: filename [ 'phase2', 'tsx' ]
+178 error @libprov/phase2: devDependencies { '@libprov/builder': '^1.0.6', '@types/styled-components': '^5.1.11' }
+178 error @libprov/phase2: peerDependencies { react: '^17.0.2', 'styled-components': '^5.3.0' }
+178 error @libprov/section: filename [ 'section', 'tsx' ]
+178 error @libprov/section: devDependencies { '@libprov/builder': '^1.0.6', '@types/styled-components': '^5.1.11' }
+178 error @libprov/section: peerDependencies {
+178 error @libprov/section:   '@types/styled-components': '^5.1.11',
+178 error @libprov/section:   react: '^17.0.2',
+178 error @libprov/section:   'styled-components': '^5.3.0'
+178 error @libprov/section: }
+178 error @libprov/radio: /home/hvmlopez/yarn-monorepo-first-approach/packages/radio/lib/radio.tsx → dist/radio.cjs.js, dist/radio.esm.js...
+178 error @libprov/phase2: /home/hvmlopez/yarn-monorepo-first-approach/packages/phase2/lib/phase2.tsx → dist/phase2.cjs.js, dist/phase2.esm.js...
+178 error @libprov/section: /home/hvmlopez/yarn-monorepo-first-approach/packages/section/lib/section.tsx → dist/section.cjs.js, dist/section.esm.js...
+178 error @libprov/smilef: filename [ 'smilef', 'tsx' ]
+178 error @libprov/smilef: devDependencies { '@libprov/builder': '^1.0.6', '@types/react': '^17.0.15' }
+178 error @libprov/smilef: peerDependencies { react: '^17.0.2' }
+178 error @libprov/selector: filename [ 'selector', 'tsx' ]
+178 error @libprov/selector: devDependencies {
+178 error @libprov/selector:   '@libprov/builder': '^1.0.6',
+178 error @libprov/selector:   '@types/react-custom-scrollbars': '^4.0.8',
+178 error @libprov/selector:   '@types/react-select': '^4.0.17'
+178 error @libprov/selector: }
+178 error @libprov/selector: peerDependencies {
+178 error @libprov/selector:   react: '^17.0.2',
+178 error @libprov/selector:   'react-custom-scrollbars': '^4.2.1',
+178 error @libprov/selector:   'react-select': '^4.3.1'
+178 error @libprov/selector: }
+178 error @libprov/table: filename [ 'table', 'tsx' ]
+178 error @libprov/table: devDependencies { '@libprov/builder': '^1.0.6', '@types/lodash.debounce': '^4.0.6' }
+178 error @libprov/table: peerDependencies {
+178 error @libprov/table:   '@types/react-bootstrap-table': '^4.3.9',
+178 error @libprov/table:   'lodash.debounce': '^4.0.8',
+178 error @libprov/table:   react: '^17.0.2',
+178 error @libprov/table:   'react-bootstrap-table': '^4.3.1',
+178 error @libprov/table:   'seamless-scroll-polyfill': '^1.2.4',
+178 error @libprov/table:   simplebar: '^5.3.5'
+178 error @libprov/table: }
+178 error @libprov/smilef: /home/hvmlopez/yarn-monorepo-first-approach/packages/smilef/lib/smilef.tsx → dist/smilef.cjs.js, dist/smilef.esm.js...
+178 error @libprov/table: /home/hvmlopez/yarn-monorepo-first-approach/packages/table/lib/table.tsx → dist/table.cjs.js, dist/table.esm.js...
+178 error @libprov/selector: /home/hvmlopez/yarn-monorepo-first-approach/packages/selector/lib/selector.tsx → dist/selector.cjs.js, dist/selector.esm.js...
+178 error @libprov/date: created dist/date.cjs.js, dist/date.esm.js in 19.7s
+178 error @libprov/date: Done in 22.20s.
+178 error @libprov/tooltip: yarn run v1.22.11
+178 error @libprov/tooltip: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/tooltip: filename [ 'tooltip', 'tsx' ]
+178 error @libprov/tooltip: devDependencies { '@types/styled-components': '^5.1.11' }
+178 error @libprov/tooltip: peerDependencies {
+178 error @libprov/tooltip:   '@libprov/builder': '^1.0.5-alpha.0',
+178 error @libprov/tooltip:   react: '^17.0.2',
+178 error @libprov/tooltip:   'react-bootstrap': '0.32.4',
+178 error @libprov/tooltip:   'styled-components': '^5.3.0'
+178 error @libprov/tooltip: }
+178 error @libprov/tooltip: /home/hvmlopez/yarn-monorepo-first-approach/packages/tooltip/lib/tooltip.tsx → dist/tooltip.cjs.js, dist/tooltip.esm.js...
+178 error @libprov/cards: created dist/cards.cjs.js, dist/cards.esm.js in 28.9s
+178 error @libprov/cards: Done in 31.57s.
+178 error @libprov/paginator: created dist/paginator.cjs.js, dist/paginator.esm.js in 13.6s
+178 error @libprov/paginator: Done in 18.05s.
+178 error @libprov/section: created dist/section.cjs.js, dist/section.esm.js in 13.4s
+178 error @libprov/section: Done in 16.72s.
+178 error @libprov/smilef: created dist/smilef.cjs.js, dist/smilef.esm.js in 13.2s
+178 error @libprov/smilef: Done in 16.95s.
+178 error @libprov/phase1: created dist/phase1.cjs.js, dist/phase1.esm.js in 15.6s
+178 error @libprov/phase1: Done in 20.02s.
+178 error @libprov/radio: created dist/radio.cjs.js, dist/radio.esm.js in 15s
+178 error @libprov/radio: Done in 17.75s.
+178 error @libprov/message: created dist/message.cjs.js, dist/message.esm.js in 17.6s
+178 error @libprov/phase2: created dist/phase2.cjs.js, dist/phase2.esm.js in 14.8s
+178 error @libprov/message: Done in 22.18s.
+178 error @libprov/phase2: Done in 18.34s.
+178 error @libprov/selector: created dist/selector.cjs.js, dist/selector.esm.js in 15.1s
+178 error @libprov/selector: Done in 19.26s.
+178 error @libprov/pdf: created dist/pdf.cjs.js, dist/pdf.esm.js in 19.6s
+178 error @libprov/pdf: Done in 24.38s.
+178 error @libprov/tooltip: created dist/tooltip.cjs.js, dist/tooltip.esm.js in 12.8s
+178 error @libprov/tooltip: Done in 16.28s.
+178 error @libprov/table: created dist/table.cjs.js, dist/table.esm.js in 17.3s
+178 error @libprov/table: Done in 20.45s.
+178 error @libprov/proveedores: yarn run v1.22.11
+178 error @libprov/proveedores: $ rollup --config node_modules/@libprov/builder/lib/rollup.config.js
+178 error @libprov/proveedores: filename [ 'index', 'tsx' ]
+178 error @libprov/proveedores: devDependencies { '@libprov/builder': '^1.0.6' }
+178 error @libprov/proveedores: peerDependencies {}
+178 error @libprov/proveedores: /home/hvmlopez/yarn-monorepo-first-approach/packages/proveedores/lib/index.tsx → dist/index.cjs.js, dist/index.esm.js...
+178 error @libprov/proveedores: (!) Circular dependencies
+178 error @libprov/proveedores: ../../node_modules/react-bootstrap/es/Media.js -> ../../node_modules/react-bootstrap/es/MediaBody.js -> ../../node_modules/react-bootstrap/es/Media.js
+178 error @libprov/proveedores: ../../node_modules/react-bootstrap/es/Media.js -> ../../node_modules/react-bootstrap/es/MediaLeft.js -> ../../node_modules/react-bootstrap/es/Media.js
+178 error @libprov/proveedores: ../../node_modules/react-bootstrap/es/Media.js -> ../../node_modules/react-bootstrap/es/MediaRight.js -> ../../node_modules/react-bootstrap/es/Media.js
+178 error @libprov/proveedores: created dist/index.cjs.js, dist/index.esm.js in 16.5s
+178 error @libprov/proveedores: Done in 18.01s.
+178 error lerna success run Ran npm script 'build' in 24 packages in 57.5s:
+178 error lerna success - @libprov/alertf
+178 error lerna success - @libprov/buttons
+178 error lerna success - @libprov/card
+178 error lerna success - @libprov/cards
+178 error lerna success - @libprov/date
+178 error lerna success - @libprov/dots
+178 error lerna success - @libprov/download
+178 error lerna success - @libprov/filter
+178 error lerna success - @libprov/infouser
+178 error lerna success - @libprov/labelvalue
+178 error lerna success - @libprov/labelvaluerow
+178 error lerna success - @libprov/loader
+178 error lerna success - @libprov/message
+178 error lerna success - @libprov/paginator
+178 error lerna success - @libprov/pdf
+178 error lerna success - @libprov/phase1
+178 error lerna success - @libprov/phase2
+178 error lerna success - @libprov/proveedores
+178 error lerna success - @libprov/radio
+178 error lerna success - @libprov/section
+178 error lerna success - @libprov/selector
+178 error lerna success - @libprov/smilef
+178 error lerna success - @libprov/table
+178 error lerna success - @libprov/tooltip
+178 error yarn run v1.22.11
+178 error $ /home/hvmlopez/yarn-monorepo-first-approach/node_modules/.bin/lint-staged
+178 error [STARTED] Preparing...
+178 error [SUCCESS] Preparing...
+178 error [STARTED] Running tasks...
+178 error [STARTED] Running tasks for **/*.+(js|json|ts|tsx)
+178 error [STARTED] prettier --ignore-path .gitignore --write
+178 error [SUCCESS] prettier --ignore-path .gitignore --write
+178 error [STARTED] git add .
+178 error [SUCCESS] git add .
+178 error [SUCCESS] Running tasks for **/*.+(js|json|ts|tsx)
+178 error [SUCCESS] Running tasks...
+178 error [STARTED] Applying modifications...
+178 error [SUCCESS] Applying modifications...
+178 error [STARTED] Cleaning up...
+178 error [SUCCESS] Cleaning up...
+178 error Done in 0.99s.
+178 error yarn run v1.22.11
+178 error $ jest
+178 error PASS lint packages/message/lib/message.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/message/lib/message.tsx
+178 error          9:15  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         17:22  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         18:28  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         18:38  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         19:26  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         19:36  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         20:31  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         20:41  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         21:32  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         21:42  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         30:3   warning  Missing return type on function                          @typescript-eslint/explicit-module-boundary-types
+178 error         30:14  warning  Argument 'e' should be typed with a non-any type         @typescript-eslint/explicit-module-boundary-types
+178 error         30:17  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         30:43  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         30:53  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         35:35  warning  Argument 'props' should be typed with a non-any type     @typescript-eslint/explicit-module-boundary-types
+178 error         35:42  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         35:47  warning  Argument '_state' should be typed with a non-any type    @typescript-eslint/explicit-module-boundary-types
+178 error         35:47  warning  '_state' is defined but never used                       @typescript-eslint/no-unused-vars
+178 error         35:55  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         35:61  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         41:16  warning  Missing return type on function                          @typescript-eslint/explicit-module-boundary-types
+178 error         44:3   warning  Missing return type on function                          @typescript-eslint/explicit-module-boundary-types
+178 error         44:22  warning  Argument 'prevPros' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error         44:32  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         44:37  warning  Argument '_' should be typed with a non-any type         @typescript-eslint/explicit-module-boundary-types
+178 error         44:37  warning  '_' is defined but never used                            @typescript-eslint/no-unused-vars
+178 error         44:40  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error         49:3   warning  Missing return type on function                          @typescript-eslint/explicit-module-boundary-types
+178 error         50:19  warning  Unexpected any. Specify a different type                 @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 30 problems (0 errors, 30 warnings)
+178 error
+178 error PASS lint packages/download/lib/download.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/download/lib/download.tsx
+178 error         15:30  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         15:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 2 problems (0 errors, 2 warnings)
+178 error
+178 error PASS lint packages/download/lib/styles.tsx
+178 error PASS lint packages/download/lib/FaFileArchiveIcon.tsx
+178 error PASS lint packages/radio/lib/radio.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/radio/lib/radio.tsx
+178 error         19:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         19:25  warning  Argument 'nextProps' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error         19:36  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         19:41  warning  Argument 'nextState' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error         19:52  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         32:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         32:22  warning  Argument 'prevProps' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error         32:33  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         32:38  warning  Argument '_' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error         32:38  warning  '_' is defined but never used                             @typescript-eslint/no-unused-vars
+178 error         32:41  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         42:15  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         42:16  warning  Argument 'e' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error         42:19  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         45:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error
+178 error       ✖ 15 problems (0 errors, 15 warnings)
+178 error
+178 error PASS lint packages/smilef/lib/smilef.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/smilef/lib/smilef.tsx
+178 error         20:3  warning  'titleId' is assigned a value but never used  @typescript-eslint/no-unused-vars
+178 error
+178 error       ✖ 1 problem (0 errors, 1 warning)
+178 error
+178 error PASS lint packages/loader/lib/loader.tsx
+178 error PASS lint packages/date/lib/styles.tsx
+178 error PASS lint packages/date/lib/date.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/date/lib/date.tsx
+178 error          12:20  warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+178 error          13:20  warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+178 error          14:9   warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+178 error          76:22  warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+178 error          77:22  warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+178 error          78:11  warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+178 error          81:3   warning  Missing return type on function                      @typescript-eslint/explicit-module-boundary-types
+178 error          84:16  warning  Argument 'date' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error          84:22  warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+178 error         102:3   warning  Missing return type on function                      @typescript-eslint/explicit-module-boundary-types
+178 error         120:34  warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+178 error         121:32  warning  Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 12 problems (0 errors, 12 warnings)
+178 error
+178 error PASS lint packages/cards/lib/styles.tsx
+178 error PASS lint packages/infouser/lib/infouser.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/infouser/lib/infouser.tsx
+178 error          6:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         15:33  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 2 problems (0 errors, 2 warnings)
+178 error
+178 error PASS lint packages/selector/lib/selector.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/selector/lib/selector.tsx
+178 error           6:22  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error           6:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          26:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          26:35  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          51:30  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          51:35  warning  '_' is defined but never used             @typescript-eslint/no-unused-vars
+178 error          51:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          54:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          54:39  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          65:24  warning  '__' is defined but never used            @typescript-eslint/no-unused-vars
+178 error          65:28  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          65:33  warning  '_' is defined but never used             @typescript-eslint/no-unused-vars
+178 error          65:36  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          68:20  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          68:25  warning  '_' is defined but never used             @typescript-eslint/no-unused-vars
+178 error          68:28  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          88:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          88:39  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          98:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          98:37  warning  '_' is defined but never used             @typescript-eslint/no-unused-vars
+178 error          98:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         101:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         101:29  warning  '_' is defined but never used             @typescript-eslint/no-unused-vars
+178 error         101:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         105:26  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         125:49  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         145:18  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         152:20  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         186:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 29 problems (0 errors, 29 warnings)
+178 error
+178 error PASS lint packages/cards/lib/cards.tsx
+178 error PASS lint packages/alertf/lib/alertf.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/alertf/lib/alertf.tsx
+178 error         40:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         44:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         44:22  warning  Argument 'prevProps' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error         44:33  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         44:38  warning  Argument 'prevState' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error         44:38  warning  'prevState' is defined but never used                     @typescript-eslint/no-unused-vars
+178 error         44:49  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         53:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error
+178 error       ✖ 8 problems (0 errors, 8 warnings)
+178 error
+178 error PASS lint packages/buttons/lib/styles.tsx
+178 error PASS lint packages/paginator/lib/paginator.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/paginator/lib/paginator.tsx
+178 error          47:3   warning  'className' is assigned a value but never used  @typescript-eslint/no-unused-vars
+178 error         169:25  warning  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+178 error         169:35  warning  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+178 error         173:16  warning  Missing return type on function                 @typescript-eslint/explicit-module-boundary-types
+178 error         177:3   warning  Missing return type on function                 @typescript-eslint/explicit-module-boundary-types
+178 error
+178 error       ✖ 5 problems (0 errors, 5 warnings)
+178 error
+178 error PASS lint packages/dots/lib/dots.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/dots/lib/dots.tsx
+178 error          9:24  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         11:31  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         18:20  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         18:21  warning  Argument 'e' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error         18:24  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         27:24  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         41:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         41:22  warning  Argument 'prevProps' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error         41:33  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         41:38  warning  Argument '_' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error         41:38  warning  '_' is defined but never used                             @typescript-eslint/no-unused-vars
+178 error         41:41  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         51:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error
+178 error       ✖ 13 problems (0 errors, 13 warnings)
+178 error
+178 error PASS lint packages/buttons/lib/buttons.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/buttons/lib/buttons.tsx
+178 error          9:28  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          9:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         12:31  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         12:41  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 4 problems (0 errors, 4 warnings)
+178 error
+178 error PASS lint packages/card/lib/styles.tsx
+178 error PASS lint packages/table/lib/paginatorPanel.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/table/lib/paginatorPanel.tsx
+178 error         45:3  warning  'className' is assigned a value but never used  @typescript-eslint/no-unused-vars
+178 error         79:3  warning  Missing return type on function                 @typescript-eslint/explicit-module-boundary-types
+178 error
+178 error       ✖ 2 problems (0 errors, 2 warnings)
+178 error
+178 error PASS lint packages/pdf/lib/pdf.tsx
+178 error PASS lint packages/tooltip/lib/tooltip.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/tooltip/lib/tooltip.tsx
+178 error         16:11  warning  Unexpected any. Specify a different type              @typescript-eslint/no-explicit-any
+178 error         17:15  warning  Argument 'props' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error         17:22  warning  Unexpected any. Specify a different type              @typescript-eslint/no-explicit-any
+178 error         26:3   warning  Missing return type on function                       @typescript-eslint/explicit-module-boundary-types
+178 error         26:15  warning  Argument 'e' should be typed with a non-any type      @typescript-eslint/explicit-module-boundary-types
+178 error         26:18  warning  Unexpected any. Specify a different type              @typescript-eslint/no-explicit-any
+178 error         31:3   warning  Missing return type on function                       @typescript-eslint/explicit-module-boundary-types
+178 error
+178 error       ✖ 7 problems (0 errors, 7 warnings)
+178 error
+178 error PASS lint packages/phase2/lib/phase2.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/phase2/lib/phase2.tsx
+178 error         6:54  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 1 problem (0 errors, 1 warning)
+178 error
+178 error PASS lint packages/section/lib/styles.tsx
+178 error PASS lint packages/section/lib/section.tsx
+178 error PASS lint packages/card/lib/card.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/card/lib/card.tsx
+178 error         9:22  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         9:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 2 problems (0 errors, 2 warnings)
+178 error
+178 error PASS lint packages/proveedores/lib/index.tsx
+178 error PASS lint packages/phase1/lib/phase1.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/phase1/lib/phase1.tsx
+178 error         6:54  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 1 problem (0 errors, 1 warning)
+178 error
+178 error PASS lint packages/labelvaluerow/lib/icons.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/labelvaluerow/lib/icons.tsx
+178 error          5:12  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error          6:14  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         32:12  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         33:14  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 4 problems (0 errors, 4 warnings)
+178 error
+178 error PASS lint packages/phase1/lib/styles.tsx
+178 error PASS lint packages/filter/lib/filter.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/filter/lib/filter.tsx
+178 error          13:26  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          13:36  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          17:10  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          45:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          45:22  warning  Argument 'prevProps' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error          45:33  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          45:38  warning  Argument '_' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error          45:38  warning  '_' is defined but never used                             @typescript-eslint/no-unused-vars
+178 error          45:41  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          55:25  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          55:27  warning  'style' is defined but never used                         @typescript-eslint/no-unused-vars
+178 error          71:11  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          84:13  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          84:14  warning  Argument 'e' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error          84:17  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          90:15  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          90:16  warning  Argument '_' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error          90:19  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          90:24  warning  Argument 'item' should be typed with a non-any type       @typescript-eslint/explicit-module-boundary-types
+178 error          90:30  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         100:16  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         100:17  warning  Argument 'e' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error         100:20  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         115:15  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         125:18  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         130:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error
+178 error       ✖ 26 problems (0 errors, 26 warnings)
+178 error
+178 error PASS lint packages/labelvalue/lib/labelvalue.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/labelvalue/lib/labelvalue.tsx
+178 error          8:15  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error         15:6   warning  'props' is defined but never used         @typescript-eslint/no-unused-vars
+178 error         20:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 3 problems (0 errors, 3 warnings)
+178 error
+178 error PASS lint packages/labelvaluerow/lib/labelvaluerow.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/labelvaluerow/lib/labelvaluerow.tsx
+178 error          12:10  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          19:10  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          20:18  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          32:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          32:22  warning  Argument 'prevProps' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error          32:33  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          32:38  warning  Argument '__' should be typed with a non-any type         @typescript-eslint/explicit-module-boundary-types
+178 error          32:38  warning  '__' is defined but never used                            @typescript-eslint/no-unused-vars
+178 error          32:42  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          43:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          98:50  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         103:50  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error
+178 error       ✖ 12 problems (0 errors, 12 warnings)
+178 error
+178 error PASS lint packages/loader/lib/styles.tsx
+178 error PASS lint packages/phase2/lib/styles.tsx
+178 error PASS lint packages/pdf/lib/styles.tsx
+178 error PASS lint packages/tooltip/lib/styles.tsx
+178 error PASS lint packages/table/lib/table.tsx
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error
+178 error       /home/hvmlopez/yarn-monorepo-first-approach/packages/table/lib/table.tsx
+178 error          34:9   warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          37:13  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          39:19  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          40:16  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error          49:18  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          49:33  warning  '_' is defined but never used                             @typescript-eslint/no-unused-vars
+178 error          75:18  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error          75:19  warning  Argument 'e' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error          75:22  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         111:36  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         138:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         165:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         172:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         172:22  warning  Argument 'prevProps' should be typed with a non-any type  @typescript-eslint/explicit-module-boundary-types
+178 error         172:33  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         172:38  warning  Argument '_' should be typed with a non-any type          @typescript-eslint/explicit-module-boundary-types
+178 error         172:38  warning  '_' is defined but never used                             @typescript-eslint/no-unused-vars
+178 error         172:41  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         198:27  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         198:28  warning  Argument 'props' should be typed with a non-any type      @typescript-eslint/explicit-module-boundary-types
+178 error         198:35  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         206:17  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         213:33  warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error         241:28  warning  Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+178 error         274:3   warning  Missing return type on function                           @typescript-eslint/explicit-module-boundary-types
+178 error
+178 error       ✖ 25 problems (0 errors, 25 warnings)
+178 error
+178 error PASS client __tests__/labelvaluerow/labelvaluerow.test.js (12.377 s)
+178 error   ● Console
+178 error
+178 error     console.error
+178 error       Warning: Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
+178 error
+178 error       Check the render method of `LabelValueRow`.
+178 error           at LabelValue (/home/hvmlopez/yarn-monorepo-first-approach/packages/labelvalue/lib/labelvalue.tsx:12:3)
+178 error           at div
+178 error           at div
+178 error           at LabelValueRow (/home/hvmlopez/yarn-monorepo-first-approach/packages/labelvaluerow/lib/labelvaluerow.tsx:1186:5)
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+178 error       at validateFunctionComponentInDev (node_modules/react-dom/cjs/react-dom.development.js:17926:9)
+178 error       at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:17893:7)
+178 error       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19049:16)
+178 error       at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23940:14)
+178 error       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22779:12)
+178 error       at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
+178 error
+178 error PASS client __tests__/card/card.test.js (12.83 s)
+178 error PASS client __tests__/pdf/pdf.test.js (13.43 s)
+178 error   ● Console
+178 error
+178 error     console.error
+178 error       Warning: Cannot update a component (`Viewer`) while rendering a different component (`Document`). To locate the bad setState() call inside `Document`, follow the stack trace as described in https://reactjs.org/link/setstate-in-render
+178 error           at Document (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/react-pdf/dist/umd/Document.js:78:37)
+178 error           at div
+178 error           at I (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/styled-components/src/models/Keyframes.js:20:51)
+178 error           at div
+178 error           at I (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/styled-components/src/models/Keyframes.js:20:51)
+178 error           at Viewer (/home/hvmlopez/yarn-monorepo-first-approach/packages/pdf/lib/Viewer/index.tsx:22:3)
+178 error           at PdfFile (/home/hvmlopez/yarn-monorepo-first-approach/packages/pdf/lib/PdfFile/index.tsx:15:3)
+178 error           at div
+178 error
+178 error       78 |             onLoadSuccess={onDocumentLoadSuccess}
+178 error       79 |             renderMode={'svg'}
+178 error     > 80 |             loading={() => setloading(true) as any}
+178 error          |                            ^
+178 error       81 |           >
+178 error       82 |             <Page pageNumber={pageNumber} scale={scale} ref={ref as any} />
+178 error       83 |           </Document>
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+178 error       at warnAboutRenderPhaseUpdatesInDEV (node_modules/react-dom/cjs/react-dom.development.js:24002:15)
+178 error       at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21836:3)
+178 error       at dispatchAction (node_modules/react-dom/cjs/react-dom.development.js:16139:5)
+178 error       at loading (packages/pdf/lib/Viewer/index.tsx:80:28)
+178 error       at Document.renderContent (node_modules/react-pdf/dist/umd/Document.js:440:44)
+178 error       at Document.render (node_modules/react-pdf/dist/umd/Document.js:461:33)
+178 error
+178 error     console.error
+178 error       Warning: Received `true` for a non-boolean attribute `loading`.
+178 error
+178 error       If you want to write it to the DOM, pass a string instead: loading="true" or loading={value.toString()}.
+178 error           at div
+178 error           at I (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/styled-components/src/models/Keyframes.js:20:51)
+178 error           at Object.<anonymous>.exports.Loader (/home/hvmlopez/yarn-monorepo-first-approach/packages/loader/lib/loader.tsx:8:43)
+178 error           at Viewer (/home/hvmlopez/yarn-monorepo-first-approach/packages/pdf/lib/Viewer/index.tsx:22:3)
+178 error           at PdfFile (/home/hvmlopez/yarn-monorepo-first-approach/packages/pdf/lib/PdfFile/index.tsx:15:3)
+178 error           at div
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+178 error       at validateProperty$1 (node_modules/react-dom/cjs/react-dom.development.js:3521:9)
+178 error       at warnUnknownProperties (node_modules/react-dom/cjs/react-dom.development.js:3559:21)
+178 error       at validateProperties$2 (node_modules/react-dom/cjs/react-dom.development.js:3583:3)
+178 error       at validatePropertiesInDevelopment (node_modules/react-dom/cjs/react-dom.development.js:8765:5)
+178 error       at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
+178 error       at finalizeInitialChildren (node_modules/react-dom/cjs/react-dom.development.js:10201:3)
+178 error
+178 error     console.error
+178 error       Error: Setting up fake worker failed: "Cannot find module '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js' from 'node_modules/pdfjs-dist/build/pdf.js'".
+178 error           at /home/hvmlopez/yarn-monorepo-first-approach/node_modules/pdfjs-dist/build/webpack:/pdfjs-dist/build/pdf/src/display/api.js:1993:13
+178 error           at processTicksAndRejections (node:internal/process/task_queues:96:5)
+178 error
+178 error       at consoleOnDev (node_modules/react-pdf/dist/umd/shared/utils.js:156:34)
+178 error       at errorOnDev (node_modules/react-pdf/dist/umd/shared/utils.js:173:16)
+178 error       at Document.onLoadError (node_modules/react-pdf/dist/umd/Document.js:255:29)
+178 error       at _callee$ (node_modules/react-pdf/dist/umd/Document.js:197:21)
+178 error       at tryCatch (node_modules/regenerator-runtime/runtime.js:63:40)
+178 error       at Generator.invoke [as _invoke] (node_modules/regenerator-runtime/runtime.js:294:22)
+178 error       at Generator.throw (node_modules/regenerator-runtime/runtime.js:119:21)
+178 error       at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+178 error
+178 error PASS client __tests__/dots/dots.test.js
+178 error PASS client __tests__/download/download.test.js
+178 error PASS client __tests__/filter/filter.test.js (13.698 s)
+178 error PASS client __tests__/radio/radio.test.js (13.879 s)
+178 error PASS client __tests__/cards/cards.test.js
+178 error PASS client __tests__/infouser/infouser.test.js
+178 error PASS client __tests__/message/message.test.js (13.945 s)
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error       Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state
+178 error       * Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: Modal, Portal
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11530:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error     console.warn
+178 error       Warning: componentWillUpdate has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * Rename componentWillUpdate to UNSAFE_componentWillUpdate to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: Modal
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11536:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error PASS client __tests__/table/table.test.js (13.9 s)
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error       Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state
+178 error       * Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: BootstrapTable, PaginationList, TableHeaderColumn
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11530:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error PASS client __tests__/tooltip/tooltip.test.js (14.127 s)
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error       Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state
+178 error       * Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: Overlay
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11530:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error     console.warn
+178 error       Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state
+178 error       * Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: Portal
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11530:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error     console.warn
+178 error       Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state
+178 error       * Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: Position
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11530:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error PASS client __tests__/buttons/buttons.test.js
+178 error PASS client __tests__/selector/selector.test.js (14.076 s)
+178 error PASS client __tests__/alertf/alert.test.js
+178 error PASS client __tests__/section/section.test.js
+178 error PASS client __tests__/labelvalue/labelvalue.test.js
+178 error PASS client __tests__/loader/loader.test.js
+178 error PASS client __tests__/smilef/smilef.test.js
+178 error PASS client __tests__/phase1/phase1.test.js
+178 error PASS client __tests__/phase2/phase2.test.js
+178 error PASS client __tests__/paginator/paginator.test.js (14.388 s)
+178 error PASS client __tests__/date/date.test.js (14.856 s)
+178 error   ● Console
+178 error
+178 error     console.warn
+178 error       The icon "calendar" was used but not registered. See http://aka.ms/fabric-icon-usage for more information.
+178 error
+178 error       at Object.warn (node_modules/@uifabric/utilities/src/warn.ts:97:13)
+178 error       at Object.getIcon (node_modules/@uifabric/styling/lib/src/utilities/icons.ts:150:9)
+178 error       at IconBase.Object.<anonymous>.IconBase._getIconContent (node_modules/office-ui-fabric-react/lib/components/src/components/Icon/Icon.base.tsx:90:28)
+178 error       at IconBase.Object.<anonymous>.IconBase.render (node_modules/office-ui-fabric-react/lib/components/src/components/Icon/Icon.base.tsx:40:11)
+178 error       at IconBase.obj.<computed> [as render] (node_modules/@uifabric/utilities/src/BaseComponent.ts:254:30)
+178 error       at finishClassComponent (node_modules/react-dom/cjs/react-dom.development.js:17485:31)
+178 error       at updateClassComponent (node_modules/react-dom/cjs/react-dom.development.js:17435:24)
+178 error       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19073:16)
+178 error
+178 error     console.warn
+178 error       Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state
+178 error       * Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: DatePicker, IconBase, TextField
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11530:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error     console.warn
+178 error       Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state
+178 error       * Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: Callout, LayerBase
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11530:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error     console.warn
+178 error       Warning: componentWillMount has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move code with side effects to componentDidMount, and set initial state in the constructor.
+178 error       * Rename componentWillMount to UNSAFE_componentWillMount to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: CalloutContentBase, FocusTrapZone, Popup
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11524:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error     console.warn
+178 error       Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://reactjs.org/link/derived-state
+178 error       * Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: Calendar, CalendarDay, CalendarMonth, CalloutContentBase, Fabric, FocusTrapZone, FocusZone, Popup
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11530:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error     console.warn
+178 error       Warning: componentWillUpdate has been renamed, and is not recommended for use. See https://reactjs.org/link/unsafe-component-lifecycles for details.
+178 error
+178 error       * Move data fetching code or side effects to componentDidUpdate.
+178 error       * Rename componentWillUpdate to UNSAFE_componentWillUpdate to suppress this warning in non-strict mode. In React 18.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+178 error
+178 error       Please update the following components: CalloutContentBase
+178 error
+178 error       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+178 error       at warn (node_modules/react-dom/cjs/react-dom.development.js:34:5)
+178 error       at Object.<anonymous>.ReactStrictModeWarnings.flushPendingUnsafeLifecycleWarnings (node_modules/react-dom/cjs/react-dom.development.js:11536:7)
+178 error       at flushRenderPhaseStrictModeWarningsInDEV (node_modules/react-dom/cjs/react-dom.development.js:23822:31)
+178 error       at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23005:3)
+178 error       at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+178 error       at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+178 error       at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
+178 error
+178 error PASS prettier packages/loader/README.md
+178 error PASS prettier packages/paginator/README.md
+178 error PASS prettier packages/loader/package.json
+178 error PASS prettier packages/table/README.md
+178 error PASS prettier packages/paginator/lib/styles.scss
+178 error PASS prettier packages/table/package.json
+178 error PASS prettier packages/paginator/package.json
+178 error PASS prettier packages/buttons/package.json
+178 error PASS prettier packages/buttons/README.md
+178 error PASS prettier packages/dots/README.md
+178 error PASS prettier packages/dots/package.json
+178 error PASS prettier packages/dots/lib/Dots.scss
+178 error PASS prettier packages/table/lib/styles.scss
+178 error PASS prettier packages/filter/lib/styles.scss
+178 error PASS prettier packages/filter/package.json
+178 error PASS prettier packages/filter/README.md
+178 error PASS prettier packages/builder/README.md
+178 error PASS prettier packages/builder/package.json
+178 error PASS prettier packages/loader/lib/loader.tsx
+178 error PASS prettier packages/builder/lib/rollup.config.js
+178 error PASS prettier packages/buttons/lib/buttons.tsx
+178 error PASS prettier packages/card/README.md
+178 error PASS prettier packages/card/lib/card.tsx
+178 error PASS prettier packages/card/package.json
+178 error PASS prettier packages/table/lib/paginatorPanel.tsx
+178 error PASS prettier packages/tooltip/lib/styles.scss
+178 error PASS prettier packages/paginator/lib/paginator.tsx
+178 error PASS prettier packages/loader/lib/styles.tsx
+178 error PASS prettier packages/dots/lib/dots.tsx
+178 error PASS prettier packages/tooltip/lib/styles.tsx
+178 error PASS prettier packages/pdf/lib/pdf.tsx
+178 error PASS prettier packages/pdf/README.md
+178 error PASS prettier packages/buttons/lib/styles.tsx
+178 error PASS prettier packages/tooltip/README.md
+178 error PASS prettier packages/phase2/lib/phase2.tsx
+178 error PASS prettier packages/tooltip/package.json
+178 error PASS prettier packages/pdf/package.json
+178 error PASS prettier packages/phase2/README.md
+178 error PASS prettier packages/phase2/package.json
+178 error PASS prettier packages/message/package.json
+178 error PASS prettier packages/message/README.md
+178 error PASS prettier packages/infouser/README.md
+178 error PASS prettier packages/phase2/lib/styles.tsx
+178 error PASS prettier packages/infouser/lib/styles.scss
+178 error PASS prettier packages/infouser/package.json
+178 error PASS prettier packages/section/lib/styles.scss
+178 error PASS prettier packages/infouser/lib/infouser.tsx
+178 error PASS prettier packages/filter/lib/filter.tsx
+178 error PASS prettier packages/smilef/lib/styles.scss
+178 error PASS prettier packages/pdf/lib/styles.tsx
+178 error PASS prettier packages/section/lib/section.tsx
+178 error PASS prettier packages/section/README.md
+178 error PASS prettier packages/message/lib/message.tsx
+178 error PASS prettier packages/smilef/lib/smilef.tsx
+178 error PASS prettier packages/phase1/lib/phase1.tsx
+178 error PASS prettier packages/section/package.json
+178 error PASS prettier packages/smilef/README.md
+178 error PASS prettier packages/smilef/package.json
+178 error PASS prettier packages/table/lib/table.tsx
+178 error PASS prettier packages/proveedores/README.md
+178 error PASS prettier packages/section/lib/styles.tsx
+178 error PASS prettier packages/phase1/README.md
+178 error PASS prettier packages/proveedores/package.json
+178 error PASS prettier packages/phase1/package.json
+178 error PASS prettier packages/proveedores/lib/index.tsx
+178 error PASS prettier packages/download/README.md
+178 error PASS prettier packages/radio/README.md
+178 error PASS prettier packages/radio/package.json
+178 error PASS prettier packages/date/lib/styles.scss
+178 error PASS prettier packages/download/package.json
+178 error PASS prettier packages/phase1/lib/styles.tsx
+178 error PASS prettier packages/card/lib/styles.tsx
+178 error PASS prettier packages/download/lib/FaFileArchiveIcon.tsx
+178 error PASS prettier packages/labelvaluerow/lib/styles.scss
+178 error PASS prettier packages/download/lib/download.tsx
+178 error PASS prettier packages/date/README.md
+178 error PASS prettier packages/download/lib/styles.tsx
+178 error PASS prettier packages/radio/lib/styles.scss
+178 error PASS prettier packages/date/package.json
+178 error PASS prettier packages/labelvaluerow/README.md
+178 error PASS prettier packages/date/lib/styles.tsx
+178 error PASS prettier packages/radio/lib/radio.tsx
+178 error PASS prettier packages/selector/README.md
+178 error PASS prettier packages/selector/lib/styles.scss
+178 error PASS prettier packages/labelvaluerow/lib/icons.tsx
+178 error PASS prettier packages/message/lib/styles.scss
+178 error PASS prettier packages/labelvalue/lib/styles.scss
+178 error PASS prettier packages/selector/package.json
+178 error PASS prettier packages/date/lib/date.tsx
+178 error PASS prettier packages/cards/README.md
+178 error PASS prettier packages/labelvaluerow/package.json
+178 error PASS prettier packages/tooltip/lib/tooltip.tsx
+178 error PASS prettier packages/cards/lib/cards.tsx
+178 error PASS prettier packages/labelvalue/README.md
+178 error PASS prettier packages/labelvalue/lib/labelvalue.tsx
+178 error PASS prettier packages/labelvalue/package.json
+178 error PASS prettier packages/alertf/package.json
+178 error PASS prettier packages/labelvaluerow/lib/labelvaluerow.tsx
+178 error PASS prettier packages/alertf/lib/styles.scss
+178 error PASS prettier packages/cards/package.json
+178 error PASS prettier packages/cards/lib/styles.tsx
+178 error PASS prettier packages/alertf/README.md
+178 error PASS prettier packages/alertf/lib/alertf.tsx
+178 error PASS prettier packages/selector/lib/selector.tsx
+178 error ------------------------|---------|----------|---------|---------|------------------------------------------------------------------
+178 error File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+178 error ------------------------|---------|----------|---------|---------|------------------------------------------------------------------
+178 error All files               |   79.92 |     51.6 |   74.03 |      79 |
+178 error  alertf/lib             |    96.3 |    85.71 |     100 |    96.3 |
+178 error   alertf.tsx            |    96.3 |    85.71 |     100 |    96.3 | 46
+178 error  buttons/lib            |     100 |      100 |     100 |     100 |
+178 error   buttons.tsx           |     100 |      100 |     100 |     100 |
+178 error   styles.tsx            |     100 |      100 |     100 |     100 |
+178 error  card/lib               |     100 |      100 |     100 |     100 |
+178 error   card.tsx              |     100 |      100 |     100 |     100 |
+178 error   styles.tsx            |     100 |      100 |     100 |     100 |
+178 error  cards/lib              |     100 |    66.67 |     100 |     100 |
+178 error   cards.tsx             |     100 |    66.67 |     100 |     100 | 17-18
+178 error   styles.tsx            |     100 |      100 |     100 |     100 |
+178 error  date/lib               |   92.31 |       50 |     100 |      96 |
+178 error   date.tsx              |      90 |       50 |     100 |   94.74 | 99
+178 error   styles.tsx            |     100 |       50 |     100 |     100 | 21
+178 error  dots/lib               |   95.45 |    66.67 |     100 |   95.24 |
+178 error   dots.tsx              |   95.45 |    66.67 |     100 |   95.24 | 44
+178 error  download/lib           |   95.24 |        0 |      75 |   94.74 |
+178 error   FaFileArchiveIcon.tsx |     100 |      100 |     100 |     100 |
+178 error   download.tsx          |   83.33 |        0 |      50 |      80 | 22
+178 error   styles.tsx            |     100 |      100 |     100 |     100 |
+178 error  filter/lib             |   83.78 |    76.92 |      75 |   82.86 |
+178 error   filter.tsx            |   83.78 |    76.92 |      75 |   82.86 | 91-97,126,140,179
+178 error  infouser/lib           |     100 |       75 |     100 |     100 |
+178 error   infouser.tsx          |     100 |       75 |     100 |     100 | 15
+178 error  labelvalue/lib         |     100 |       50 |     100 |     100 |
+178 error   labelvalue.tsx        |     100 |       50 |     100 |     100 | 33-35
+178 error  labelvaluerow/lib      |   62.96 |       44 |   41.67 |      60 |
+178 error   icons.tsx             |     100 |      100 |     100 |     100 |
+178 error   labelvaluerow.tsx     |      50 |       44 |      30 |      50 | 21-38,70-80,103
+178 error  loader/lib             |     100 |    71.43 |     100 |     100 |
+178 error   loader.tsx            |     100 |    66.67 |     100 |     100 | 8
+178 error   styles.tsx            |     100 |       75 |     100 |     100 | 20
+178 error  message/lib            |   64.71 |       60 |      50 |   64.71 |
+178 error   message.tsx           |   64.71 |       60 |      50 |   64.71 | 31-33,42,80-128
+178 error  paginator/lib          |   90.48 |    63.33 |   81.82 |   90.48 |
+178 error   paginator.tsx         |   90.48 |    63.33 |   81.82 |   90.48 | 96,144
+178 error  pdf/lib                |      84 |     9.09 |   28.57 |   83.33 |
+178 error   pdf.tsx               |     100 |      100 |      50 |     100 |
+178 error   styles.tsx            |   80.95 |     9.09 |      20 |   80.95 | 96,111,136,152
+178 error  phase1/lib             |     100 |       80 |     100 |     100 |
+178 error   phase1.tsx            |     100 |        0 |     100 |     100 | 12
+178 error   styles.tsx            |     100 |      100 |     100 |     100 |
+178 error  phase2/lib             |     100 |       75 |     100 |     100 |
+178 error   phase2.tsx            |     100 |       50 |     100 |     100 | 12
+178 error   styles.tsx            |     100 |      100 |     100 |     100 |
+178 error  radio/lib              |   88.24 |    81.25 |     100 |   88.24 |
+178 error   radio.tsx             |   88.24 |    81.25 |     100 |   88.24 | 29,39
+178 error  section/lib            |     100 |       60 |     100 |     100 |
+178 error   section.tsx           |     100 |       60 |     100 |     100 | 16-17
+178 error   styles.tsx            |     100 |      100 |     100 |     100 |
+178 error  selector/lib           |   80.85 |    38.89 |   72.22 |    81.4 |
+178 error   selector.tsx          |   80.85 |    38.89 |   72.22 |    81.4 | 89-101,165,185
+178 error  smilef/lib             |     100 |    88.24 |     100 |     100 |
+178 error   smilef.tsx            |     100 |    88.24 |     100 |     100 | 15,71
+178 error  table/lib              |      50 |    29.81 |      50 |    49.6 |
+178 error   paginatorPanel.tsx    |   73.33 |    34.62 |   42.86 |   73.33 | 95-143
+178 error   table.tsx             |   46.85 |    28.21 |   52.94 |   46.36 | 50-69,78-106,114-132,145,174-190,208,214-220,295,335,346-360,372
+178 error  tooltip/lib            |     100 |       50 |     100 |     100 |
+178 error   styles.tsx            |     100 |      100 |     100 |     100 |
+178 error   tooltip.tsx           |     100 |       50 |     100 |     100 | 39-44
+178 error ------------------------|---------|----------|---------|---------|------------------------------------------------------------------
+178 error
+178 error Test Suites: 165 passed, 165 total
+178 error Tests:       166 passed, 166 total
+178 error Snapshots:   1 passed, 1 total
+178 error Time:        42.384 s
+178 error Ran all test suites in 3 projects.
+178 error Done in 44.41s.
+178 error .husky/pre-commit: 7: en: Permission denied
+178 error husky - pre-commit hook exited with code 127 (error)
+178 error     at makeError (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/execa/lib/error.js:60:11)
+178 error     at handlePromise (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/execa/index.js:118:26)
+178 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+178 error     at async Promise.all (index 0)
