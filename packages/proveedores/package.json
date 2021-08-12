@@ -34,8 +34,9 @@
     "@libprov/cards": "^1.0.3",
     "@libprov/date": "^1.0.3",
     "@libprov/dots": "^1.0.8",
-    "@libprov/download": "^1.0.3",
+    "@libprov/download": "^1.0.0",
     "@libprov/filter": "^1.0.8",
+    "@libprov/hector": "^1.0.0",
     "@libprov/infouser": "^1.0.3",
     "@libprov/labelvalue": "^1.0.3",
     "@libprov/labelvaluerow": "^1.0.3",
@@ -55,5 +56,5 @@
   "devDependencies": {
     "@libprov/builder": "^1.0.8"
   },
-  "gitHead": "c642abff50ed4ad11f140a7007c663c7a8058abe"
+  "gitHead": "2a98c4868f817d319e1e82892426bb5f166ac538"
 }
