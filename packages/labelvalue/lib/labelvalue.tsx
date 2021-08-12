@@ -23,9 +23,9 @@ export const LabelValue: React.FC<LabelValueProps> = ({
               className={stylesColumn}
               aria-describedby={`${index}_${item.value}`}
               tabIndex={0}
+              key={`labelValueItem_${index}`}
             >
               <LabelValueItem
-                key={`labelValueItem_${index}`}
                 id={`${index}_${item.value}`}
                 item={item}
                 styles="col-sm-12 p-0"

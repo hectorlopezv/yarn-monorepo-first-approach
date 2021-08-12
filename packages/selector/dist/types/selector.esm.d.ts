@@ -13,6 +13,7 @@ interface SelectProps {
   type?: string
   onClick?: (args: any, type: string) => void
   className?: string
+  inputId?: string
 }
 declare const Selector: React.FC<SelectProps>
 export {optionInterface, SelectProps, Selector}

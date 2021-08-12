@@ -1,12 +1,7 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
 import React from 'react'
-//import {Scrollbars} from 'react-custom-scrollbars'
+import {Scrollbars} from 'react-custom-scrollbars'
 import Select from 'react-select'
 import './styles.scss'
-require('react-dom')
-window.React2 = require('react')
-console.log(window.React1 === window.React2)
 const stylesDefault = {
   option: (provided: any, state: any) => () => {
     let bColor = 'transparent'
@@ -119,10 +114,9 @@ const MenuList = (props: any) => {
         height: getHeight(),
       }}
     >
-      {/* <Scrollbars renderThumbVertical={renderThumbVertical}>
+      <Scrollbars renderThumbVertical={renderThumbVertical}>
         {props.children}
-      </Scrollbars> */}
-      {props.children}
+      </Scrollbars>
     </div>
   )
 }
@@ -157,6 +151,7 @@ export interface SelectProps {
   type?: string
   onClick?: (args: any, type: string) => void
   className?: string
+  inputId?: string
 }
 
 export const Selector: React.FC<SelectProps> = ({
@@ -171,6 +166,7 @@ export const Selector: React.FC<SelectProps> = ({
   value = 'value1',
   type = 'type selector',
   className = '',
+  ...props
 }) => {
   return (
     <div className={`${className} selectC_simple`}>
@@ -178,6 +174,7 @@ export const Selector: React.FC<SelectProps> = ({
         <p className="">{label}</p>
       </div>
       <Select
+        inputId={props.inputId}
         onChange={args => onClick(args, type)}
         options={Options}
         value={{value: value, label: value}}

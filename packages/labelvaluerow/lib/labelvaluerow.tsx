@@ -23,8 +23,6 @@ export class LabelValueRow extends React.Component<ILabelValueRowProps> {
         display: !this.state.display,
       },
       () => {
-        console.log('this.state.display', this.state.display)
-        console.log('this.myRef.current', this.myRef.current)
         if (this.state.display && this.myRef.current) {
           this.myRef.current.focus()
         }
@@ -97,10 +95,12 @@ export class LabelValueRow extends React.Component<ILabelValueRowProps> {
           {React.Children.map(this.props.children, (child, index) => {
             // will not explode if children is null
             if (index === 0) {
-              return React.cloneElement(child as any, {ref: this.myRef}) //if we want to put new props to child
-              return child
+              return React.cloneElement(child as any, {
+                ref: this.myRef,
+                key: `index_${index}`,
+              }) //if we want to put new props to child
             } else {
-              return child
+              return React.cloneElement(child as any, {key: `index_${index}`})
             }
           })}
         </div>

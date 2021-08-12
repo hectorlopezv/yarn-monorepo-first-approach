@@ -45,6 +45,7 @@ const Test = () => {
     console.log(e)
     setvalueSelect({...e})
   }
+
   const cleanData = () => {
     console.log('cleaning data')
   }
@@ -98,7 +99,7 @@ const Test = () => {
   ]
   return (
     <div className="App">
-      {/* <div>
+      <div>
         <Smilef sad message1="hola este es hello" />
       </div>
       <div></div>
@@ -198,6 +199,7 @@ const Test = () => {
           alignItems: 'center',
           justifyContent: 'center',
           height: '200px',
+          position: 'relative',
         }}
       >
         <ToolTipc
@@ -257,9 +259,17 @@ const Test = () => {
             />
           </div>
         </LabelValueRow>
-      </div> */}
+      </div>
 
-      <div>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '200px',
+          width: '100%',
+        }}
+      >
         <Selector
           disabled={false}
           label={'hector'}
@@ -268,6 +278,7 @@ const Test = () => {
             {label: 'hola', value: 'value1'},
             {label: 'hola2', value: 'value2'},
           ]}
+          onClick={selectHandler}
           value={valueSelect ? valueSelect.value : 'placeholder'}
         />
       </div>

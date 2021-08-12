@@ -16,7 +16,7 @@ describe('testing suite', () => {
       screen.getByRole('heading', {
         name: /hello im card title/i,
       }),
-    ).toMatchSnapshot()
+    ).toHaveTextContent(/hello im card title/i)
 
     expect(screen.queryAllByTestId(/hello/i)).toHaveLength(2)
   })

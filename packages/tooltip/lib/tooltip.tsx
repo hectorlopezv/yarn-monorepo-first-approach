@@ -2,7 +2,7 @@
 import {Popover, OverlayTrigger} from 'react-bootstrap'
 import {Container} from './styles'
 import React, {Component} from 'react'
-
+import './styles.scss'
 export interface IToolTipc_SCProps {
   text: string
   icon: string
@@ -44,7 +44,6 @@ export class ToolTipc extends Component<IToolTipc_SCProps> {
                   ? 'popover-positioned-left'
                   : 'popover-positioned-bottom'
               }
-              title=""
             >
               {this.props.text}
             </Popover>

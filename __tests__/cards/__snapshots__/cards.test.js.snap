@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`testing suite testing unit Cards 1`] = `
-<h2
-  class="sc-htpNat gKEsUm"
->
-  hello im card title
-</h2>
-`;

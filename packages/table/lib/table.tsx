@@ -290,7 +290,7 @@ export class Table extends React.Component<ITableProps> {
                 return (
                   <TableHeaderColumn
                     isKey={true}
-                    key={id}
+                    key={`Table_${id}`}
                     dataField={el.dataField}
                     width={el.width}
                     dataFormat={this.props.estadoFormater}
@@ -303,7 +303,7 @@ export class Table extends React.Component<ITableProps> {
 
               return (
                 <TableHeaderColumn
-                  key={id}
+                  key={`Table_${id}`}
                   dataField={el.dataField}
                   width={el.width}
                   dataFormat={this.props.estadoFormater}
@@ -317,7 +317,7 @@ export class Table extends React.Component<ITableProps> {
                 return (
                   <TableHeaderColumn
                     isKey={true}
-                    key={id}
+                    key={`Table_${id}`}
                     dataField={el.dataField}
                     width={el.width}
                     dataFormat={this.props.estadoFormater}
@@ -329,7 +329,7 @@ export class Table extends React.Component<ITableProps> {
 
               return (
                 <TableHeaderColumn
-                  key={id}
+                  key={`Table_${id}`}
                   dataField={el.dataField}
                   width={el.width}
                   dataFormat={this.props.estadoFormater}
@@ -342,7 +342,7 @@ export class Table extends React.Component<ITableProps> {
                 return (
                   <TableHeaderColumn
                     isKey={true}
-                    key={id}
+                    key={`Table_${id}`}
                     dataField={el.dataField}
                     width={el.width}
                     csvFormat={this.props.csvformater}
@@ -354,7 +354,7 @@ export class Table extends React.Component<ITableProps> {
 
               return (
                 <TableHeaderColumn
-                  key={id}
+                  key={`Table_${id}`}
                   dataField={el.dataField}
                   width={el.width}
                   csvFormat={this.props.csvformater}
@@ -367,7 +367,7 @@ export class Table extends React.Component<ITableProps> {
                 return (
                   <TableHeaderColumn
                     isKey={true}
-                    key={id}
+                    key={`Table_${id}`}
                     dataField={el.dataField}
                     width={el.width}
                   >
@@ -377,7 +377,7 @@ export class Table extends React.Component<ITableProps> {
               }
               return (
                 <TableHeaderColumn
-                  key={id}
+                  key={`Table_${id}`}
                   dataField={el.dataField}
                   width={el.width}
                 >

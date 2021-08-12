@@ -48,7 +48,10 @@ export class RadioHv extends React.Component<IRadioHvProps> {
         <FormGroup className=" col-xs-11 col-sm-11  col-md-11 col-lg-11 ">
           {this.props.messages.map((message, id) => {
             return (
-              <div key={id} className="provedores__selectorRadio  row">
+              <div
+                key={`${this.props.label}_${id}`}
+                className="provedores__selectorRadio  row"
+              >
                 <div className="provedores__selectorLabelRadio col-xs-5 col-sm-5 col-md-5 col-lg-5">
                   <p className="provedores__RadioLabel">{this.props.label}</p>
                 </div>

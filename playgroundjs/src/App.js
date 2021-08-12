@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Test from './test'
 import React from 'react'
 const App = () => {
