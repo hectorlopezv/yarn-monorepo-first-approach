@@ -1,8 +1,8 @@
-256 error Error: Command failed with exit code 128: git push --follow-tags --no-verify --atomic origin main
-256 error ssh: Could not resolve hostname github.com: Temporary failure in name resolution
-256 error fatal: Could not read from remote repository.
-256 error
-256 error Please make sure you have the correct access rights
-256 error and the repository exists.
-256 error     at makeError (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/execa/lib/error.js:60:11)
-256 error     at handlePromise (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/execa/index.js:118:26)
+222 warn complete Waiting for 17 child processes to exit. CTRL-C to exit immediately.
+223 error Error: Command failed with exit code 128: git tag @libprov/download@1.0.2 -m @libprov/download@1.0.2
+223 error fatal: tag '@libprov/download@1.0.2' already exists
+223 error     at makeError (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/execa/lib/error.js:60:11)
+223 error     at handlePromise (/home/hvmlopez/yarn-monorepo-first-approach/node_modules/execa/index.js:118:26)
+223 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+223 error     at async Promise.all (index 6)
+223 error     at async Promise.all (index 0)

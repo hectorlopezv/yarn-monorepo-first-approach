@@ -1,6 +1,6 @@
 {
   "name": "@libprov/cards",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
@@ -40,7 +40,7 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
-    "@libprov/builder": "^1.0.9",
+    "@libprov/builder": "^1.0.11",
     "@types/styled-components": "^5.1.11"
   },
   "gitHead": "2a98c4868f817d319e1e82892426bb5f166ac538"
