@@ -17,6 +17,7 @@ import {Phase2} from '@libprov/phase2'
 import {InfoUser} from '@libprov/infouser'
 import {LabelValue} from '@libprov/labelvalue'
 import {LabelValueRow} from '@libprov/labelvaluerow'
+import {Selector} from '@libprov/selector'
 const CloseIcon = props => {
   return (
     <svg
@@ -38,6 +39,12 @@ const CloseIcon = props => {
   )
 }
 const Test = () => {
+  const [selectRadio, setselectRadio] = useState(null)
+  const [valueSelect, setvalueSelect] = useState(null)
+  const selectHandler = e => {
+    console.log(e)
+    setvalueSelect({...e})
+  }
   const cleanData = () => {
     console.log('cleaning data')
   }
@@ -46,7 +53,6 @@ const Test = () => {
     console.log('entro')
     setdate(moment(value))
   }
-  const [selectRadio, setselectRadio] = useState(null)
 
   const selectedRadioHandler = radio => {
     if (radio) {
@@ -92,7 +98,7 @@ const Test = () => {
   ]
   return (
     <div className="App">
-      <div>
+      {/* <div>
         <Smilef sad message1="hola este es hello" />
       </div>
       <div></div>
@@ -251,6 +257,19 @@ const Test = () => {
             />
           </div>
         </LabelValueRow>
+      </div> */}
+
+      <div>
+        <Selector
+          disabled={false}
+          label={'hector'}
+          placeholder={'placeholder'}
+          Options={[
+            {label: 'hola', value: 'value1'},
+            {label: 'hola2', value: 'value2'},
+          ]}
+          value={valueSelect ? valueSelect.value : 'placeholder'}
+        />
       </div>
     </div>
   )

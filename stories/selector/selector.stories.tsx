@@ -62,7 +62,7 @@ const Template: ComponentStory<typeof Selector> = args => {
         {label: 'hola2', value: 'value2'},
       ]}
       onClick={selectHandler}
-      value={valueSelect ? valueSelect.value : null}
+      value={valueSelect ? valueSelect.value : args.placeholder}
     />
   )
 }

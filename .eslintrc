@@ -1,27 +1,28 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "ecmaVersion": 2019,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "project": "./tsconfig.json"
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "plugins": ["@typescript-eslint/eslint-plugin"],
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended",
-      "eslint-config-prettier",
-      "plugin:jsx-a11y/recommended"
-    ],
-    "rules": {
-      "strict": ["error", "never"]
-    },
-    "env": {
-      "browser": true,
-      "node": true,
-      "jest": true
-    }
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "strict": ["error", "never"]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
   }
+}

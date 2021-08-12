@@ -1,7 +1,12 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import React from 'react'
-import {Scrollbars} from 'react-custom-scrollbars'
+//import {Scrollbars} from 'react-custom-scrollbars'
 import Select from 'react-select'
 import './styles.scss'
+require('react-dom')
+window.React2 = require('react')
+console.log(window.React1 === window.React2)
 const stylesDefault = {
   option: (provided: any, state: any) => () => {
     let bColor = 'transparent'
@@ -114,9 +119,10 @@ const MenuList = (props: any) => {
         height: getHeight(),
       }}
     >
-      <Scrollbars renderThumbVertical={renderThumbVertical}>
+      {/* <Scrollbars renderThumbVertical={renderThumbVertical}>
         {props.children}
-      </Scrollbars>
+      </Scrollbars> */}
+      {props.children}
     </div>
   )
 }
