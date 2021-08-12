@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
 interface IAlertFProps {
-  type: string
-  mensaje: string
-  handleFlyerClose?: (...args: unknown[]) => unknown
-  className?: string
+    type: string;
+    mensaje: string;
+    handleFlyerClose?: (...args: unknown[]) => unknown;
+    className?: string;
 }
 declare class Alertf extends React.Component<IAlertFProps> {
-  type: string
-  icon: string
-  setTypeClass: (input: string) => void
-  componentDidMount(): void
-  componentDidUpdate(prevProps: any, prevState: any): void
-  static defaultProps: {
-    type: string
-    className: string
-  }
-  render(): JSX.Element
+    type: string;
+    icon: string;
+    setTypeClass: (input: string) => void;
+    componentDidMount(): void;
+    componentDidUpdate(prevProps: any, prevState: any): void;
+    static defaultProps: {
+        type: string;
+        className: string;
+    };
+    render(): JSX.Element;
 }
-export {IAlertFProps, Alertf}
+export { IAlertFProps, Alertf };
 //# sourceMappingURL=alertf.cjs.d.ts.map

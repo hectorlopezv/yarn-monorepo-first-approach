@@ -1,19 +1,19 @@
-import React from 'react'
+import React from 'react';
 interface ILabelValueRowProps {
-  styles: string
-  concealable: boolean
-  label: string
-  value: string
-  delta: any
+    styles: string;
+    concealable: boolean;
+    label: string;
+    value: string;
+    delta: any;
 }
 declare class LabelValueRow extends React.Component<ILabelValueRowProps> {
-  state: {
-    display: boolean
-  }
-  myRef: any
-  clickHandler: () => void
-  componentDidUpdate(prevProps: any, __: any): void
-  render(): JSX.Element
+    state: {
+        display: boolean;
+    };
+    myRef: any;
+    clickHandler: () => void;
+    componentDidUpdate(prevProps: any, __: any): void;
+    render(): JSX.Element;
 }
-export {ILabelValueRowProps, LabelValueRow}
+export { ILabelValueRowProps, LabelValueRow };
 //# sourceMappingURL=labelvaluerow.cjs.d.ts.map

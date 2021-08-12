@@ -1,10 +1,10 @@
-import React from 'react'
-import {ReactNode} from 'react'
+import React from 'react';
+import { ReactNode } from "react";
 interface CardsProps {
-  children: ReactNode
-  title: string
-  classExtra?: string
+    children: ReactNode;
+    title: string;
+    classExtra?: string;
 }
-declare const Cards: React.FC<CardsProps>
-export {CardsProps, Cards}
+declare const Cards: React.FC<CardsProps>;
+export { CardsProps, Cards };
 //# sourceMappingURL=cards.cjs.d.ts.map
