@@ -42,5 +42,6 @@
   "devDependencies": {
     "@libprov/builder": "^1.0.6-alpha.0",
     "@types/styled-components": "^5.1.11"
-  }
+  },
+  "gitHead": "6579cec0d261e2b7f862e57f5d83cc92d98a255b"
 }

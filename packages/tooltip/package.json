@@ -43,5 +43,6 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.11"
-  }
+  },
+  "gitHead": "6579cec0d261e2b7f862e57f5d83cc92d98a255b"
 }

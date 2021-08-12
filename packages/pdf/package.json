@@ -47,5 +47,6 @@
     "react-pdf": "^5.3.2",
     "seamless-scroll-polyfill": "^1.2.4",
     "styled-components": "^5.3.0"
-  }
+  },
+  "gitHead": "6579cec0d261e2b7f862e57f5d83cc92d98a255b"
 }
