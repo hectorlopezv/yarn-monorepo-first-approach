@@ -1,10 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import {Viewer_SC} from '../Viewer'
+import {Viewer} from '../Viewer'
 
 export interface PdfFile_SCProps {
   NombrePdf: string
-  dowloadPdfDataMobile: (...args: any[]) => any
+  dowloadPdfDataMobile?: (...args: any[]) => any
   setToogleShow: (...args: any[]) => any
   base64: string
   ToogleShow: boolean
@@ -12,7 +11,7 @@ export interface PdfFile_SCProps {
   domElementName: string
 }
 
-export const PdfFile_SC: React.FC<PdfFile_SCProps> = ({
+export const PdfFile: React.FC<PdfFile_SCProps> = ({
   NombrePdf,
   dowloadPdfDataMobile,
   base64,
@@ -24,7 +23,7 @@ export const PdfFile_SC: React.FC<PdfFile_SCProps> = ({
   return (
     <>
       {ToogleShow && dataUrl !== null && (
-        <Viewer_SC
+        <Viewer
           dataUri={dataUrl}
           dowloadPdfDataMobile={dowloadPdfDataMobile}
           NombrePdf={NombrePdf}

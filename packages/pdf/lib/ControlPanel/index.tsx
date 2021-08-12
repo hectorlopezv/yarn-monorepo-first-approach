@@ -20,7 +20,7 @@ export interface ControlPanel_SCProps {
   setPageNumber: (...args: any[]) => any
   scale: number
   setScale: (...args: any[]) => any
-  dowloadPdfDataMobile: (...args: any[]) => any
+  dowloadPdfDataMobile?: (...args: any[]) => any
   setToogleShow: (...args: any[]) => any
   NombrePdf: string
   base64: string
@@ -86,7 +86,7 @@ export const ControlPanel_SC: React.FC<ControlPanel_SCProps> = ({
 
   const dowloadPdf = (e: any) => {
     e.stopPropagation()
-    dowloadPdfDataMobile(NombrePdf, base64)
+    dowloadPdfDataMobile && dowloadPdfDataMobile(NombrePdf, base64)
   }
 
   const unMountPdf = (e: any) => {
@@ -99,27 +99,27 @@ export const ControlPanel_SC: React.FC<ControlPanel_SCProps> = ({
       <FirstPageX
         className={firstPageClass ? 'disablingIcon' : ''}
         onClick={goToFirstPage}
-        firstPageClass={firstPageClass as any}
+        firstpageclass={firstPageClass as any}
       />
 
-      <Left onClick={goToPreviousPage} firstPageClass={firstPageClass} />
+      <Left onClick={goToPreviousPage} firstpageclass={firstPageClass} />
 
       <Span>{`Toolbar ${pageNumber} De ${numPages}`}</Span>
 
-      <Right onClick={goToNextPage} lastPageClass={lastPageClass} />
+      <Right onClick={goToNextPage} lastpageclass={lastPageClass} />
 
       <LastPageX
         className={lastPageClass ? 'disablingIcon' : ''}
         onClick={goToLastPage}
-        lastPageClass={lastPageClass as any}
+        lastpageclass={lastPageClass as any}
       />
 
-      <Minus onClick={zoomOut} zoomOutClass={zoomOutClass} />
+      <Minus onClick={zoomOut} zoomoutclass={zoomOutClass} />
       <Span>{(scale * 100).toFixed()}%</Span>
       <Plus
         onClick={zoomIn}
-        zoomInClass={zoomInClass}
-        disabledZoomIn={disabledZoomIn}
+        zoominclass={zoomInClass}
+        disabledzoomin={disabledZoomIn === true}
       />
 
       <DownloadIcon onClick={dowloadPdf} />

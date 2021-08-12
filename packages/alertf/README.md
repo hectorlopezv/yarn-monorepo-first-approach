@@ -1,11 +1,13 @@
-# `@libProv/alertf`
+# `@libprov/alertf`
 
 > TODO: description
 
 ## Usage
 
 ```
-const alertf = require('@libProv/alertf');
+CJS
+const alertf = require('@libprov/alertf');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Alertf} from '@libprov/alertf'
 ```

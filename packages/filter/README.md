@@ -1,11 +1,13 @@
-# `@libProv/filter`
+# `@libprov/filter`
 
 > TODO: description
 
 ## Usage
 
 ```
-const filter = require('@libProv/filter');
+CJS
+const Filter = require('@libprov/filter');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Filter} from '@libprov/filter'
 ```

@@ -1,11 +1,14 @@
-# `@libProv/proveedores`
+# `@libprov/proveedores`
 
 > TODO: description
 
 ## Usage
 
 ```
-const proveedores = require('@libProv/proveedores');
+CJS
+const Download = require('@libprov/proveedores').Download;
+const AlertF = require('@libprov/proveedores').AlertF;
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Download, AlertF, ...} from '@libprov/proveedores'
 ```

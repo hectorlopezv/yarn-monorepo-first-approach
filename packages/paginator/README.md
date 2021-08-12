@@ -1,11 +1,13 @@
-# `@libProv/paginator`
+# `@libprov/paginator`
 
 > TODO: description
 
 ## Usage
 
 ```
-const paginator = require('@libProv/paginator');
+CJS
+const PaginationPanel = require('@libprov/paginator');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {PaginationPanel} from '@libprov/paginator'
 ```

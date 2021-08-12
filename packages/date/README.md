@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const date = require('@libprov/date');
+CJS
+const Date = require('@libprov/date');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Date} from '@libprov/date'
 ```

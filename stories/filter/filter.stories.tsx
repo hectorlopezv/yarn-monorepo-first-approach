@@ -14,7 +14,7 @@ const Template: ComponentStory<typeof FilterSelect> = args => {
     // eslint-disable-next-line no-undef
     value: 'hector placeholder',
   })
-  const [title, settitle] = useState(selecteSite.value)
+  const [title, settitle] = useState('p4')
   const handleSelect = e => {
     setselecteSite({...e})
     settitle(e.value)
@@ -22,7 +22,6 @@ const Template: ComponentStory<typeof FilterSelect> = args => {
   return (
     <FilterSelect
       {...args}
-      ref={selectorFields}
       options={[
         {value: 'Nombre sede', label: 'Nombre sede'},
         {value: 'hector', label: 'hector'},
@@ -30,7 +29,6 @@ const Template: ComponentStory<typeof FilterSelect> = args => {
         {value: 'pepe', label: 'pepe'},
       ]}
       onSelected={handleSelect}
-      title={title}
       placeholder={selecteSite.value || 'placeholder'}
       disabled={null}
     />

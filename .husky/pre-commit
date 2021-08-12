@@ -1,6 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-
-yarn run lint-staged
-#yarn run test
+lerna run build #build library for test
+yarn run lint-staged #format files
+yarn run test #run test lint-eslint-client test...ect
 

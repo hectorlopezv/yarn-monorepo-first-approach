@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const table = require('@libprov/table');
+CJS
+const Table = require('@libprov/table');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Table} from '@libprov/table'
 ```

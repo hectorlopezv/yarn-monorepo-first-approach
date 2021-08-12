@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {PaginationPanel} from './PaginationPanel'
+import {PaginatorArrows} from './paginatorPanel'
 import {SliderTable} from '@libprov/dots'
 
 import SimpleBar from 'simplebar' // or "import SimpleBar from 'simplebar';" if you want to use it manually.
@@ -33,9 +33,9 @@ export interface ITableProps {
   titleTable: string
   data: any
   fields: fieldType[]
-  preventScroll: undefined | boolean | null
-  toright: any
-  changePage: (page: number) => void
+  preventScroll?: undefined | boolean | null
+  toright?: any
+  changePage?: (page: number) => void
   estadoFormater: any //(cell, row, formatExtraData, rowIdx)=> null , string jsx.element
   csvformater: any //(cell, row)=> string | null
 }
@@ -196,7 +196,12 @@ export class Table extends React.Component<ITableProps> {
   }
 
   renderPaginationPanel = (props: any) => {
-    return <PaginationPanel {...props} />
+    return (
+      // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+      <div tabIndex={0}>
+        <PaginatorArrows {...props} />
+      </div>
+    )
   }
   isOverflown = (element: HTMLElement | null) => {
     if (element === null) return false

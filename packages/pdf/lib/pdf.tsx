@@ -1,3 +1,3 @@
-import {PdfFile_SC} from './PdfFile'
-import {Viewer_SC} from './Viewer'
-export {PdfFile_SC, Viewer_SC}
+import {PdfFile} from './PdfFile'
+import {Viewer} from './Viewer'
+export {PdfFile, Viewer}

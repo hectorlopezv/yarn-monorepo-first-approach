@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const tooltip = require('@libprov/tooltip');
+CJS
+const ToolTipc = require('@libprov/tooltip');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {ToolTipc} from '@libprov/tooltip'
 ```

@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const download = require('@libprov/download');
+CJS
+const Download = require('@libprov/download');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Download} from '@libprov/download'
 ```

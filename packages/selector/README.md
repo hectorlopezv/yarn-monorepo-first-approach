@@ -1,11 +1,13 @@
-# `@libProv/selector`
+# `@libprov/selector`
 
 > TODO: description
 
 ## Usage
 
 ```
-const selector = require('@libProv/selector');
+CJS
+const Selector = require('@libprov/selector');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Selector} from '@libprov/selector'
 ```

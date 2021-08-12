@@ -1,11 +1,13 @@
-# `@libProv/phase1`
+# `@libprov/phase1`
 
 > TODO: description
 
 ## Usage
 
 ```
-const phase1 = require('@libProv/phase1');
+CJS
+const Phase1 = require('@libprov/phase1');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Phase1} from '@libprov/phase1'
 ```

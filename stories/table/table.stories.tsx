@@ -58,6 +58,19 @@ export default {
         type: 'text',
       },
     },
+    titleCssOverflowContainer: {
+      name: 'titleCssOverflowContainer',
+      type: {name: 'string', required: true},
+      defaultValue: 'titleCssOverflowContainer',
+      description: 'titleCssOverflowContainer of the table',
+      table: {
+        type: {summary: 'string'},
+        defaultValue: {summary: false},
+      },
+      control: {
+        type: 'text',
+      },
+    },
     mensajeBtnDescarga: {
       name: 'mensajeBtnDescarga',
       type: {name: 'string', required: true},

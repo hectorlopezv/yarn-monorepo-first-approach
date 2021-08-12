@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const card = require('@libprov/card');
+CJS
+const Card = require('@libprov/card');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Card} from '@libprov/card'
 ```

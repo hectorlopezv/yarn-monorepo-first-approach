@@ -1,11 +1,13 @@
-# `@libProv/loader`
+# `@libprov/loader`
 
 > TODO: description
 
 ## Usage
 
 ```
-const loader = require('@libProv/loader');
+CJS
+const Loader = require('@libprov/loader');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Loader} from '@libprov/loader'
 ```

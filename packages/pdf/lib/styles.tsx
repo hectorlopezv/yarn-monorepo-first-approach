@@ -14,7 +14,7 @@ export const Close = styled(CloseIcon)`
   }
 `
 interface ContainerTypes {
-  showToolBar: boolean
+  showtoolbar: boolean
 }
 export const Container = styled.div<ContainerTypes>`
   position: absolute;
@@ -23,8 +23,8 @@ export const Container = styled.div<ContainerTypes>`
   z-index: 5;
   text-align: center;
   min-height: 900px;
-  ${({showToolBar}) =>
-    showToolBar
+  ${({showtoolbar}) =>
+    showtoolbar
       ? css`
           background-color: rgb(40, 44, 52);
         `
@@ -87,13 +87,13 @@ export const Input = styled.input`
   color: rgb(40, 44, 52);
 `
 interface PlusTypes {
-  zoomInClass: boolean
-  disabledZoomIn: boolean
+  zoominclass: boolean
+  disabledzoomin: boolean | number
 }
 export const Plus = styled(PlusIcon)<PlusTypes>`
   &&& {
-    ${({zoomInClass, disabledZoomIn}) =>
-      (zoomInClass || disabledZoomIn) &&
+    ${({zoominclass, disabledzoomin}) =>
+      (zoominclass || disabledzoomin) &&
       css`
         cursor: not-allowed;
         &:hover {
@@ -103,12 +103,12 @@ export const Plus = styled(PlusIcon)<PlusTypes>`
   }
 `
 interface MinusTypes {
-  zoomOutClass: boolean
+  zoomoutclass: boolean
 }
 export const Minus = styled(MinusIcon)<MinusTypes>`
   &&& {
-    ${({zoomOutClass}) =>
-      zoomOutClass &&
+    ${({zoomoutclass}) =>
+      zoomoutclass &&
       css`
         cursor: not-allowed;
         &:hover {
@@ -118,22 +118,22 @@ export const Minus = styled(MinusIcon)<MinusTypes>`
   }
 `
 interface lastpageInterface {
-  lastPageClass: string
+  lastpageclass: string
 }
 export const LastPageX = styled(DoubleRightIcon)<lastpageInterface>``
 
 interface FirstPageXInterface {
-  firstPageClass: string
+  firstpageclass: string
 }
 export const FirstPageX = styled(DoubleLeftIcon)<FirstPageXInterface>``
 
 interface LeftTypes {
-  firstPageClass: boolean
+  firstpageclass: boolean
 }
 export const Left = styled(LeftIcon)<LeftTypes>`
   &&& {
-    ${({firstPageClass}) =>
-      firstPageClass &&
+    ${({firstpageclass}) =>
+      firstpageclass &&
       css`
         cursor: not-allowed;
         &:hover {
@@ -144,12 +144,12 @@ export const Left = styled(LeftIcon)<LeftTypes>`
 `
 
 interface RigthTypes {
-  lastPageClass: boolean
+  lastpageclass: boolean
 }
 export const Right = styled(RightIcon)<RigthTypes>`
   &&& {
-    ${({lastPageClass}) =>
-      lastPageClass &&
+    ${({lastpageclass}) =>
+      lastpageclass &&
       css`
         cursor: not-allowed;
         &:hover {

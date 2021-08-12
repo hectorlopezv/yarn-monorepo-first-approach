@@ -2,7 +2,7 @@ import React from 'react'
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface RightIconProps {
   onClick: any
-  lastPageClass: any
+  lastpageclass: any
 }
 
 const RightIcon: React.FC<RightIconProps> = props => {

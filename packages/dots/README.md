@@ -1,11 +1,13 @@
-# `@libProv/dots`
+# `@libprov/dots`
 
 > TODO: description
 
 ## Usage
 
 ```
-const dots = require('@libProv/dots');
+CJS
+const SliderTable = require('@libprov/dots');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {SliderTable} from '@libprov/dots'
 ```

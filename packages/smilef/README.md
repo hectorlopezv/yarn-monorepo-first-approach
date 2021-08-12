@@ -1,11 +1,13 @@
-# `@libProv/smilef`
+# `@libprov/smilef`
 
 > TODO: description
 
 ## Usage
 
 ```
-const smilef = require('@libProv/smilef');
+CJS
+const Smilef = require('@libprov/smilef');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Smilef} from '@libprov/smilef'
 ```

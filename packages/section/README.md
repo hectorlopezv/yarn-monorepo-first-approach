@@ -1,11 +1,13 @@
-# `@libProv/section`
+# `@libprov/section`
 
 > TODO: description
 
 ## Usage
 
 ```
-const section = require('@libProv/section');
+CJS
+const Section = require('@libprov/section');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {Section} from '@libprov/section'
 ```

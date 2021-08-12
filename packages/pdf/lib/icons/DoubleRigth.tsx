@@ -3,7 +3,7 @@ import React from 'react'
 export interface DoubleRightIconProps {
   className?: string
   onClick: any
-  lastPageClass: any
+  lastpageclass: any
 }
 
 const DoubleRightIcon: React.FC<DoubleRightIconProps> = props => {

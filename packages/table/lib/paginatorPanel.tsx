@@ -1,6 +1,4 @@
 import React from 'react'
-import './styles.scss'
-
 //Left Arrrow
 interface LeftArrowProps {
   title?: string
@@ -77,10 +75,11 @@ interface IPaginationPanelProps {
 }
 
 //Pagination Panel
-class PaginationPanel extends React.Component<IPaginationPanelProps> {
-  public render() {
+export class PaginatorArrows extends React.Component<IPaginationPanelProps> {
+  render() {
     return (
-      <div style={{padding: '15px'}}>
+      // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+      <div style={{padding: '15px'}} tabIndex={0}>
         {this.props.totalPages > 0 && (
           <div
             className="paginador"
@@ -154,45 +153,6 @@ class PaginationPanel extends React.Component<IPaginationPanelProps> {
                 }
               />
             </div>
-          </div>
-        )}
-      </div>
-    )
-  }
-}
-
-//Paginator
-export interface IPaginatorProps {
-  size: number
-  limit: number
-  currentPage: number
-  changePage: (...args: any[]) => any
-}
-
-export class Paginator extends React.Component<IPaginatorProps> {
-  changePage = (cpage: number) => {
-    this.props.changePage(cpage)
-  }
-
-  public render() {
-    const totalPages = Math.ceil(this.props.size / this.props.limit)
-
-    return (
-      // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
-      <div className={`paginator pl-0 pr-0 clearfix`} tabIndex={0}>
-        {React.Children.count(this.props.children) >= this.props.limit
-          ? React.Children.toArray(this.props.children).slice(
-              0,
-              this.props.limit,
-            )
-          : this.props.children}
-        {totalPages > 1 && (
-          <div className="row col-sm-12">
-            <PaginationPanel
-              changePage={cpage => this.changePage(cpage)}
-              totalPages={totalPages}
-              currPage={this.props.currentPage}
-            />
           </div>
         )}
       </div>

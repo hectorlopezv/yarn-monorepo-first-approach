@@ -15,6 +15,7 @@ const CloseIcon: React.FC<CloseIconProps> = props => {
       height="1em"
       width="1em"
       xmlns="http://www.w3.org/2000/svg"
+      data-testid="closeIcon_Pdf"
       {...props}
     >
       <path

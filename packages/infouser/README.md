@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const infouser = require('@libprov/infouser');
+CJS
+const InfoUser = require('@libprov/infouser');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {InfoUser} from '@libprov/infouser'
 ```

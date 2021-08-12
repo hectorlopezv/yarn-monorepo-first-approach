@@ -17,9 +17,9 @@ interface ITableProps {
   titleTable: string
   data: any
   fields: fieldType[]
-  preventScroll: undefined | boolean | null
-  toright: any
-  changePage: (page: number) => void
+  preventScroll?: undefined | boolean | null
+  toright?: any
+  changePage?: (page: number) => void
   estadoFormater: any
   csvformater: any
 }

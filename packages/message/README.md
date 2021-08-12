@@ -1,11 +1,13 @@
-# `@libProv/message`
+# `@libprov/message`
 
 > TODO: description
 
 ## Usage
 
 ```
-const message = require('@libProv/message');
+CJS
+const ModalMessage = require('@libprov/message');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {ModalMessage} from '@libprov/message'
 ```

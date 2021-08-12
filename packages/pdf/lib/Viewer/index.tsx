@@ -4,21 +4,21 @@ import {ControlPanel_SC} from '../ControlPanel'
 import {useRect} from '../hooks'
 import {windowScrollBy, elementScrollTo} from 'seamless-scroll-polyfill'
 import {Loader} from '@libprov/loader'
-import {Document, Page, pdfjs} from 'react-pdf/dist/esm/entry.webpack'
+import {Document, Page, pdfjs} from 'react-pdf'
 // pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/scripts/pdf.worker.min.js`;
 //pdfjs.GlobalWorkerOptions.workerSrc = process.env.REACT_APP_PDF_WORKER_URL
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 export interface Viewer_SCProps {
   dataUri: string
-  dowloadPdfDataMobile: (...args: any[]) => any
+  dowloadPdfDataMobile?: (...args: any[]) => any
   setToogleShow: (...args: any[]) => any
   NombrePdf: string
   base64: string
   documentElementName: string
 }
 
-export const Viewer_SC: React.FC<Viewer_SCProps> = ({
+export const Viewer: React.FC<Viewer_SCProps> = ({
   dataUri,
   dowloadPdfDataMobile,
   NombrePdf,
@@ -40,22 +40,25 @@ export const Viewer_SC: React.FC<Viewer_SCProps> = ({
   useEffect(() => {
     if (rect) {
       setTimeout(() => {
-        elementScrollTo(
-          document.querySelector(documentElementName) as HTMLElement,
-          {
-            left: 0,
-            top: -1000,
-          },
-        )
+        const element = document.querySelector(documentElementName)
+        if (element) {
+          elementScrollTo(
+            document.querySelector(documentElementName) as HTMLElement,
+            {
+              left: 0,
+              top: -1000,
+            },
+          )
 
-        windowScrollBy({behavior: 'smooth', top: -1000, left: 0})
-      }, 50)
+          windowScrollBy({behavior: 'smooth', top: -1000, left: 0})
+        }
+      }, 100)
     }
   }, [rect])
   return (
     <>
       <Loader loading={loading} />
-      <Container className="pdf__container" showToolBar={showToolBar}>
+      <Container className="pdf__container" showtoolbar={showToolBar}>
         {showToolBar && (
           <ControlPanel_SC
             scale={scale}

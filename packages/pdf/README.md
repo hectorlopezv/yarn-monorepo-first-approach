@@ -5,7 +5,11 @@
 ## Usage
 
 ```
-const pdf = require('@libprov/pdf');
+CJS
+const PdfFile = require('@libprov/pdf').PdfFile;
+const Viewer = require('@libprov/pdf').Viewer;
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {PdfFile, Viewer}
+from '@libprov/pdf'
 ```

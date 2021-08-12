@@ -5,7 +5,13 @@
 ## Usage
 
 ```
-const buttons = require('@libprov/buttons');
 
-// TODO: DEMONSTRATE API
+```
+
+CJS const Buttons = require('@libprov/buttons');
+
+ESM/ES6 import {Buttons} from '@libprov/buttons'
+
+```
+
 ```

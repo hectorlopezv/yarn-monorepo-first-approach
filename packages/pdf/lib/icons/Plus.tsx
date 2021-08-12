@@ -3,8 +3,8 @@ import React from 'react'
 export interface PlusIconProps {
   className?: string
   onClick: any
-  zoomInClass: boolean
-  disabledZoomIn: boolean
+  zoominclass: boolean
+  disabledzoomin: boolean
 }
 
 const PlusIcon: React.FC<PlusIconProps> = props => {

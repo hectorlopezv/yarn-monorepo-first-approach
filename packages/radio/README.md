@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const radio = require('@libprov/radio');
+CJS
+const RadioHv = require('@libprov/radio');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {RadioHv} from '@libprov/radio'
 ```

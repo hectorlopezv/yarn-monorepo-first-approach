@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const labelvalue = require('@libprov/labelvalue');
+CJS
+const LabelValue = require('@libprov/labelvalue');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {LabelValue} from '@libprov/labelvalue'
 ```

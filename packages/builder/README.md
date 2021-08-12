@@ -1,11 +1,11 @@
-# `@libProv/builder`
+# `@libprov/builder`
 
 > TODO: description
 
 ## Usage
 
 ```
-const builder = require('@libProv/builder');
+const builder = require('@libprov/builder');
 
 // TODO: DEMONSTRATE API
 ```

@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const labelvaluerow = require('@libprov/labelvaluerow');
+CJS
+const LabelValueRow = require('@libprov/labelvaluerow');
 
-// TODO: DEMONSTRATE API
+ESM/ES6
+import {LabelValueRow} from '@libprov/labelvaluerow'
 ```
