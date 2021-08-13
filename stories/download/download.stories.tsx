@@ -1,6 +1,6 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {Download} from '@libprov/download'
+import {Download} from '@libprov/btndown'
 
 export default {
   title: 'components/Download',

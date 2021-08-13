@@ -2,7 +2,7 @@ import React from 'react'
 import {render, screen, waitFor} from '@testing-library/react'
 import user from '@testing-library/user-event'
 import {Paginator} from '@libprov/paginator/lib/paginator'
-import {Download} from '@libprov/download/lib/download'
+import {Download} from '@libprov/btndown/lib/download'
 describe('testing suite', () => {
   it('testing unit Paginator', async () => {
     const original = [

@@ -1,7 +1,7 @@
 import React from 'react'
 import {render, screen} from '@testing-library/react'
 import user from '@testing-library/user-event'
-import {Download} from '@libprov/download/lib/download'
+import {Download} from '@libprov/btndown/lib/btndown'
 describe('testing suite', () => {
   it('testing unit Download', () => {
     const fnListener = jest.fn()

@@ -1,6 +1,6 @@
 {
   "name": "@libprov/section",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "devDependencies": {
-    "@libprov/builder": "^2.0.0",
+    "@libprov/builder": "^2.0.2",
     "@types/styled-components": "^5.1.11"
   },
   "peerDependencies": {
@@ -44,5 +44,5 @@
     "react": "^17.0.2",
     "styled-components": "^5.3.0"
   },
-  "gitHead": "8d8ae6c1c2b8705a54c080fd548fbd5759c8ea6c"
+  "gitHead": "f1863ca2f0e4ac809136331c5e43827db043502c"
 }
