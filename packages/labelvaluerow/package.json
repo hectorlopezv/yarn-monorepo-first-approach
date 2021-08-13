@@ -1,6 +1,6 @@
 {
   "name": "@libprov/labelvaluerow",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "LabelValueRow Component for Compensar component Library - React/Typescript",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "devDependencies": {
-    "@libprov/builder": "^2.0.2"
+    "@libprov/builder": "^2.0.3"
   },
   "peerDependencies": {
     "react": "^17.0.2"

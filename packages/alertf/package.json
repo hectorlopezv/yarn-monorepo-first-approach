@@ -1,6 +1,6 @@
 {
   "name": "@libprov/alertf",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Alert Component for Compensar component Library - React/Typescript",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
@@ -38,7 +38,7 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
-    "@libprov/builder": "^2.0.2",
+    "@libprov/builder": "^2.0.3",
     "@types/react": "^17.0.15"
   },
   "gitHead": "f1863ca2f0e4ac809136331c5e43827db043502c"
