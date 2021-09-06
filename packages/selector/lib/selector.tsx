@@ -142,7 +142,7 @@ export interface optionInterface {
 }
 
 export interface SelectProps {
-  customStyles?: any
+  styles?: any
   label: string
   disabled: boolean
   placeholder: string
@@ -166,6 +166,7 @@ export const Selector: React.FC<SelectProps> = ({
   value = 'value1',
   type = 'type selector',
   className = '',
+  styles = {stylesDefault},
   ...props
 }) => {
   return (
@@ -184,7 +185,7 @@ export const Selector: React.FC<SelectProps> = ({
         placeholder={placeholder}
         isDisabled={disabled}
         noOptionsMessage={() => 'No Hay Valores Disponibles'}
-        styles={stylesDefault as any}
+        styles={styles}
         captureMenuScroll={false}
         //maxMenuHeight={300}
         components={{MenuList}}

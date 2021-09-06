@@ -37,6 +37,7 @@
     "@libprov/dots": "^2.0.3",
     "@libprov/filter": "^2.0.3",
     "@libprov/infouser": "^2.0.3",
+    "@libprov/input": "^1.0.0",
     "@libprov/labelvalue": "^2.0.3",
     "@libprov/labelvaluerow": "^2.0.3",
     "@libprov/loader": "^2.0.3",
