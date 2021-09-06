@@ -25,8 +25,12 @@ export const LabelContainer = styled.div<labelContainerTypes>`
     margin: 0px auto;
   }
 `
-
-export const Container = styled.div`
+export interface ContainerStyles {
+  className: string
+}
+export const Container = styled.div.attrs<ContainerStyles>(prop => ({
+  className: prop.className,
+}))`
   display: flex;
   align-items: flex-start;
 

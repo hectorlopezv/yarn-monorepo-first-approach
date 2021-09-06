@@ -1,6 +1,6 @@
 {
   "name": "@libprov/proveedores",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Way to import all components in one go...",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
@@ -33,7 +33,7 @@
     "@libprov/buttons": "^2.0.3",
     "@libprov/card": "^2.0.3",
     "@libprov/cards": "^2.0.3",
-    "@libprov/date": "^2.0.3",
+    "@libprov/date": "^2.0.4",
     "@libprov/dots": "^2.0.3",
     "@libprov/filter": "^2.0.3",
     "@libprov/infouser": "^2.0.3",

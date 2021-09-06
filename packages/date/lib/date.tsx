@@ -1,7 +1,7 @@
 import React from 'react'
 import {DatePicker} from 'office-ui-fabric-react/lib/DatePicker'
 import {initializeIcons} from '@uifabric/icons'
-import {Container, LabelContainer, Label, DateContainer} from './styles'
+import {Container, LabelContainer, Label, DateContainer} from './style'
 import './styles.scss'
 
 export interface IDate_SCProps {
@@ -13,6 +13,7 @@ export interface IDate_SCProps {
   maxDateSelector: any
   Date: any
   disabled: boolean
+  classContainer?: string
 }
 
 export class Date extends React.Component<IDate_SCProps> {
@@ -77,6 +78,7 @@ export class Date extends React.Component<IDate_SCProps> {
     maxDateSelector: any
     Date: any
     disabled: false
+    classContainer: null
   }
   componentDidMount() {
     initializeIcons(undefined, {disableWarnings: true})
@@ -101,15 +103,17 @@ export class Date extends React.Component<IDate_SCProps> {
   }
   render() {
     return (
-      <Container>
-        <LabelContainer
-          condition={this.props.condition}
-          className={this.props.tooltip && 'zIndex'}
-        >
-          <Label>{this.props.label}</Label>
-          {this.props.tooltip && this.props.tooltip()}
-        </LabelContainer>
+      <Container className={this.props.classContainer ?? ''}>
+        {this.props.label !== '' && this.props.label && (
+          <LabelContainer
+            condition={this.props.condition}
+            className={this.props.tooltip && 'zIndex'}
+          >
+            <Label>{this.props.label}</Label>
 
+            {this.props.tooltip && this.props.tooltip()}
+          </LabelContainer>
+        )}
         <DateContainer>
           <DatePicker
             isRequired={false}
