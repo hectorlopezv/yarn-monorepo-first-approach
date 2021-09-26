@@ -1,6 +1,6 @@
 {
   "name": "@libprov/message",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Message Component for Compensar component Library - React/Typescript",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "devDependencies": {
-    "@libprov/builder": "^2.0.5",
+    "@libprov/builder": "^2.0.6",
     "@types/react-bootstrap": "^0.32.26"
   },
   "peerDependencies": {

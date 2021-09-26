@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 interface pdfItem {
-  name: string
-  pdf: string
-  icons: React.ReactNode
+    name: string;
+    pdf: string;
+    icons: React.ReactNode;
 }
 interface filelistProps {
-  pdfs: pdfItem[]
-  title: string
+    pdfs: pdfItem[];
+    title: string;
 }
-declare const FileList: React.FC<filelistProps>
-export {FileList}
+declare const FileList: React.FC<filelistProps>;
+export { FileList };
 //# sourceMappingURL=filelist.esm.d.ts.map
