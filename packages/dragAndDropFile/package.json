@@ -5,11 +5,11 @@
   "keywords": [],
   "author": "hvmlopez <hectorvmlopez@gmail..com>",
   "license": "ISC",
-  "main": "dist/draganddropfile.cjs.js",
-  "module": "dist/draganddropfile.esm.js",
-  "types": "dist/types/draganddropfile.esm.d.ts",
+  "main": "dist/dragAndDropFile.cjs.js",
+  "module": "dist/dragAndDropFile.esm.js",
+  "types": "dist/types/dragAndDropFile.esm.d.ts",
   "filename": [
-    "draganddropfile",
+    "dragAndDropFile",
     "tsx"
   ],
   "directories": {

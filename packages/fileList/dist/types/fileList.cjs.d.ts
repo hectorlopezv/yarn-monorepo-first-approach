@@ -10,4 +10,4 @@ interface filelistProps {
 }
 declare const FileList: React.FC<filelistProps>;
 export { FileList };
-//# sourceMappingURL=filelist.cjs.d.ts.map
+//# sourceMappingURL=fileList.cjs.d.ts.map

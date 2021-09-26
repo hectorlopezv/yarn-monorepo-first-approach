@@ -8,4 +8,4 @@ interface dragDrop {
 }
 declare const DragDropFile: React.FC<dragDrop>;
 export { dragDrop, DragDropFile };
-//# sourceMappingURL=draganddropfile.esm.d.ts.map
+//# sourceMappingURL=dragAndDropFile.esm.d.ts.map

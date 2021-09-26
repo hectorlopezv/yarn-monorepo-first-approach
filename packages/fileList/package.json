@@ -5,11 +5,11 @@
   "keywords": [],
   "author": "hvmlopez <hectorvmlopez@gmail..com>",
   "license": "ISC",
-  "main": "dist/filelist.cjs.js",
-  "module": "dist/filelist.esm.js",
-  "types": "dist/types/filelist.esm.d.ts",
+  "main": "dist/fileList.cjs.js",
+  "module": "dist/fileList.esm.js",
+  "types": "dist/types/fileList.esm.d.ts",
   "filename": [
-    "filelist",
+    "fileList",
     "tsx"
   ],
   "directories": {

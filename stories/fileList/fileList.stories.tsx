@@ -1,6 +1,6 @@
 import React from 'react'
 import {ComponentStory, ComponentMeta} from '@storybook/react'
-import {FileList} from '@libprov/fileList'
+import {FileList} from '@libprov/filelist'
 //Left Arrrow
 interface LeftArrowProps {
   title?: string
