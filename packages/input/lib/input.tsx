@@ -11,7 +11,7 @@ export interface InputSimpleProps {
   onKeyDown: (...args: unknown[]) => void
 }
 
-const InputSimple: React.FC<InputSimpleProps> = ({
+export const InputSimple: React.FC<InputSimpleProps> = ({
   labelInput,
   maxLength,
   value,

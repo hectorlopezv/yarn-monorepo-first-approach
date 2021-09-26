@@ -1,0 +1,62 @@
+.dragAndDropFile {
+  transform: translateX(-3.2%);
+  &--left {
+    padding-left: 0;
+    padding-right: 21px;
+    & svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  &__btnDelete {
+    float: right !important;
+  }
+  &--right {
+    float: left;
+  }
+  &__zone {
+    font: italic normal 300 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #b2b2b2;
+    border: 1px dashed #cccccc;
+    height: 76px;
+    width: 265px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    & p {
+      margin-top: 25px;
+    }
+  }
+  &__file {
+    transform: translateX(-6px);
+    height: 76px;
+    width: 265px;
+    opacity: 0;
+    z-index: 999;
+    position: absolute;
+    &--hiden {
+      display: none !important;
+    }
+  }
+  &__btn {
+    float: right;
+  }
+  &__content {
+    width: 265px;
+    & span {
+      font: normal normal 300 14px/16px Roboto;
+      color: #ff6600;
+    }
+    & svg {
+      font: normal normal 300 14px/16px Roboto;
+      color: #ff6600;
+    }
+  }
+  &__svgContainer {
+    width: 28px;
+    height: 28px;
+    color: #81ba00;
+    float: right;
+  }
+}

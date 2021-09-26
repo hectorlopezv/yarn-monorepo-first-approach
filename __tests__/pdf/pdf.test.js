@@ -48,7 +48,7 @@ describe('testing suite', () => {
             base64={dataBase64}
             setToogleShow={() => setToogleShowd()}
             domElementName={'#prueba_pdf'}
-            ToogleShow={true}
+            ToogleShow
           />
         </div>
       </>,

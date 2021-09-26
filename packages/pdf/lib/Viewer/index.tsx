@@ -30,7 +30,7 @@ export const Viewer: React.FC<Viewer_SCProps> = ({
   const [numPages, setNumPages] = useState<number | null>(null)
   const [pageNumber, setPageNumber] = useState(1)
   const [rect, ref] = useRect()
-  const [loading, setloading] = useState(false)
+  const [loading, setloading] = useState(true)
   const [showToolBar, setshowToolBar] = useState(false)
   function onDocumentLoadSuccess({numPages}: {numPages: number}) {
     setshowToolBar(true)
@@ -55,6 +55,10 @@ export const Viewer: React.FC<Viewer_SCProps> = ({
       }, 100)
     }
   }, [rect])
+  const loadingHandler = () => {
+    setloading(true)
+    return ''
+  }
   return (
     <>
       <Loader loading={loading} />
@@ -77,7 +81,6 @@ export const Viewer: React.FC<Viewer_SCProps> = ({
             file={dataUri}
             onLoadSuccess={onDocumentLoadSuccess}
             renderMode={'svg'}
-            loading={() => setloading(true) as any}
           >
             <Page pageNumber={pageNumber} scale={scale} ref={ref as any} />
           </Document>
