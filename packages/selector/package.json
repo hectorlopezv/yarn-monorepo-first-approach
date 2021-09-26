@@ -1,6 +1,6 @@
 {
   "name": "@libprov/selector",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "Selector Component for Compensar component Library - React/Typescript",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "devDependencies": {
-    "@libprov/builder": "^2.0.4",
+    "@libprov/builder": "^2.0.5",
     "@types/react-custom-scrollbars": "^4.0.8",
     "@types/react-select": "^4.0.17"
   },
@@ -45,5 +45,5 @@
     "react-custom-scrollbars": "^4.2.1",
     "react-select": "^4.3.1"
   },
-  "gitHead": "e95ad038ce89185cf0725d24af4bcef0a76b4989"
+  "gitHead": "84382e86f1fdb149edb3688a9d23ce75111fcf1f"
 }

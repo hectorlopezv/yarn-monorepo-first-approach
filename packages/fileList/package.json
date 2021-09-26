@@ -1,15 +1,15 @@
 {
-  "name": "@libprov/fileList",
-  "version": "1.0.2",
+  "name": "@libprov/filelist",
+  "version": "1.0.3",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "hvmlopez <hectorvmlopez@gmail..com>",
   "license": "ISC",
-  "main": "dist/fileList.cjs.js",
-  "module": "dist/fileList.esm.js",
-  "types": "dist/types/fileList.esm.d.ts",
+  "main": "dist/filelist.cjs.js",
+  "module": "dist/filelist.esm.js",
+  "types": "dist/types/filelist.esm.d.ts",
   "filename": [
-    "fileList",
+    "filelist",
     "tsx"
   ],
   "directories": {
@@ -36,10 +36,10 @@
   },
   "homepage": "https://github.com/hectorlopezv/yarn-monorepo-first-approach#readme",
   "devDependencies": {
-    "@libprov/builder": "^2.0.4"
+    "@libprov/builder": "^2.0.5"
   },
   "peerDependencies": {
     "react": "^17.0.2"
   },
-  "gitHead": "e95ad038ce89185cf0725d24af4bcef0a76b4989"
+  "gitHead": "84382e86f1fdb149edb3688a9d23ce75111fcf1f"
 }

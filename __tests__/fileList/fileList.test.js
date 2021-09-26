@@ -1,6 +1,6 @@
 import React from 'react'
 import {render, screen} from '@testing-library/react'
-import {FileList} from '@libprov/fileList/lib/fileList'
+import {FileList} from '@libprov/filelist/lib/fileList'
 describe('testing suite fileList', () => {
   it('testing unit fileList', () => {
     const LeftArrow = ({className = '', title, titleId, ...props}) => {
