@@ -1,15 +1,15 @@
 {
-  "name": "@libprov/dragAndDropFile",
+  "name": "@libprov/draganddropfile",
   "version": "1.0.2",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "hvmlopez <hectorvmlopez@gmail..com>",
   "license": "ISC",
-  "main": "dist/dragAndDropFile.cjs.js",
-  "module": "dist/dragAndDropFile.esm.js",
-  "types": "dist/types/dragAndDropFile.esm.d.ts",
+  "main": "dist/draganddropfile.cjs.js",
+  "module": "dist/draganddropfile.esm.js",
+  "types": "dist/types/draganddropfile.esm.d.ts",
   "filename": [
-    "dragAndDropFile",
+    "draganddropfile",
     "tsx"
   ],
   "directories": {
@@ -40,5 +40,6 @@
   },
   "peerDependencies": {
     "react": "^17.0.2"
-  }
+  },
+  "gitHead": "e95ad038ce89185cf0725d24af4bcef0a76b4989"
 }

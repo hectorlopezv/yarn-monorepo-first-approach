@@ -35,7 +35,7 @@
     "@libprov/cards": "^2.0.4",
     "@libprov/date": "^2.0.6",
     "@libprov/dots": "^2.0.4",
-    "@libprov/dragAndDropFile": "^1.0.2",
+    "@libprov/draganddropfile": "^1.0.2",
     "@libprov/fileList": "^1.0.2",
     "@libprov/filter": "^2.0.4",
     "@libprov/infouser": "^2.0.4",
@@ -58,5 +58,5 @@
   "devDependencies": {
     "@libprov/builder": "^2.0.4"
   },
-  "gitHead": "f1863ca2f0e4ac809136331c5e43827db043502c"
+  "gitHead": "e95ad038ce89185cf0725d24af4bcef0a76b4989"
 }

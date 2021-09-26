@@ -31,11 +31,11 @@ export const DragDropFile: React.FC<dragDrop> = ({
     elem.value = ''
   }
   return (
-    <div className="col-xs-12 row pl-0 pr-0 dragAndDropFile">
-      <div className="col-xs-12 col-sm-5 dragAndDropFile--left">
+    <div className="col-xs-12 row pl-0 pr-0 draganddropfile">
+      <div className="col-xs-12 col-sm-5 draganddropfile--left">
         {filesNames === null ? (
           <input
-            className="btn-orange-v2 dragAndDropFile__btn"
+            className="btn-orange-v2 draganddropfile__btn"
             type="button"
             value={selectTitle}
             onClick={() => {
@@ -47,20 +47,20 @@ export const DragDropFile: React.FC<dragDrop> = ({
             }}
           />
         ) : (
-          <div className="dragAndDropFile__svgContainer">
+          <div className="draganddropfile__svgContainer">
             <CheckIcon />
           </div>
         )}
       </div>
-      <div className="col-xs-12 col-sm-6 dragAndDropFile--right">
-        <div className="dragAndDropFile__content">
+      <div className="col-xs-12 col-sm-6 draganddropfile--right">
+        <div className="draganddropfile__content">
           <input
             type="file"
             id="fileDnD"
             multiple={multiple ? multiple : false}
             accept={accept ? accept : '*'}
-            className={`dragAndDropFile__file ${
-              filesNames != null ? 'dragAndDropFile__file--hiden' : ''
+            className={`draganddropfile__file ${
+              filesNames != null ? 'draganddropfile__file--hiden' : ''
             }`}
             name="fileDnD"
             data-testid="fileDnD"
@@ -68,7 +68,7 @@ export const DragDropFile: React.FC<dragDrop> = ({
           />
           {filesNames === null ? (
             <>
-              <div className="dragAndDropFile__zone">
+              <div className="draganddropfile__zone">
                 <p>O arrastre el archivo aquí</p>
               </div>
             </>
@@ -87,7 +87,7 @@ export const DragDropFile: React.FC<dragDrop> = ({
                   )
                 })}
                 <input
-                  className="btn-orange-v2 dragAndDropFile__btnDelete col-xs-12 col-sm-6 col-md-5"
+                  className="btn-orange-v2 draganddropfile__btnDelete col-xs-12 col-sm-6 col-md-5"
                   type="button"
                   value={eraseTitle}
                   onClick={clearFiles}
