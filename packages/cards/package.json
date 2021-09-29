@@ -1,6 +1,6 @@
 {
   "name": "@libprov/cards",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Cards Component for Compensar component Library - React/Typescript",
   "keywords": [],
   "author": "Hector Vinicio Lopez Molinares <hectorvmlopez@gmail.com>",
@@ -40,7 +40,7 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
-    "@libprov/builder": "^2.0.6",
+    "@libprov/builder": "^2.0.7",
     "@types/styled-components": "^5.1.11"
   },
   "gitHead": "84382e86f1fdb149edb3688a9d23ce75111fcf1f"
