@@ -33,7 +33,7 @@ export const Title = styled.h2.attrs(prop => ({
   &&&& {
     text-align: left;
     margin-left: 30px;
-    font: normal normal normal 18px/21px Roboto !important;
+    font: normal normal normal 18px/21px Roboto;
     @media screen and (max-width: 902px) {
       margin-left: 0px;
     }
