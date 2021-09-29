@@ -6,3 +6,4 @@
 **/packages/**/*.cjs.*.ts.map
 **/packages/**/types/*.js
 *.log
+out*

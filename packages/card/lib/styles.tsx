@@ -43,7 +43,7 @@ export const Title = styled.span.attrs<TitleProps>(prop => ({
 }))`
   margin-top: 11px;
   text-align: center;
-  font: normal normal normal 14px/16px Roboto !important;
+  font: normal normal normal 14px/16px Roboto;
   letter-spacing: 0px;
   color: #000000;
 `
